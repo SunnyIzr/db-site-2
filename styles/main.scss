@@ -3,7 +3,7 @@
 /* BODY */
 
 body {
-  background-color: $darkBlue;
+  background-color: $darkestBlue;
   font-family: 'ProximaNova', 'Arial', sans-serif;
   font-size: 16pt;
   color: $white;
@@ -12,7 +12,7 @@ body {
 /* HEADER */
 
 .header {
-  background-color: $darkBlue;
+  background-color: $darkestBlue;
   height: 150px;
 }
 
@@ -28,10 +28,28 @@ body {
   overflow-y: auto;
 }
 
+.search-box {
+  position: relative;
+
+  .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    color: $accentBlue;
+    /*left: 0px;*/
+  }
+
+  input {
+    font-size: 14pt;
+    padding-left: 30px;
+    background-color: $darkBlue;
+    border: none;
+  }
+}
+
 .search {
   margin: 10px;
   border-radius: 25px;
-  
 }
 
 .sidebar-nav {
