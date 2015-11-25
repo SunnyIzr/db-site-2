@@ -1,0 +1,68 @@
+@import 'fonts-colors';
+
+/* BODY */
+
+body {
+  background-color: $darkBlue;
+  font-family: 'ProximaNova', 'Arial', sans-serif;
+  font-size: 16pt;
+  color: $white;
+}
+
+/* HEADER */
+
+.header {
+  background-color: $darkBlue;
+  height: 150px;
+}
+
+/* SIDEBAR */
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    text-indent: 20px;
+    line-height: 40px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      font-family: "ProximaNova Light", "Arial", sans-serif;
+      color: $lightGray;
+    }
+
+    a:active, a:focus {
+      background-color: $accentBlue;
+      text-decoration: none;
+      color: $lightGray;
+    }
+  }
+}
+
+/* MAIN CONTENT */
+
+#main-content-wrapper {
+  margin-left: 20%;
+  position: relative;
+}
+
+#inner-content-wrapper {
+  height: 200px;
+  background-color: $midBlue;
+}
