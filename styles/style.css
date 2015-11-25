@@ -8183,7 +8183,7 @@ button.close {
 /* BODY */
 body {
   background-color: #0b1529;
-  font-family: 'ProximaNova', 'Arial', sans-serif;
+  font-family: 'ProximaNova Light', 'Arial', sans-serif;
   font-size: 16pt;
   color: white;
 }
@@ -8200,13 +8200,6 @@ body {
   width: 20%;
   float: left;
   padding-right: 15px;
-  /*  z-index: 1000;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 25%;
-    height: 100%;
-    overflow-y: auto;*/
 }
 
 .search-box {
@@ -8219,7 +8212,7 @@ body {
   color: #304684;
 }
 .search-box input {
-  font-size: 14pt;
+  font-size: 12pt;
   padding: 8px 10px 8px 45px;
   width: 100%;
   background-color: #111e42;
@@ -8238,14 +8231,32 @@ body {
 .profile-stats {
   margin-top: 20px;
 }
-.profile-stats img {
+.profile-stats .user-img img {
   display: inline-block;
-  margin: 25px 10px;
+  margin: 25px 15px;
   border-radius: 50px;
   height: 100px;
 }
-.profile-stats p, .profile-stats a {
+.profile-stats p {
   text-align: right;
+  color: #bababd;
+}
+.profile-stats p:first-child {
+  color: #1b74bd;
+  margin-bottom: -6px;
+}
+.profile-stats p:last-child {
+  margin-top: -6px;
+}
+.profile-stats p:last-child img {
+  display: inline-block;
+  height: 25px;
+  padding-right: 5px;
+}
+.profile-stats a {
+  text-decoration: none;
+  color: #bababd;
+  font-size: 12pt;
 }
 
 .sidebar-nav {
@@ -8258,15 +8269,20 @@ body {
 }
 .sidebar-nav li {
   text-indent: 20px;
-  line-height: 40px;
+  line-height: 50px;
 }
 .sidebar-nav li a {
+  padding-left: 10px;
+  padding-top: 2px;
   display: block;
   text-decoration: none;
-  font-family: "ProximaNova Light", "Arial", sans-serif;
   color: #bababd;
 }
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
+.sidebar-nav li i {
+  line-height: inherit;
+  color: #304684;
+}
+.sidebar-nav .active, .sidebar-nav i.active {
   background-color: #304684;
   text-decoration: none;
   color: #bababd;
