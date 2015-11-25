@@ -28,10 +28,16 @@ body {
   overflow-y: auto;
 }
 
+.search {
+  margin: 10px;
+  border-radius: 25px;
+  
+}
+
 .sidebar-nav {
   position: absolute;
-  top: 0;
-  width: 250px;
+  top: 50px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -58,11 +64,12 @@ body {
 /* MAIN CONTENT */
 
 #main-content-wrapper {
-  margin-left: 20%;
+  margin-left: 15%;
   position: relative;
 }
 
 #inner-content-wrapper {
+  margin-left: 0;
   height: 200px;
   background-color: $midBlue;
 }
