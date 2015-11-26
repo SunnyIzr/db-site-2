@@ -8274,7 +8274,7 @@ body, html {
 }
 
 .sidebar-nav {
-  padding-left: 50px;
+  padding-left: 60px;
 }
 .sidebar-nav ul {
   margin: 15px 0px 0px 0px;
@@ -8309,11 +8309,21 @@ body, html {
 }
 
 /* MAIN CONTENT */
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+  background-color: #132451;
+}
+
 #inner-content-wrapper {
   position: relative;
   height: 100vh;
   margin-left: -15px;
-  width: 110%;
+  margin-right: -15px;
+  width: 100%;
   background-color: #132451;
 }
 #inner-content-wrapper p {
@@ -8424,43 +8434,4 @@ body, html {
   right: 50%;
   position: absolute;
   margin-right: -20px;
-}
-
-.score-list li .score-box .score-btn:hover,
-.score-list li .score-box .score-btn:focus,
-.score-list li .score-box .score-btn.focus,
-.score-list li .score-box .score-btn:active,
-.score-list li .score-box .score-btn.active,
-.open > .score-list li .score-box .score-btn.dropdown-toggle {
-  color: #fff;
-  background-color: #1b2f64;
-  border-color: #e0e0e0;
-}
-
-.score-list li .score-box .score-btn:active,
-.score-list li .score-box .score-btn.active,
-.open > .score-list li .score-box .score-btn.dropdown-toggle {
-  background-image: none;
-}
-
-.score-list li .score-box .score-btn.disabled,
-.score-list li .score-box .score-btn.disabled:hover,
-.score-list li .score-box .score-btn.disabled:focus,
-.score-list li .score-box .score-btn.disabled.focus,
-.score-list li .score-box .score-btn.disabled:active,
-.score-list li .score-box .score-btn.disabled.active,
-.score-list li .score-box .score-btn[disabled],
-.score-list li .score-box .score-btn[disabled]:hover,
-.score-list li .score-box .score-btn[disabled]:focus,
-.score-list li .score-box .score-btn[disabled].focus,
-.score-list li .score-box .score-btn[disabled]:active,
-.score-list li .score-box .score-btn[disabled].active,
-fieldset[disabled] .score-list li .score-box .score-btn,
-fieldset[disabled] .score-list li .score-box .score-btn:hover,
-fieldset[disabled] .score-list li .score-box .score-btn:focus,
-fieldset[disabled] .score-list li .score-box .score-btn.focus,
-fieldset[disabled] .score-list li .score-box .score-btn:active,
-fieldset[disabled] .score-list li .score-box .score-btn.active {
-  background-color: #26428c;
-  border-color: white;
 }
