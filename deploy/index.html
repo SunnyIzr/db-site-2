@@ -16,7 +16,7 @@
 <body>
 <div class="wrapper">
 
-<div id="sidebar-wrapper">
+<div id="sidebar-wrapper" class="col-sm-3 sidebar">
   <div class="row user-search">
     <div class="col-xs-9 search-box">
       <span class="glyphicon glyphicon-search"></span>
@@ -39,8 +39,9 @@
     </div>  
   </div>  
 
-  <div class="row"></div>
-  <ul class="sidebar-nav fa-ul">
+  <div class="row">
+    <div class="col-xs-12 sidebar-nav">
+  <ul class="fa-ul">
     <li class="active">
       <i class="fa-li fa fa-cog fa-lg active"></i>
       <a href="#">Daily Bracket</a>
@@ -82,10 +83,12 @@
       <a href="#">Settings</a>
     </li>
   </ul>
+</div>
+</div>
 
 </div>
 
-<div id="main-content-wrapper">
+<div id="main-content-wrapper" class="col-sm-9 main-content">
 <div class="header">
   <img class="img-responsive logo" src="img/logowe.png" alt="Daily Bracket">
 </div>
@@ -94,7 +97,7 @@
   </div>  
 </div>
 
-    <div class="container">
+  </div>
     <script src="script.min.js"></script>
   </body>
 

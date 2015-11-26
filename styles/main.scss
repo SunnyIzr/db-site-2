@@ -9,6 +9,16 @@ body {
   color: $white;
 }
 
+body, html {
+  height: 100%;
+}
+
+/*#wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}*/
+
 /* HEADER */
 
 .header {
@@ -24,12 +34,16 @@ body {
 
 /* SIDEBAR */
 
-#sidebar-wrapper {
+/*#sidebar-wrapper {
   position: relative;
   width: 22%;
   float: left;
   padding-right: 15px;
-}
+}*/
+
+.sidebar {
+  background-color: $darkestBlue;
+}  
 
 .search-box {
   position: relative;
@@ -97,11 +111,7 @@ body {
 }
 
 .sidebar-nav {
-  position: absolute;
-  top: 240px;
-  width: 100%;
   margin: 0;
-  padding: 0;
   list-style: none;
 
   li {
@@ -138,15 +148,17 @@ body {
 
 /* MAIN CONTENT */
 
-#main-content-wrapper {
+/*#main-content-wrapper {
+  height: 100%;
   width: 78%;
   float: left;
   position: relative;
-}
+}*/
 
-#inner-content-wrapper {
+/*#inner-content-wrapper {
+  position: relative;
+  height: 100%;
   margin-left: 0;
   width: 100%;
-  height: 100vh;
   background-color: $midBlue;
-}
+}*/
