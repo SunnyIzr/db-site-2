@@ -13,36 +13,29 @@ body, html {
   height: 100%;
 }
 
-/*#wrapper {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-}*/
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 /* HEADER */
 
 .header {
   background-color: $darkestBlue;
-  height: 70px;
+  height: 75px;
 
   img {
     height: 100%;
     margin: 0 auto;
-    padding: 5px 0px;
+    padding: 8px 0px;
   }
 }
 
 /* SIDEBAR */
 
-/*#sidebar-wrapper {
-  position: relative;
-  width: 22%;
-  float: left;
-  padding-right: 15px;
-}*/
-
 .sidebar {
   background-color: $darkestBlue;
+  padding-left: 0;
 }  
 
 .search-box {
@@ -65,18 +58,19 @@ body, html {
 }
 
 .search {
-  margin: 10px;
+  margin: 10px 0px;
   border-radius: 25px;
 }
 
 .notification {
   margin-top: 10px;
+  margin-left: -10px;
 }
 
 .profile-stats {
   margin-top: 20px;
 
-    .user-img img {
+     .user-img img {
       display: inline-block;
       margin: 20px 25px;
       border-radius: 50px;
@@ -86,6 +80,7 @@ body, html {
     p {
       text-align: right;
       color: $lightGray;
+      padding-right: 15px;
     }
 
     p:first-child {
@@ -111,54 +106,227 @@ body, html {
 }
 
 .sidebar-nav {
-  margin: 0;
+  padding-left: 50px;
+
+  ul {
+  margin: 15px 0px 0px 0px;
   list-style: none;
 
-  li {
-    text-indent: 20px;
-    line-height: 50px;
-    border-bottom: solid 1px $accentBlue;
+    li {
+      text-indent: 20px;
+      line-height: 50px;
+      border-bottom: solid 1px $accentBlue;
 
-    a {
-      padding-left: 10px;
-      display: block;
+      a {
+        padding-left: 10px;
+        display: block;
+        text-decoration: none;
+        color: $lightGray;
+      }
+
+      i {
+        line-height: inherit;
+        color: $accentBlue;
+        margin-top: -4px;
+        border-bottom: solid 1px $accentBlue;
+      }
+    }
+
+    .active, i.active {
+      background-color: $accentBlue;
       text-decoration: none;
       color: $lightGray;
+      border: none;
     }
-
-    i {
-      line-height: inherit;
-      color: $accentBlue;
+    i.active {
       margin-top: -4px;
-      border-bottom: solid 1px $accentBlue;
+      color: $orange;
     }
-  }
-
-  .active, i.active {
-    background-color: $accentBlue;
-    text-decoration: none;
-    color: $lightGray;
-    border: none;
-  }
-  i.active {
-    margin-top: -4px;
-    color: $orange;
-  }
+  }  
 }
 
 /* MAIN CONTENT */
 
-/*#main-content-wrapper {
-  height: 100%;
-  width: 78%;
-  float: left;
+#inner-content-wrapper {
   position: relative;
-}*/
-
-/*#inner-content-wrapper {
-  position: relative;
-  height: 100%;
-  margin-left: 0;
-  width: 100%;
+  height: 100vh;
+  margin-left: -15px;
+  width: 110%;
   background-color: $midBlue;
-}*/
+
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.placeholder {
+  position: relative;
+  top: 20px;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: $orange;
+}
+
+/* TEAMS LIST */
+
+.teams-list {
+  margin-top: 20px;
+
+  li {
+    list-style-type: none;
+
+    .team-box {
+    position: relative;
+    display: block;
+
+      .team-btn {
+        color: $white;
+        background-color: transparent;
+        border-color: $white;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        position: relative;
+        outline: none;
+        background-color: $midBlue;
+
+        span {
+          display: block;
+        }
+
+        .title {
+          font-size: 12px;
+          color: white;
+        }
+
+        .subtitle {
+          font-size: 10px;
+          color: #c88e6d;
+        }
+
+        .time-channel {
+          color: #fff;
+          font-size: 10px;
+          border: 1px solid #fff;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+      }
+
+      .team-btn:hover,
+      .team-btn:focus,
+      .team-btn.focus,
+      .team-btn:active,
+      .team-btn.active {
+        color: #fff;
+        background-color: transparent;
+        border-color: #e0e0e0;
+      }
+
+      .team-btn.disabled,
+      .team-btn.disabled:hover,
+      .team-btn.disabled:focus,
+      .team-btn.disabled.focus,
+      .team-btn.disabled:active,
+      .team-btn.disabled.active,
+      .team-btn[disabled],
+      .team-btn[disabled]:hover,
+      .team-btn[disabled]:focus,
+      .team-btn[disabled].focus,
+      .team-btn[disabled]:active,
+      .team-btn[disabled].active{
+        background-color: transparent;
+        border-color: white;
+      }
+
+      .team-btn-left {
+        padding: 3px 70px 3px 10px;
+        float: left;
+        width: 50%;
+      
+        .time-channel {
+          top: 5px;
+          right: 0;
+          position: absolute;
+          padding: 5px 15px 5px 5px !important;
+          border: 0;
+        }
+      }
+
+      .team-btn-right {
+        padding: 3px 10px 3px 70px;
+        float: left;
+        width: 50%;
+        
+        .time-channel {
+          top: 5px;
+          left: 0;
+          position: absolute;
+          padding: 5px 15px 5px 15px !important;
+          border: 0;
+        }
+      }
+      
+      .ball-center {
+        top: 0;
+        right: 50%;
+        position: absolute;
+        margin-right: -20px;
+      }
+    }
+  }
+}
+
+.score-list li .score-box .score-btn:hover,
+.score-list li .score-box .score-btn:focus,
+.score-list li .score-box .score-btn.focus,
+.score-list li .score-box .score-btn:active,
+.score-list li .score-box .score-btn.active,
+.open > .score-list li .score-box .score-btn.dropdown-toggle {
+  color: #fff;
+  background-color: #1b2f64;
+  border-color: #e0e0e0;
+}
+
+.score-list li .score-box .score-btn:active,
+.score-list li .score-box .score-btn.active,
+.open > .score-list li .score-box .score-btn.dropdown-toggle {
+  background-image: none;
+}
+
+.score-list li .score-box .score-btn.disabled,
+.score-list li .score-box .score-btn.disabled:hover,
+.score-list li .score-box .score-btn.disabled:focus,
+.score-list li .score-box .score-btn.disabled.focus,
+.score-list li .score-box .score-btn.disabled:active,
+.score-list li .score-box .score-btn.disabled.active,
+.score-list li .score-box .score-btn[disabled],
+.score-list li .score-box .score-btn[disabled]:hover,
+.score-list li .score-box .score-btn[disabled]:focus,
+.score-list li .score-box .score-btn[disabled].focus,
+.score-list li .score-box .score-btn[disabled]:active,
+.score-list li .score-box .score-btn[disabled].active,
+fieldset[disabled] .score-list li .score-box .score-btn,
+fieldset[disabled] .score-list li .score-box .score-btn:hover,
+fieldset[disabled] .score-list li .score-box .score-btn:focus,
+fieldset[disabled] .score-list li .score-box .score-btn.focus,
+fieldset[disabled] .score-list li .score-box .score-btn:active,
+fieldset[disabled] .score-list li .score-box .score-btn.active {
+  background-color: #26428c;
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

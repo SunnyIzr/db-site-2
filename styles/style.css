@@ -8192,31 +8192,26 @@ body, html {
   height: 100%;
 }
 
-/*#wrapper {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-}*/
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* HEADER */
 .header {
   background-color: #0b1529;
-  height: 70px;
+  height: 75px;
 }
 .header img {
   height: 100%;
   margin: 0 auto;
-  padding: 5px 0px;
+  padding: 8px 0px;
 }
 
 /* SIDEBAR */
-/*#sidebar-wrapper {
-  position: relative;
-  width: 22%;
-  float: left;
-  padding-right: 15px;
-}*/
 .sidebar {
   background-color: #0b1529;
+  padding-left: 0;
 }
 
 .search-box {
@@ -8237,12 +8232,13 @@ body, html {
 }
 
 .search {
-  margin: 10px;
+  margin: 10px 0px;
   border-radius: 25px;
 }
 
 .notification {
   margin-top: 10px;
+  margin-left: -10px;
 }
 
 .profile-stats {
@@ -8257,6 +8253,7 @@ body, html {
 .profile-stats p {
   text-align: right;
   color: #bababd;
+  padding-right: 15px;
 }
 .profile-stats p:first-child {
   color: #1b74bd;
@@ -8277,48 +8274,193 @@ body, html {
 }
 
 .sidebar-nav {
-  margin: 0;
+  padding-left: 50px;
+}
+.sidebar-nav ul {
+  margin: 15px 0px 0px 0px;
   list-style: none;
 }
-.sidebar-nav li {
+.sidebar-nav ul li {
   text-indent: 20px;
   line-height: 50px;
   border-bottom: solid 1px #304684;
 }
-.sidebar-nav li a {
+.sidebar-nav ul li a {
   padding-left: 10px;
   display: block;
   text-decoration: none;
   color: #bababd;
 }
-.sidebar-nav li i {
+.sidebar-nav ul li i {
   line-height: inherit;
   color: #304684;
   margin-top: -4px;
   border-bottom: solid 1px #304684;
 }
-.sidebar-nav .active, .sidebar-nav i.active {
+.sidebar-nav ul .active, .sidebar-nav ul i.active {
   background-color: #304684;
   text-decoration: none;
   color: #bababd;
   border: none;
 }
-.sidebar-nav i.active {
+.sidebar-nav ul i.active {
   margin-top: -4px;
   color: #eb5b05;
 }
 
 /* MAIN CONTENT */
-/*#main-content-wrapper {
-  height: 100%;
-  width: 78%;
+#inner-content-wrapper {
+  position: relative;
+  height: 100vh;
+  margin-left: -15px;
+  width: 110%;
+  background-color: #132451;
+}
+#inner-content-wrapper p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.placeholder {
+  position: relative;
+  top: 20px;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #eb5b05;
+}
+
+/* TEAMS LIST */
+.teams-list {
+  margin-top: 20px;
+}
+.teams-list li {
+  list-style-type: none;
+}
+.teams-list li .team-box {
+  position: relative;
+  display: block;
+}
+.teams-list li .team-box .team-btn {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  position: relative;
+  outline: none;
+  background-color: #132451;
+}
+.teams-list li .team-box .team-btn span {
+  display: block;
+}
+.teams-list li .team-box .team-btn .title {
+  font-size: 12px;
+  color: white;
+}
+.teams-list li .team-box .team-btn .subtitle {
+  font-size: 10px;
+  color: #c88e6d;
+}
+.teams-list li .team-box .team-btn .time-channel {
+  color: #fff;
+  font-size: 10px;
+  border: 1px solid #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.teams-list li .team-box .team-btn:hover,
+.teams-list li .team-box .team-btn:focus,
+.teams-list li .team-box .team-btn.focus,
+.teams-list li .team-box .team-btn:active,
+.teams-list li .team-box .team-btn.active {
+  color: #fff;
+  background-color: transparent;
+  border-color: #e0e0e0;
+}
+.teams-list li .team-box .team-btn.disabled,
+.teams-list li .team-box .team-btn.disabled:hover,
+.teams-list li .team-box .team-btn.disabled:focus,
+.teams-list li .team-box .team-btn.disabled.focus,
+.teams-list li .team-box .team-btn.disabled:active,
+.teams-list li .team-box .team-btn.disabled.active,
+.teams-list li .team-box .team-btn[disabled],
+.teams-list li .team-box .team-btn[disabled]:hover,
+.teams-list li .team-box .team-btn[disabled]:focus,
+.teams-list li .team-box .team-btn[disabled].focus,
+.teams-list li .team-box .team-btn[disabled]:active,
+.teams-list li .team-box .team-btn[disabled].active {
+  background-color: transparent;
+  border-color: white;
+}
+.teams-list li .team-box .team-btn-left {
+  padding: 3px 70px 3px 10px;
   float: left;
-  position: relative;
-}*/
-/*#inner-content-wrapper {
-  position: relative;
-  height: 100%;
-  margin-left: 0;
-  width: 100%;
-  background-color: $midBlue;
-}*/
+  width: 50%;
+}
+.teams-list li .team-box .team-btn-left .time-channel {
+  top: 5px;
+  right: 0;
+  position: absolute;
+  padding: 5px 15px 5px 5px !important;
+  border: 0;
+}
+.teams-list li .team-box .team-btn-right {
+  padding: 3px 10px 3px 70px;
+  float: left;
+  width: 50%;
+}
+.teams-list li .team-box .team-btn-right .time-channel {
+  top: 5px;
+  left: 0;
+  position: absolute;
+  padding: 5px 15px 5px 15px !important;
+  border: 0;
+}
+.teams-list li .team-box .ball-center {
+  top: 0;
+  right: 50%;
+  position: absolute;
+  margin-right: -20px;
+}
+
+.score-list li .score-box .score-btn:hover,
+.score-list li .score-box .score-btn:focus,
+.score-list li .score-box .score-btn.focus,
+.score-list li .score-box .score-btn:active,
+.score-list li .score-box .score-btn.active,
+.open > .score-list li .score-box .score-btn.dropdown-toggle {
+  color: #fff;
+  background-color: #1b2f64;
+  border-color: #e0e0e0;
+}
+
+.score-list li .score-box .score-btn:active,
+.score-list li .score-box .score-btn.active,
+.open > .score-list li .score-box .score-btn.dropdown-toggle {
+  background-image: none;
+}
+
+.score-list li .score-box .score-btn.disabled,
+.score-list li .score-box .score-btn.disabled:hover,
+.score-list li .score-box .score-btn.disabled:focus,
+.score-list li .score-box .score-btn.disabled.focus,
+.score-list li .score-box .score-btn.disabled:active,
+.score-list li .score-box .score-btn.disabled.active,
+.score-list li .score-box .score-btn[disabled],
+.score-list li .score-box .score-btn[disabled]:hover,
+.score-list li .score-box .score-btn[disabled]:focus,
+.score-list li .score-box .score-btn[disabled].focus,
+.score-list li .score-box .score-btn[disabled]:active,
+.score-list li .score-box .score-btn[disabled].active,
+fieldset[disabled] .score-list li .score-box .score-btn,
+fieldset[disabled] .score-list li .score-box .score-btn:hover,
+fieldset[disabled] .score-list li .score-box .score-btn:focus,
+fieldset[disabled] .score-list li .score-box .score-btn.focus,
+fieldset[disabled] .score-list li .score-box .score-btn:active,
+fieldset[disabled] .score-list li .score-box .score-btn.active {
+  background-color: #26428c;
+  border-color: white;
+}

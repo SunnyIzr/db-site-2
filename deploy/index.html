@@ -14,9 +14,9 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="container-fluid">
 
-<div id="sidebar-wrapper" class="col-sm-3 sidebar">
+<div class="col-sm-3 sidebar">
   <div class="row user-search">
     <div class="col-xs-9 search-box">
       <span class="glyphicon glyphicon-search"></span>
@@ -88,12 +88,39 @@
 
 </div>
 
-<div id="main-content-wrapper" class="col-sm-9 main-content">
-<div class="header">
+<div class="col-sm-9 main-content no-padding">
+<div class="header no-padding">
   <img class="img-responsive logo" src="img/logowe.png" alt="Daily Bracket">
 </div>
   
   <div id="inner-content-wrapper">
+
+    <div class="col-xs-4 col-xs-offset-4">
+      <div class="placeholder">
+      </div>  
+
+      <p>Swipe the ball to place your bet or tap it to view Dailybracket's take.</p>
+
+      <a href="#"><button>Learn More</button></a>
+
+      <ul class="teams-list">
+        <li>
+          <a href="#" class="team-box">
+            <button class="btn active team-btn team-btn-left">
+              <span class="title">2 Virginia</span>
+              <span class="subtitle">Cavaliers</span>
+              <span class="time-channel">7:00P</span>
+            </button>
+            <button class="btn team-btn team-btn-right">
+              <span class="title">Syracuse</span>
+              <span class="subtitle">Orange</span>
+              <span class="time-channel">ESPN</span>
+            </button>
+            <span class="ball-center pico pico-ball-center-key"></span>
+          </a>
+        </li>
+      </ul>   
+    </div>   
   </div>  
 </div>
 
