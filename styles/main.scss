@@ -12,15 +12,21 @@ body {
 /* HEADER */
 
 .header {
-  background-color: $darkBlue;
-  height: 150px;
+  background-color: $darkestBlue;
+  height: 70px;
+
+  img {
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px 0px;
+  }
 }
 
 /* SIDEBAR */
 
 #sidebar-wrapper {
   position: relative;
-  width: 20%;
+  width: 22%;
   float: left;
   padding-right: 15px;
 }
@@ -36,7 +42,7 @@ body {
   }
 
   input {
-    font-size: 12pt;
+    font-size: 14pt;
     padding: 8px 10px 8px 45px;
     width: 100%;
     background-color: $darkBlue;
@@ -58,7 +64,7 @@ body {
 
     .user-img img {
       display: inline-block;
-      margin: 25px 15px;
+      margin: 20px 25px;
       border-radius: 50px;
       height: 100px;
     }
@@ -92,7 +98,7 @@ body {
 
 .sidebar-nav {
   position: absolute;
-  top: 250px;
+  top: 240px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -101,10 +107,10 @@ body {
   li {
     text-indent: 20px;
     line-height: 50px;
+    border-bottom: solid 1px $accentBlue;
 
     a {
       padding-left: 10px;
-      padding-top: 2px;
       display: block;
       text-decoration: none;
       color: $lightGray;
@@ -113,6 +119,8 @@ body {
     i {
       line-height: inherit;
       color: $accentBlue;
+      margin-top: -4px;
+      border-bottom: solid 1px $accentBlue;
     }
   }
 
@@ -120,13 +128,18 @@ body {
     background-color: $accentBlue;
     text-decoration: none;
     color: $lightGray;
+    border: none;
+  }
+  i.active {
+    margin-top: -4px;
+    color: $orange;
   }
 }
 
 /* MAIN CONTENT */
 
 #main-content-wrapper {
-  width: 80%;
+  width: 78%;
   float: left;
   position: relative;
 }
