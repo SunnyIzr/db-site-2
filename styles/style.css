@@ -8226,7 +8226,7 @@ body, html {
 }
 .search-box input {
   font-size: 14pt;
-  padding: 8px 10px 8px 45px;
+  padding: 8px 10px 8px 55px;
   width: 100%;
   background-color: #111e42;
   border: none;
@@ -8283,7 +8283,7 @@ body, html {
 }
 .sidebar-nav ul li {
   text-indent: 20px;
-  line-height: 50px;
+  line-height: 55px;
   border-bottom: solid 1px #304684;
 }
 .sidebar-nav ul li a {
@@ -8313,38 +8313,50 @@ body, html {
 .container-fluid {
   padding: 0;
   margin: 0;
-  background-color: #132451;
+  background-color: #0b1529;
 }
 
 .main-content {
-  background-color: #132451;
+  background-color: #0b1529;
   margin-left: -15px !important;
+  padding-right: 0;
 }
 
-/*#inner-content-wrapper {
-  position: relative;
-  height: 100vh;
-  margin-left: -15px;
-  margin-right: -15px;
-  width: 100%;
-  background-color: $midBlue;
-}*/
+#inner-content-wrapper {
+  background-color: #132451;
+}
+
 .inner-content {
-  width: 50%;
+  background-color: #132451;
+  width: 47%;
   margin: 0 auto;
-}
-.inner-content p {
-  margin-top: 20px;
-  text-align: center;
 }
 
-.placeholder {
-  position: relative;
-  top: 20px;
-  height: 200px;
-  width: 300px;
-  margin: 0 auto;
-  background-color: #eb5b05;
+.placeholder img {
+  padding-top: 10px;
+  padding-left: 60px;
+  height: 210px;
+}
+
+.description {
+  margin-bottom: -10px;
+}
+.description p {
+  margin-top: 10px;
+  padding-left: 50px;
+  font-size: 14pt;
+  text-align: left;
+}
+.description .learn-more button {
+  margin-top: 15px;
+  background-color: #132451;
+  border-radius: 8px;
+  border: solid 1px white;
+  color: white;
+  padding: 5px 15px;
+}
+.description .learn-more a.button:hover {
+  background-color: #304684;
 }
 
 /* TEAMS LIST */
@@ -8443,8 +8455,8 @@ body, html {
 }
 .teams-list li .ball-center {
   position: relative;
-  right: -108px;
-  top: -10px;
+  right: -200px;
+  top: -21px;
 }
 .teams-list li .ball-center img {
   height: 65px;
