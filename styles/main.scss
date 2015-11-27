@@ -294,17 +294,19 @@ body, html {
           padding: 8px 15px 8px 40px !important;
         }
       } 
-
-      .ball-center {
-        top: -22px;
-        right: -43%;
-        position: relative;
-
-        img {
-          height: 65px;
-        }
-      }
     }
+
+    .ball-center {
+      position: relative;
+      right: -108px;
+      top: -10px;
+
+      img {
+        height: 65px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }  
   }
 }
 

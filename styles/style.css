@@ -8441,11 +8441,13 @@ body, html {
   position: absolute;
   padding: 8px 15px 8px 40px !important;
 }
-.teams-list li .team-box .ball-center {
-  top: -22px;
-  right: -43%;
+.teams-list li .ball-center {
   position: relative;
+  right: -108px;
+  top: -10px;
 }
-.teams-list li .team-box .ball-center img {
+.teams-list li .ball-center img {
   height: 65px;
+  display: inline-block;
+  margin: 0 auto;
 }
