@@ -385,7 +385,7 @@ body, html {
   }
 
   a:hover {
-    font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+    font-family: "ProximaNova", "Arial Bold", sans-serif;
   }
     
   li {
@@ -403,9 +403,28 @@ body, html {
     a, a:hover {
       color: $white;
       text-decoration: none;
+      font-family: "ProximaNova Light", "Arial", sans-serif;
     }
   }
 }
+
+/* ANALYSIS */
+
+.analysis {
+  background-color: $white;
+  color: black;
+  margin: 5px 18px 10px 18px;
+  padding: 5px;
+
+  .analysis-title {
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    
+  }
+}
+
+/* TWEETS */
+
+/* STATS */
 
 
 
