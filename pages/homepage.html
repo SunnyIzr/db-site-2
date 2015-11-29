@@ -1,100 +1,12 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  
-  <link href='style.min.css' rel='stylesheet' type='text/css'>
-  
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  
+include "head.html" 
 
-  
-</head>
-
-<body>
-<div class="container-fluid">
-
-<div class="col-sm-3 sidebar">
-  <div class="row user-search">
-    <div class="col-xs-9 search-box">
-      <span class="glyphicon glyphicon-search"></span>
-      <input class="search" type="text" name="search" placeholder="Search for Users">
-    </div>
-    <div class="col-xs-3 notification">
-      <img class="img-responsive" src="img/notification.png" alt="notification">
-    </div>  
-  </div>
-  
-  <div class="row profile-stats">
-    <div class="col-xs-5 user-img">
-      <img class="img-responsive" src="img/user.png" alt="user">
-    </div>
-    <div class="col-xs-7">
-      <p>ybzhang23</p>
-      <p><a href="#">View Profile & Stats</a></p>
-      <p>&dollar;127.00</p>
-      <p><img class="img-responsive" src="img/balance-icon.png" alt="balance">1,128</p>
-    </div>  
-  </div>  
-
-  <div class="row">
-    <div class="col-xs-12 sidebar-nav">
-  <ul class="fa-ul">
-    <li class="active">
-      <i class="fa-li fa fa-cog fa-lg active"></i>
-      <a href="#">Daily Bracket</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-cog fa-lg"></i>
-      <a href="#">Daily Lineup</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-usd fa-lg"></i>
-      <a href="#">Transactions</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-money fa-lg"></i>
-      <a href="#">Deposit New</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-users fa-lg"></i>
-      <a href="#">Groups</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-user fa-lg"></i>
-      <a href="#">Refer a Friend</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-tasks fa-lg"></i>
-      <a href="#">Leaderboard</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-question-circle fa-lg"></i>
-      <a href="#">Help & FAQ</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-heart-o fa-lg"></i>
-      <a href="#">Love this app?</a>
-    </li>
-    <li>
-      <i class="fa-li fa fa-bars fa-lg"></i>
-      <a href="#">Settings</a>
-    </li>
-  </ul>
-</div>
-</div>
-
-</div>
+include "sidebar.html"
 
 <div class="col-sm-9 main-content">
 
-  <div class="row header">
-      <img class="img-responsive logo" src="img/logowe.png" alt="Daily Bracket">
-  </div>
+  include "header.html"
   
-  <div class="row" id="inner-content-wrapper">
+  <div class="row inner-content-wrapper">
   <div class="col-xs-12">  
     <div class="inner-content">
       <div class="placeholder">
@@ -144,7 +56,7 @@
           </a>
         </li>
 
-                <li>
+        <li>
           <a href="#" class="team-box">
             <button class="btn active team-btn team-btn-left">
               <span class="title">Suns</span>
@@ -160,7 +72,7 @@
           </a>
         </li>
 
-                <li>
+        <li>
           <a href="#" class="team-box">
             <button class="btn team-btn team-btn-left">
               <span class="title">Pelicans</span>
@@ -197,9 +109,4 @@
   </div>  
 </div>
 
-  </div>
-    <script src="script.min.js"></script>
-  </body>
-
-
-</html>
+include "footer.html"
