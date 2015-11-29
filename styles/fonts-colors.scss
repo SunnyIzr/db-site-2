@@ -19,6 +19,15 @@ $white: #fff;
 }
 
 @font-face {
+  font-family: 'ProximaNova Bold';
+  src: url('fonts/proxima/ProximaNova-Bold.ttf'),
+       url('fonts/proxima/ProximaNova-Bold.eof'),
+       url('fonts/proxima/ProximaNova-Bold.otf'),
+       url('fonts/proxima/ProximaNova-Bold.svg'),
+       url('fonts/proxima/ProximaNova-Bold.woff')
+}
+
+@font-face {
   font-family: 'ProximaNova Light';
   src: url('fonts/proxima/ProximaNova-Light.ttf'),
        url('fonts/proxima/ProximaNova-Light.eof'),

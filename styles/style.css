@@ -8165,6 +8165,10 @@ button.close {
   src: url("fonts/proxima/ProximaNova-Regular.ttf"), url("fonts/proxima/ProximaNova-Regular.eof"), url("fonts/proxima/ProximaNova-Regular.otf"), url("fonts/proxima/ProximaNova-Regular.svg"), url("fonts/proxima/ProximaNova-Regular.woff");
 }
 @font-face {
+  font-family: 'ProximaNova Bold';
+  src: url("fonts/proxima/ProximaNova-Bold.ttf"), url("fonts/proxima/ProximaNova-Bold.eof"), url("fonts/proxima/ProximaNova-Bold.otf"), url("fonts/proxima/ProximaNova-Bold.svg"), url("fonts/proxima/ProximaNova-Bold.woff");
+}
+@font-face {
   font-family: 'ProximaNova Light';
   src: url("fonts/proxima/ProximaNova-Light.ttf"), url("fonts/proxima/ProximaNova-Light.eof"), url("fonts/proxima/ProximaNova-Light.otf"), url("fonts/proxima/ProximaNova-Light.svg"), url("fonts/proxima/ProximaNova-Light.woff");
 }
@@ -8328,13 +8332,12 @@ body, html {
 
 .inner-content {
   background-color: #132451;
-  width: 47%;
+  width: 40%;
   margin: 0 auto;
 }
 
 .placeholder img {
-  padding-top: 10px;
-  padding-left: 60px;
+  margin-top: 5px;
   height: 210px;
 }
 
@@ -8344,17 +8347,18 @@ body, html {
 .description p {
   margin-top: 10px;
   margin-right: -10px;
-  padding-left: 50px;
   font-size: 14pt;
   text-align: left;
 }
 .description .learn-more button {
   margin-top: 15px;
+  margin-left: -10px;
+  font-size: 14pt;
   background-color: #132451;
   border-radius: 8px;
   border: solid 1px white;
   color: white;
-  padding: 5px 15px;
+  padding: 8px 15px;
 }
 .description .learn-more a.button:hover {
   background-color: #304684;
@@ -8363,6 +8367,9 @@ body, html {
 /* TEAMS LIST */
 .teams-list {
   margin-top: 20px;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
 }
 .teams-list li {
   list-style-type: none;
@@ -8456,7 +8463,7 @@ body, html {
 }
 .teams-list li .ball-center {
   position: relative;
-  right: -200px;
+  right: -180px;
   top: -21px;
 }
 .teams-list li .ball-center img {
@@ -8465,125 +8472,7 @@ body, html {
   margin: 0 auto;
 }
 
-/* SLIDESHOW BUTTONS */
-/*.slideshow-buttons {
-  margin-top: 20px;
-
-  img.right-icon {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-
-  img.right-icon, img.left-icon {
-    width: 1.5em;
-  }
-}*/
-.slides {
-  /*    padding: 0;
-    width: 609px;
-    height: 420px;
-    display: block;
-    margin: 0 auto;
-    position: relative;*/
-  list-style-type: none;
-}
-.slides * {
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-.slides input {
-  display: none;
-}
-.slides .slide {
-  margin-top: 20px;
-  /*    transform: scale(0);
-
-      transition: all .7s ease-in-out;*/
-}
-.slides .nav .prev {
-  margin-top: 2px;
-}
-.slides .nav .exit, .slides .nav .prev {
-  /*float: left;*/
-}
-.slides .nav li {
-  display: inline-block;
-}
-.slides .nav-dots {
-  width: 100%;
-  top: 9px;
-  height: 11px;
-  display: block;
-  position: absolute;
-  text-align: center;
-}
-.slides .nav-dots .nav-dot {
-  top: -5px;
-  width: 11px;
-  height: 11px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 100%;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.slides .nav-dots .nav-dot:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slides input#team-1:checked ~ .nav-dots label#nav-dot-1,
-.slides input#img-2:checked ~ .nav-dots label#img-dot-2,
-.slides input#img-3:checked ~ .nav-dots label#img-dot-3,
-.slides input#img-4:checked ~ .nav-dots label#img-dot-4,
-.slides input#img-5:checked ~ .nav-dots label#img-dot-5,
-.slides input#img-6:checked ~ .nav-dots label#img-dot-6 {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/*.slide-container { display: block; }*/
-/*.nav label {
-    width: 200px;
-    height: 100%;
-    display: none;
-    position: absolute;
-
-    opacity: 0;
-    z-index: 9;
-    cursor: pointer;
-
-    transition: opacity .2s;
-
-    color: #FFF;
-    font-size: 156pt;
-    text-align: center;
-    line-height: 380px;
-    font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
-}
-*/
-/*.slide:hover + .nav label { opacity: 0.5; }*/
-/*.nav label:hover { opacity: 1; }*/
-/*.nav .next { right: 0; }*/
-input:checked + .slide-container .slide {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .nav label {
-  display: block;
-}
-
-/* SLIDESHOW */
+/* SLIDESHOW NAV */
 .nav-buttons .carousel-indicators {
   top: 20px;
   left: 55px;
@@ -8606,4 +8495,44 @@ input:checked + .slide-container .nav label {
 }
 .nav-buttons .exit img {
   margin-top: 8px;
+}
+
+/* TEAMS MENU */
+.carousel-inner ul.teams-list {
+  width: 90%;
+  margin-left: 15px;
+}
+.carousel-inner ul.teams-list .ball-center {
+  right: -170px;
+}
+
+.teams-menu {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 14pt;
+}
+.teams-menu a, .teams-menu a:hover {
+  color: #304684;
+  text-decoration: none;
+}
+.teams-menu a:hover {
+  font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+}
+.teams-menu li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 50px 10px 50px;
+  margin: -10px;
+  border-bottom: solid 1px #304684;
+}
+.teams-menu li.active {
+  border-bottom: solid 7px #304684;
+  padding-bottom: 4px;
+}
+.teams-menu li.active a, .teams-menu li.active a:hover {
+  color: white;
+  text-decoration: none;
 }
