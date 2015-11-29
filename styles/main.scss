@@ -462,7 +462,37 @@ input:checked + .slide-container  .slide {
 
 input:checked + .slide-container .nav label { display: block; }
 
+/* SLIDESHOW */
 
+.nav-buttons {
+  .carousel-indicators {
+    top: 20px;
+    left: 55px;
+    width: 70%;
+
+    li {
+      background-color: $shadowBlue;
+      border: none;
+      margin: 2px;
+    }
+
+    .active {
+      background-color: $white;
+      border: none;
+    }
+  }
+
+  .right-button {
+    margin-left: -35px;
+  }
+
+  .left img, .right img {
+    margin-top: 4px;
+  }
+  .exit img {
+    margin-top: 8px;
+  }
+}
 
 
 

@@ -8582,3 +8582,28 @@ input:checked + .slide-container .slide {
 input:checked + .slide-container .nav label {
   display: block;
 }
+
+/* SLIDESHOW */
+.nav-buttons .carousel-indicators {
+  top: 20px;
+  left: 55px;
+  width: 70%;
+}
+.nav-buttons .carousel-indicators li {
+  background-color: #414e72;
+  border: none;
+  margin: 2px;
+}
+.nav-buttons .carousel-indicators .active {
+  background-color: white;
+  border: none;
+}
+.nav-buttons .right-button {
+  margin-left: -35px;
+}
+.nav-buttons .left img, .nav-buttons .right img {
+  margin-top: 4px;
+}
+.nav-buttons .exit img {
+  margin-top: 8px;
+}
