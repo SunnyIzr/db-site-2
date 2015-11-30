@@ -8543,10 +8543,40 @@ body, html {
   background-color: white;
   color: black;
   margin: 5px 18px 10px 18px;
-  padding: 5px;
+  padding: 8px 12px;
 }
-.analysis .analysis-title {
-  font-family: "Proxima Nova", "Arial", sans-serif;
+.analysis .title {
+  font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+  font-size: 17pt;
+  line-height: 20pt;
+}
+.analysis .author p {
+  font-size: 12pt;
+  color: #bababd;
+}
+.analysis .text {
+  font-size: 12pt;
+}
+.analysis .text .first-sentence {
+  font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+}
+.analysis .text p:last-child {
+  margin-bottom: 15px;
+}
+.analysis .tags {
+  display: inline-block;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  border-top: solid 2px #bababd;
+}
+.analysis li {
+  color: #bababd;
+  font-size: 14pt;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px 0px 15px;
 }
 
 /* TWEETS */
