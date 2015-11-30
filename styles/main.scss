@@ -500,6 +500,83 @@ body, html {
 
 /* STATS */
 
+.content.stats {
+  padding: 0 !important;
+}
+
+.stats {
+  table {
+    width: 100%;
+
+    tr {
+      line-height: 45px;
+      font-size: 14pt;
+    }
+
+    td {
+      border-bottom: solid 1px $lightGray;
+    }  
+
+    .score-header, .score-row, .bottom-row {  
+      text-align: center;
+      td {
+        width: 35px;
+      }
+    }
+
+    .score-header {
+      background-color: $lightGray;
+    }
+
+    .score-header, .bottom-row {
+      font-size: 12pt;
+      color: $darkGray;
+    }
+
+    .team-name {
+      font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+    }
+
+    .score-row td.team-name {
+      width: 80px;
+    } 
+
+    .rel-stats-header {
+      background-color: $lightGray;
+      text-align: center;
+      font-family: "ProximaNova", "Arial", sans-serif;
+    }  
+
+    .left {
+      text-align: right;
+    }
+
+    .middle {
+      text-align: center;
+      font-size: 12pt;
+      color: $lightGray;
+    }
+
+    .right {
+      text-align: left;
+    }
+
+    .lineup-header {
+      text-align: center;
+      background-color: $lightGray;
+      font-family: "ProximaNova", "Arial", sans-serif;
+    }
+
+    .lineup-text {
+      font-size: 12pt;
+      color: $lightGray;
+
+      td {
+        padding-left: 15px;
+      }
+    }
+  }
+}
 
 
 

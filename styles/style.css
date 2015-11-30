@@ -8611,3 +8611,64 @@ body, html {
 }
 
 /* STATS */
+.content.stats {
+  padding: 0 !important;
+}
+
+.stats table {
+  width: 100%;
+}
+.stats table tr {
+  line-height: 45px;
+  font-size: 14pt;
+}
+.stats table td {
+  border-bottom: solid 1px #bababd;
+}
+.stats table .score-header, .stats table .score-row, .stats table .bottom-row {
+  text-align: center;
+}
+.stats table .score-header td, .stats table .score-row td, .stats table .bottom-row td {
+  width: 35px;
+}
+.stats table .score-header {
+  background-color: #bababd;
+}
+.stats table .score-header, .stats table .bottom-row {
+  font-size: 12pt;
+  color: #777777;
+}
+.stats table .team-name {
+  font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+}
+.stats table .score-row td.team-name {
+  width: 80px;
+}
+.stats table .rel-stats-header {
+  background-color: #bababd;
+  text-align: center;
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
+.stats table .left {
+  text-align: right;
+}
+.stats table .middle {
+  text-align: center;
+  font-size: 12pt;
+  color: #bababd;
+}
+.stats table .right {
+  text-align: left;
+}
+.stats table .lineup-header {
+  text-align: center;
+  background-color: #bababd;
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
+.stats table .lineup-text {
+  font-size: 12pt;
+  color: #bababd;
+}
+.stats table .lineup-text td {
+  padding-left: 15px;
+}
