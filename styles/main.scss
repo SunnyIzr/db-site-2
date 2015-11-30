@@ -524,6 +524,12 @@ body, html {
       }
     }
 
+    .stats-header {
+      text-align: center;
+      background-color: $lightGray;
+      font-family: "ProximaNova", "Arial", sans-serif;
+    }
+
     .score-header {
       background-color: $lightGray;
     }
@@ -541,12 +547,6 @@ body, html {
       width: 80px;
     } 
 
-    .rel-stats-header {
-      background-color: $lightGray;
-      text-align: center;
-      font-family: "ProximaNova", "Arial", sans-serif;
-    }  
-
     .left {
       text-align: right;
     }
@@ -559,12 +559,6 @@ body, html {
 
     .right {
       text-align: left;
-    }
-
-    .lineup-header {
-      text-align: center;
-      background-color: $lightGray;
-      font-family: "ProximaNova", "Arial", sans-serif;
     }
 
     .lineup-text {

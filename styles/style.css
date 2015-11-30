@@ -8631,6 +8631,11 @@ body, html {
 .stats table .score-header td, .stats table .score-row td, .stats table .bottom-row td {
   width: 35px;
 }
+.stats table .stats-header {
+  text-align: center;
+  background-color: #bababd;
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
 .stats table .score-header {
   background-color: #bababd;
 }
@@ -8644,11 +8649,6 @@ body, html {
 .stats table .score-row td.team-name {
   width: 80px;
 }
-.stats table .rel-stats-header {
-  background-color: #bababd;
-  text-align: center;
-  font-family: "ProximaNova", "Arial", sans-serif;
-}
 .stats table .left {
   text-align: right;
 }
@@ -8659,11 +8659,6 @@ body, html {
 }
 .stats table .right {
   text-align: left;
-}
-.stats table .lineup-header {
-  text-align: center;
-  background-color: #bababd;
-  font-family: "ProximaNova", "Arial", sans-serif;
 }
 .stats table .lineup-text {
   font-size: 12pt;
