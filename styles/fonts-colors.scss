@@ -1,0 +1,52 @@
+$darkestBlue: #0B1529;
+$darkBlue: #111e42;
+$midBlue: #132451;
+$lightBlue: #1b74bd;
+$accentBlue: #304684;
+$shadowBlue: #414E72;
+$lightGray: #bababd;
+$darkGray: #777777;
+$orange: #EB5B05;
+$lightOrange: #F7A561;
+$white: #fff;
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('fonts/proxima/ProximaNova-Regular.ttf'),
+       url('fonts/proxima/ProximaNova-Regular.eof'),
+       url('fonts/proxima/ProximaNova-Regular.otf'),
+       url('fonts/proxima/ProximaNova-Regular.svg'),
+       url('fonts/proxima/ProximaNova-Regular.woff')
+}
+
+@font-face {
+  font-family: 'ProximaNova Bold';
+  src: url('fonts/proxima/ProximaNova-Bold.ttf'),
+       url('fonts/proxima/ProximaNova-Bold.eof'),
+       url('fonts/proxima/ProximaNova-Bold.otf'),
+       url('fonts/proxima/ProximaNova-Bold.svg'),
+       url('fonts/proxima/ProximaNova-Bold.woff')
+}
+
+@font-face {
+  font-family: 'ProximaNova Light';
+  src: url('fonts/proxima/ProximaNova-Light.ttf'),
+       url('fonts/proxima/ProximaNova-Light.eof'),
+       url('fonts/proxima/ProximaNova-Light.otf'),
+       url('fonts/proxima/ProximaNova-Light.svg'),
+       url('fonts/proxima/ProximaNova-Light.woff')
+}
+
+@font-face {
+  font-family: 'Rockwell Light';
+  src: url('fonts/rockwell/RockwellStd-Light.otf')
+}
+
+@font-face {
+  font-family: 'Lubalin';
+  src: url('fonts/lubalin/LubalinGraph-Bk.ttf')
+}
+
+.title-font {
+  font-family: 'Rockwell Light', 'Helvetica Neue', 'Arial', sans-serif;
+}

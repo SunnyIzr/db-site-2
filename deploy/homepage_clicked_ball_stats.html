@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <link href='style.min.css' rel='stylesheet' type='text/css'>
+  
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+  
+</head>
+
+<body>
+<div class="container-fluid">
+
+<div class="col-sm-3 sidebar">
+  <div class="row user-search">
+    <div class="col-xs-9 search-box">
+      <span class="glyphicon glyphicon-search"></span>
+      <input class="search" type="text" name="search" placeholder="Search for Users">
+    </div>
+    <div class="col-xs-3 notification">
+      <img class="img-responsive" src="img/notification.png" alt="notification">
+    </div>  
+  </div>
+  
+  <div class="row profile-stats">
+    <div class="col-xs-5 user-img">
+      <img class="img-responsive" src="img/user.png" alt="user">
+    </div>
+    <div class="col-xs-7">
+      <p>ybzhang23</p>
+      <p><a href="#">View Profile & Stats</a></p>
+      <p>&dollar;127.00</p>
+      <p><img class="img-responsive" src="img/balance-icon.png" alt="balance">1,128</p>
+    </div>  
+  </div>  
+
+  <div class="row">
+    <div class="col-xs-12 sidebar-nav">
+  <ul class="fa-ul">
+    <li class="active">
+      <i class="fa-li fa fa-cog fa-lg active"></i>
+      <a href="#">Daily Bracket</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-cog fa-lg"></i>
+      <a href="#">Daily Lineup</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-usd fa-lg"></i>
+      <a href="#">Transactions</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-money fa-lg"></i>
+      <a href="#">Deposit New</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-users fa-lg"></i>
+      <a href="#">Groups</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-user fa-lg"></i>
+      <a href="#">Refer a Friend</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-tasks fa-lg"></i>
+      <a href="#">Leaderboard</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-question-circle fa-lg"></i>
+      <a href="#">Help & FAQ</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-heart-o fa-lg"></i>
+      <a href="#">Love this app?</a>
+    </li>
+    <li>
+      <i class="fa-li fa fa-bars fa-lg"></i>
+      <a href="#">Settings</a>
+    </li>
+  </ul>
+</div>
+</div>
+
+</div>
+
+<div class="col-sm-9 main-content">
+
+  <div class="row header">
+      <img class="img-responsive logo" src="img/logowe.png" alt="Daily Bracket">
+  </div>
+  
+  <div class="row inner-content-wrapper">
+    <div class="col-xs-12">  
+      <div class="inner-content">
+        <div id="team-slides" class="row carousel slide" data-ride="carousel">
+          <div class="row nav-buttons">
+            <div class="col-xs-2 col-xs-offset-1">
+              <a class="exit" href="#" role="button"><img class="img-responsive" src="img/close.png"></a>
+            </div>
+            <div class="col-xs-2">
+              <a class="left" href="#team-slides" role="button" data-slide="prev"><img class="img-responsive" src="img/prev.png"></a>
+            </div>
+            <div class="col-xs-4">  
+              <ol class="carousel-indicators">
+                <li data-target="#team-slides" data-slide-to="0"></li>
+                <li data-target="#team-slides" data-slide-to="1" class="active"></li>
+                <li data-target="#team-slides" data-slide-to="2"></li>
+                <li data-target="#team-slides" data-slide-to="3"></li>
+                <li data-target="#team-slides" data-slide-to="4"></li>
+              </ol>
+            </div>
+            <div class="col-xs-2 right-button">  
+              <a class="right" href="#team-slides" role="button" data-slide="next"><img class="img-responsive" src="img/next.png"></a>
+            </div>  
+          </div>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item">
+            </div>
+
+            <div class="item active">
+              <ul class="teams-list">
+                <li>
+                  <a href="#" class="team-box">
+                    <button class="btn active team-btn team-btn-left">
+                      <span class="title">2 Virginia</span>
+                      <span class="subtitle">Cavaliers</span>
+                      <span class="time-channel">7:00P</span>
+                    </button>
+                    <button class="btn team-btn team-btn-right">
+                      <span class="title">Syracuse</span>
+                      <span class="subtitle">Orange</span>
+                      <span class="time-channel">ESPN</span>
+                    </button>
+                    <a href="#" class="ball-center"><span class="ball"><img src="img/ball-center.png" alt="ball" class="img-responsive"></span></a>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="row">
+                <ul class="teams-menu">
+                  <li><a href="#">Analysis</a></li>
+                  <li><a href="#">Tweets</a></li>
+                  <li class="active"><a href="#">Stats</a></li>
+                </ul>  
+              </div> 
+
+              <ul class="row teams-details-wrapper">
+                <li class="content stats">
+                  <table>
+                    <tr class="score-header">
+                      <td></td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>T</td>    
+                    </tr>  
+                    <tr class="score-row">
+                      <td class="team-name">UVA</td>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>55</td>   
+                    </tr>  
+                    <tr class="score-row">
+                      <td class="team-name">SYR</td>
+                      <td>29</td>
+                      <td>16</td>
+                      <td>45</td>   
+                    </tr> 
+                    <tr class="bottom-row">
+                      <td></td>
+                      <td>2ND HALF</td>
+                      <td>4:39</td>
+                      <td></td>
+                    </tr>  
+                  </table>  
+                </li>
+                <li class="content stats">
+                  <table>
+                    <tr class="stats-header">
+                      <td colspan="3">Relevant Stats</td>
+                    </tr>  
+                    <tr class="rel-stats-row">
+                      <td class="left team-name">UVA</td>
+                      <td class="middle">TEAM</td>
+                      <td class="right team-name">SYR</td>
+                    </tr>  
+                    <tr class="rel-stats-row">
+                      <td class="left">(29-2)</td>
+                      <td class="middle">RECORD</td>
+                      <td class="right">(24-6)</td>
+                    </tr> 
+                    <tr class="rel-stats-row">
+                      <td class="left">W4</td>
+                      <td class="middle">STREAK</td>
+                      <td class="right">L1</td>
+                    </tr> 
+                    <tr class="rel-stats-row">
+                      <td class="left">102</td>
+                      <td class="middle">PGG</td>
+                      <td class="right">98.7</td>
+                    </tr> 
+                    <tr class="rel-stats-row">
+                      <td class="left">85.4</td>
+                      <td class="middle">PGGA</td>
+                      <td class="right">96.5</td>
+                    </tr> 
+                    <tr class="rel-stats-row">
+                      <td class="left">M. Bigups</td>
+                      <td class="middle">LEADING SCORER</td>
+                      <td class="right">O. Kantjump</td>
+                    </tr>
+                  </table>  
+                </li>
+                <li class="content stats">
+                  <table>
+                    <tr class="stats-header">
+                      <td>WSU @ UCLA Daily Lineup Stats</td>
+                    </tr>
+                    <tr class="lineup-text">
+                      <td>Est atqui forensibus definiebas id</td>
+                    </tr>  
+                  </table>  
+                </li>
+              </ul>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+        </div>
+      </div>
+    </div>    
+  </div>   
+</div>  
+</div>
+
+  </div>
+    <script src="script.min.js"></script>
+  </body>
+
+
+</html>
