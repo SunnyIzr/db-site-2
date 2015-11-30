@@ -330,6 +330,8 @@ body, html {
 /* SLIDESHOW NAV */
 
 .nav-buttons {
+  margin-top: 10px;
+
   .carousel-indicators {
     top: 20px;
     left: 55px;
@@ -410,11 +412,17 @@ body, html {
 
 /* ANALYSIS */
 
-.analysis {
-  background-color: $white;
+.teams-details-wrapper {
   color: black;
   margin: 5px 18px 10px 18px;
-  padding: 8px 12px;
+  list-style-type: none;
+  padding: 0;
+
+  li.content {
+    background-color: $white;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+  }
 
   .title {
     font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
@@ -422,7 +430,7 @@ body, html {
     line-height: 20pt;
   }
 
-  .author p{
+  .subtitle {
     font-size: 12pt;
     color: $lightGray;
   }
@@ -439,7 +447,6 @@ body, html {
     }
   }
 
-
   .tags {
     display: inline-block;
     padding: 0;
@@ -447,18 +454,49 @@ body, html {
     text-align: center;
     width: 100%;
     border-top: solid 2px $lightGray;
+
+    li {
+      color: $lightGray;
+      font-size: 14pt;
+      display: inline-block;
+      text-align: center;
+      padding: 10px 15px 0px 15px;
+    }
   }
 
-  li {
-    color: $lightGray;
-    font-size: 14pt;
-    display: inline-block;
-    text-align: center;
-    padding: 10px 15px 0px 15px;
-  }
 }
 
 /* TWEETS */
+
+.tweets {
+  .twitter-ball img {
+    width: 60px;
+  }
+
+  p {
+    padding-left: 10px;
+  }
+
+  p:first-child {
+    margin-top: 15px;
+  }
+
+  .title {
+    line-height: 15px;
+  }
+
+  .subtitle {
+    font-family: "ProximaNova Light", "Arial", sans-serif;
+  }
+
+  .text {
+    margin-top: 75px;
+  }
+
+  .twitter-image {
+    padding: 0px 10px 10px 10px;
+  }
+}
 
 /* STATS */
 
