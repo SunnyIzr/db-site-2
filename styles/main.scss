@@ -215,6 +215,46 @@ body, html {
     border-radius: 120px;
     margin: auto;
 
+  .active-border {
+    border: solid 4px white;
+    width: 400px;
+    height: 220px;
+    border-radius: 120px;
+  }  
+
+  .inner-ellipse {
+    position: relative;
+    width: 385px;
+    height: 202px;
+    margin: 5px;
+    border-radius: 100px;
+    border: solid 30px $accentBlue;
+
+    .inner-text {
+      padding: 25px 60px;
+      text-align: center;
+      font-size: 11pt;
+
+      p:first-child {
+        margin-top: -2px;
+        line-height: 18px;
+      }
+
+      p:nth-child(2) {
+        font-family: "Rockwell";
+        font-size: 26pt;
+      }
+
+      p + p {
+        margin-top: -15px;
+      }
+
+      span.streak-num {
+        color: $orange;
+      }
+    }
+  }   
+
     p span:not(.streak-num) {
       position: absolute;
       top: 0;
@@ -223,7 +263,7 @@ body, html {
     .outer-numbers {  
       font-family: "Rockwell", serif;
       font-size: 22pt;
-      color: white;
+      color: $darkBlue;
   
       .num1, .num6 { left: 175px; }
       .num2, .num5 { left: 260px; }
@@ -246,6 +286,9 @@ body, html {
       .num4 { 
         left: 350px;
         transform: rotate(-72deg); 
+      }
+      .active {
+        color: $white;
       }
     }  
 
@@ -282,39 +325,6 @@ body, html {
       }  
     }
   }  
-
-  .inner-ellipse {
-    position: relative;
-    width: 385px;
-    height: 202px;
-    margin: 5px;
-    border-radius: 100px;
-    border: solid 30px $accentBlue;
-
-    .inner-text {
-      padding: 25px 60px;
-      text-align: center;
-      font-size: 12pt;
-
-      p:first-child {
-        margin-top: -2px;
-        line-height: 18px;
-      }
-      
-      p:nth-child(2) {
-        font-family: "Rockwell";
-        font-size: 26pt;
-      }
-
-      p + p {
-        margin-top: -15px;
-      }
-
-      span.streak-num {
-        color: $orange;
-      }
-    }
-  }   
 }
 
 /* TEAMS LIST */
