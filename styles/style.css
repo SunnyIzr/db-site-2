@@ -8518,6 +8518,7 @@ body, html {
 }
 .teams-list li {
   list-style-type: none;
+  position: relative;
 }
 .teams-list li .team-box {
   position: relative;
@@ -8582,6 +8583,13 @@ body, html {
   padding: 8px 100px 8px 20px;
   float: left;
   width: 50%;
+  -moz-border-top-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right-width: 0px;
 }
 .teams-list li .team-box .team-btn-left .title, .teams-list li .team-box .team-btn-left .subtitle {
   text-align: left;
@@ -8591,11 +8599,25 @@ body, html {
   right: 0;
   position: absolute;
   padding: 8px 40px 8px 15px !important;
+  -moz-border-top-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right-width: 0px;
 }
 .teams-list li .team-box .team-btn-right {
   padding: 8px 20px 8px 100px;
   float: left;
   width: 50%;
+  -moz-border-top-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left-width: 0px;
 }
 .teams-list li .team-box .team-btn-right .title, .teams-list li .team-box .team-btn-right .subtitle {
   text-align: right;
@@ -8605,11 +8627,23 @@ body, html {
   left: 0;
   position: absolute;
   padding: 8px 15px 8px 40px !important;
+  -moz-border-top-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left-width: 0px;
 }
 .teams-list li .ball-center {
   position: relative;
-  right: -180px;
-  top: -21px;
+  width: 67px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -22px;
+  display: block;
 }
 .teams-list li .ball-center img {
   height: 65px;
