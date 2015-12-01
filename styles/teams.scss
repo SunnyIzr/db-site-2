@@ -1,0 +1,125 @@
+/* TEAMS LIST */
+
+.teams-list {
+  margin-top: 20px;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+
+  li {
+    list-style-type: none;
+
+    .team-box {
+    position: relative;
+    display: block;
+
+      .team-btn {
+        color: $white;
+        background-color: transparent;
+        border-color: $white;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        position: relative;
+        outline: none;
+        background-color: $midBlue;
+        margin-bottom: -40px;
+
+        span {
+          display: block;
+        }
+
+        .title {
+          font-size: 15px;
+          color: $white;
+        }
+
+        .subtitle {
+          font-size: 13px;
+          color: $lightOrange;
+        }
+
+        .time-channel {
+          color: $white;
+          font-size: 12px;
+          border: 1px solid $white;
+          -moz-border-radius: 30px;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+        }
+      }
+
+      .team-btn:hover,
+      .team-btn:focus,
+      .team-btn.focus,
+      .team-btn:active,
+      .team-btn.active {
+        color: #fff;
+        background-color: $accentBlue;
+        border-color: #e0e0e0;
+      }
+
+      .team-btn.disabled,
+      .team-btn.disabled:hover,
+      .team-btn.disabled:focus,
+      .team-btn.disabled.focus,
+      .team-btn.disabled:active,
+      .team-btn.disabled.active,
+      .team-btn[disabled],
+      .team-btn[disabled]:hover,
+      .team-btn[disabled]:focus,
+      .team-btn[disabled].focus,
+      .team-btn[disabled]:active,
+      .team-btn[disabled].active{
+        background-color: $accentBlue;
+        border-color: white;
+      }
+
+      .team-btn-left {
+        padding: 8px 100px 8px 20px;
+        float: left;
+        width: 50%;
+
+        .title, .subtitle {
+          text-align: left;
+        }
+      
+        .time-channel {
+          top: 10px;
+          right: 0;
+          position: absolute;
+          padding: 8px 40px 8px 15px !important;
+        }
+      }
+
+      .team-btn-right {
+        padding: 8px 20px 8px 100px;
+        float: left;
+        width: 50%;
+
+        .title, .subtitle {
+          text-align: right;
+        }
+        
+        .time-channel {
+          top: 10px;
+          left: 0;
+          position: absolute;
+          padding: 8px 15px 8px 40px !important;
+        }
+      } 
+    }
+
+    .ball-center {
+      position: relative;
+      right: -180px;
+      top: -21px;
+
+      img {
+        height: 65px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }  
+  }
+}

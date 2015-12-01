@@ -6249,7 +6249,6 @@ a.thumbnail.active {
   from {
     background-position: 40px 0;
   }
-
   to {
     background-position: 0 0;
   }
@@ -6258,7 +6257,6 @@ a.thumbnail.active {
   from {
     background-position: 40px 0;
   }
-
   to {
     background-position: 0 0;
   }
@@ -6267,7 +6265,6 @@ a.thumbnail.active {
   from {
     background-position: 40px 0;
   }
-
   to {
     background-position: 0 0;
   }
@@ -8184,26 +8181,9 @@ button.close {
   font-family: 'Rockwell Light', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-/* BODY */
-body {
-  background-color: #0b1529;
-  font-family: 'ProximaNova Light', 'Arial', sans-serif;
-  font-size: 16pt;
-  color: white;
-}
-
-body, html {
-  height: 100%;
-}
-
-.no-padding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 /* HEADER */
 .header {
-  background-color: #0b1529;
+  background-color: #0B1529;
   height: 75px;
   margin-right: -15px !important;
 }
@@ -8215,7 +8195,7 @@ body, html {
 
 /* SIDEBAR */
 .sidebar {
-  background-color: #0b1529;
+  background-color: #0B1529;
   padding-left: 0;
 }
 
@@ -8310,18 +8290,35 @@ body, html {
 }
 .sidebar-nav ul i.active {
   margin-top: -4px;
-  color: #eb5b05;
+  color: #EB5B05;
+}
+
+/* BODY */
+body {
+  background-color: #0B1529;
+  font-family: 'ProximaNova Light', 'Arial', sans-serif;
+  font-size: 16pt;
+  color: #fff;
+}
+
+body, html {
+  height: 100%;
+}
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* MAIN CONTENT */
 .container-fluid {
   padding: 0;
   margin: 0;
-  background-color: #0b1529;
+  background-color: #0B1529;
 }
 
 .main-content {
-  background-color: #0b1529;
+  background-color: #0B1529;
   margin-left: -15px !important;
   padding-right: 0;
 }
@@ -8373,7 +8370,7 @@ body, html {
   position: relative;
   width: 404px;
   height: 220px;
-  border: solid 4px #eb5b05;
+  border: solid 4px #EB5B05;
   border-radius: 120px;
   margin: auto;
 }
@@ -8420,7 +8417,7 @@ body, html {
   margin-top: -15px;
 }
 .streak .main-ellipse .inner-ellipse .inner-text span.streak-num {
-  color: #eb5b05;
+  color: #EB5B05;
 }
 .streak .main-ellipse p span:not(.streak-num) {
   position: absolute;
@@ -8466,11 +8463,11 @@ body, html {
   transform: rotate(-72deg);
 }
 .streak .main-ellipse .outer-numbers .active {
-  color: white;
+  color: #fff;
 }
 .streak .main-ellipse .inner-numbers span {
   font-size: 12pt;
-  color: #eb5b05;
+  color: #EB5B05;
 }
 .streak .main-ellipse .inner-numbers .inner-num1 {
   left: 175px;
@@ -8527,9 +8524,9 @@ body, html {
   display: block;
 }
 .teams-list li .team-box .team-btn {
-  color: white;
+  color: #fff;
   background-color: transparent;
-  border-color: white;
+  border-color: #fff;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
@@ -8543,16 +8540,16 @@ body, html {
 }
 .teams-list li .team-box .team-btn .title {
   font-size: 15px;
-  color: white;
+  color: #fff;
 }
 .teams-list li .team-box .team-btn .subtitle {
   font-size: 13px;
-  color: #f7a561;
+  color: #F7A561;
 }
 .teams-list li .team-box .team-btn .time-channel {
-  color: white;
+  color: #fff;
   font-size: 12px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
@@ -8630,12 +8627,12 @@ body, html {
   width: 70%;
 }
 .nav-buttons .carousel-indicators li {
-  background-color: #414e72;
+  background-color: #414E72;
   border: none;
   margin: 2px;
 }
 .nav-buttons .carousel-indicators .active {
-  background-color: white;
+  background-color: #fff;
   border: none;
 }
 .nav-buttons .right-button {
@@ -8684,7 +8681,7 @@ body, html {
   padding-bottom: 4px;
 }
 .teams-menu li.active a, .teams-menu li.active a:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-family: "ProximaNova Light", "Arial", sans-serif;
 }
@@ -8697,7 +8694,7 @@ body, html {
   padding: 0;
 }
 .teams-details-wrapper li.content {
-  background-color: white;
+  background-color: #fff;
   margin-bottom: 10px;
   padding: 8px 12px;
 }
@@ -8815,3 +8812,5 @@ body, html {
 .stats table .lineup-text td {
   padding-left: 15px;
 }
+
+/*# sourceMappingURL=style.css.map */

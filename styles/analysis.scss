@@ -1,0 +1,55 @@
+/* ANALYSIS */
+
+.teams-details-wrapper {
+  color: black;
+  margin: 5px 18px 10px 18px;
+  list-style-type: none;
+  padding: 0;
+
+  li.content {
+    background-color: $white;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+  }
+
+  .title {
+    font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+    font-size: 17pt;
+    line-height: 20pt;
+  }
+
+  .subtitle {
+    font-size: 12pt;
+    color: $lightGray;
+  }
+
+  .text {
+    font-size: 12pt;
+
+    .first-sentence {
+      font-family: "ProximaNova Bold", "Arial Bold", sans-serif;
+    }
+
+    p:last-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .tags {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    border-top: solid 2px $lightGray;
+
+    li {
+      color: $lightGray;
+      font-size: 14pt;
+      display: inline-block;
+      text-align: center;
+      padding: 10px 15px 0px 15px;
+    }
+  }
+
+}

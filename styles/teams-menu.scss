@@ -1,0 +1,47 @@
+/* TEAMS MENU */
+
+.carousel-inner ul.teams-list {
+  width: 90%;
+  margin-left: 15px;
+
+  .ball-center {
+    right: -170px;
+  }
+}
+
+.teams-menu {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 14pt;
+
+  a, a:hover {
+    color: $accentBlue;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-family: "ProximaNova", "Arial Bold", sans-serif;
+  }
+    
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 50px 10px 50px;
+    margin: -10px;
+    border-bottom: solid 1px $accentBlue;
+  }
+
+  li.active {
+    border-bottom: solid 7px $accentBlue;
+    padding-bottom: 4px;
+
+    a, a:hover {
+      color: $white;
+      text-decoration: none;
+      font-family: "ProximaNova Light", "Arial", sans-serif;
+    }
+  }
+}

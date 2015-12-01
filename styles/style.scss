@@ -1,5 +1,15 @@
 @import 'bootstrap';
+@import 'fonts-colors';
+@import 'header';
+@import 'sidebar';
 @import 'main';
+@import 'streak';
+@import 'teams';
+@import 'slideshow-nav';
+@import 'teams-menu';
+@import 'analysis';
+@import 'tweets';
+@import 'stats';
 
 // SMALL TABLETS
 @media (min-width: 768px) {
