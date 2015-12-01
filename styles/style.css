@@ -8371,70 +8371,123 @@ body, html {
 }
 .streak .main-ellipse {
   position: relative;
-  width: 95%;
+  width: 404px;
   height: 220px;
   border: solid 4px #eb5b05;
   border-radius: 120px;
   margin: auto;
+}
+.streak .main-ellipse p span:not(.streak-num) {
+  position: absolute;
+  top: 0;
 }
 .streak .main-ellipse .outer-numbers {
   font-family: "Rockwell", serif;
   font-size: 22pt;
   color: white;
 }
-.streak .main-ellipse p span {
-  position: absolute;
-  top: 0;
-}
-.streak .main-ellipse .inner-ellipse {
-  position: relative;
-  width: 97%;
-  height: 202px;
-  margin: 5px;
-  border-radius: 100px;
-  border: solid 30px #304684;
-}
-.streak .main-ellipse .inner-ellipse .inner-text {
-  padding: 5px 60px;
-  text-align: center;
-  font-size: 12pt;
-}
-.streak .main-ellipse .num1, .streak .main-ellipse .num6 {
+.streak .main-ellipse .outer-numbers .num1, .streak .main-ellipse .outer-numbers .num6 {
   left: 175px;
 }
-.streak .main-ellipse .num2, .streak .main-ellipse .num5 {
+.streak .main-ellipse .outer-numbers .num2, .streak .main-ellipse .outer-numbers .num5 {
   left: 260px;
 }
-.streak .main-ellipse .num10, .streak .main-ellipse .num7 {
+.streak .main-ellipse .outer-numbers .num10, .streak .main-ellipse .outer-numbers .num7 {
   left: 90px;
 }
-.streak .main-ellipse .num5, .streak .main-ellipse .num6, .streak .main-ellipse .num7 {
+.streak .main-ellipse .outer-numbers .num5, .streak .main-ellipse .outer-numbers .num6, .streak .main-ellipse .outer-numbers .num7 {
   top: 172px;
 }
-.streak .main-ellipse .num3, .streak .main-ellipse .num9 {
+.streak .main-ellipse .outer-numbers .num3, .streak .main-ellipse .outer-numbers .num9 {
   top: 50px;
 }
-.streak .main-ellipse .num4, .streak .main-ellipse .num8 {
+.streak .main-ellipse .outer-numbers .num4, .streak .main-ellipse .outer-numbers .num8 {
   top: 120px;
 }
-.streak .main-ellipse .num3 {
+.streak .main-ellipse .outer-numbers .num3 {
   left: 352px;
   transform: rotate(64deg);
 }
-.streak .main-ellipse .num9 {
+.streak .main-ellipse .outer-numbers .num9 {
   left: 18px;
   transform: rotate(-64deg);
 }
-.streak .main-ellipse .num8 {
+.streak .main-ellipse .outer-numbers .num8 {
   left: 20px;
   transform: rotate(58deg);
 }
-.streak .main-ellipse .num4 {
+.streak .main-ellipse .outer-numbers .num4 {
   left: 350px;
   transform: rotate(-72deg);
 }
 .streak .main-ellipse .inner-numbers span {
   font-size: 12pt;
+  color: #eb5b05;
+}
+.streak .main-ellipse .inner-numbers .inner-num1 {
+  left: 175px;
+}
+.streak .main-ellipse .inner-numbers .inner-num6 {
+  left: 155px;
+}
+.streak .main-ellipse .inner-numbers .inner-num2, .streak .main-ellipse .inner-numbers .inner-num5 {
+  left: 260px;
+}
+.streak .main-ellipse .inner-numbers .inner-num10, .streak .main-ellipse .inner-numbers .inner-num7 {
+  left: 90px;
+}
+.streak .main-ellipse .inner-numbers .inner-num1, .streak .main-ellipse .inner-numbers .inner-num2, .streak .main-ellipse .inner-numbers .inner-num10 {
+  top: 35px;
+}
+.streak .main-ellipse .inner-numbers .inner-num5, .streak .main-ellipse .inner-numbers .inner-num6, .streak .main-ellipse .inner-numbers .inner-num7 {
+  top: 158px;
+}
+.streak .main-ellipse .inner-numbers .inner-num3, .streak .main-ellipse .inner-numbers .inner-num9 {
+  top: 70px;
+}
+.streak .main-ellipse .inner-numbers .inner-num3 {
+  left: 317px;
+  transform: rotate(64deg);
+}
+.streak .main-ellipse .inner-numbers .inner-num9 {
+  left: 40px;
+  transform: rotate(-64deg);
+}
+.streak .main-ellipse .inner-numbers .inner-num8 {
+  top: 120px;
+  left: 43px;
+  transform: rotate(58deg);
+}
+.streak .main-ellipse .inner-numbers .inner-num4 {
+  top: 127px;
+  left: 310px;
+  transform: rotate(-53deg);
+}
+.streak .inner-ellipse {
+  position: relative;
+  width: 385px;
+  height: 202px;
+  margin: 5px;
+  border-radius: 100px;
+  border: solid 30px #304684;
+}
+.streak .inner-ellipse .inner-text {
+  padding: 25px 60px;
+  text-align: center;
+  font-size: 12pt;
+}
+.streak .inner-ellipse .inner-text p:first-child {
+  margin-top: -2px;
+  line-height: 18px;
+}
+.streak .inner-ellipse .inner-text p:nth-child(2) {
+  font-family: "Rockwell";
+  font-size: 26pt;
+}
+.streak .inner-ellipse .inner-text p + p {
+  margin-top: -15px;
+}
+.streak .inner-ellipse .inner-text span.streak-num {
   color: #eb5b05;
 }
 
