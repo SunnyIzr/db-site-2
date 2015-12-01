@@ -216,17 +216,26 @@ body, html {
     margin: auto;
 
   .active-border {
-    border: solid 4px white;
-    width: 400px;
-    height: 220px;
-    border-radius: 120px;
+    border: solid 5px white;
+    width: 146px;
+    height: 212px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+
+    img.checker-finish {
+      display: block;
+      position: absolute;
+      top: 179px;
+      left: 140px;
+      height: 30px;
+    }
   }  
 
   .inner-ellipse {
     position: relative;
     width: 385px;
     height: 202px;
-    margin: 5px;
+    padding: 5px;
     border-radius: 100px;
     border: solid 30px $accentBlue;
 
@@ -234,6 +243,10 @@ body, html {
       padding: 25px 60px;
       text-align: center;
       font-size: 11pt;
+      height: 143px;
+      border-radius: 120px;
+      margin-top: -5px;
+      background-color: $midBlue;
 
       p:first-child {
         margin-top: -2px;

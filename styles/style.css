@@ -8378,16 +8378,24 @@ body, html {
   margin: auto;
 }
 .streak .main-ellipse .active-border {
-  border: solid 4px white;
-  width: 400px;
-  height: 220px;
-  border-radius: 120px;
+  border: solid 5px white;
+  width: 146px;
+  height: 212px;
+  border-top-left-radius: 120px;
+  border-bottom-left-radius: 120px;
+}
+.streak .main-ellipse .active-border img.checker-finish {
+  display: block;
+  position: absolute;
+  top: 179px;
+  left: 140px;
+  height: 30px;
 }
 .streak .main-ellipse .inner-ellipse {
   position: relative;
   width: 385px;
   height: 202px;
-  margin: 5px;
+  padding: 5px;
   border-radius: 100px;
   border: solid 30px #304684;
 }
@@ -8395,6 +8403,10 @@ body, html {
   padding: 25px 60px;
   text-align: center;
   font-size: 11pt;
+  height: 143px;
+  border-radius: 120px;
+  margin-top: -5px;
+  background-color: #132451;
 }
 .streak .main-ellipse .inner-ellipse .inner-text p:first-child {
   margin-top: -2px;
