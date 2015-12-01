@@ -201,6 +201,55 @@ body, html {
   }
 }
 
+/* STREAK */
+
+.streak {
+  width: 100%;
+  margin-top: 20px;
+
+  .main-ellipse {
+    position: relative;
+    width: 95%;
+    height: 200px;
+    border: solid 4px $orange;
+    border-radius: 100px;
+    margin: auto;
+
+    p span {  
+      font-family: "Rockwell", serif;
+      font-size: 24pt;
+      color: white;
+      height: 200px;
+      position: absolute;
+      width: 20px;
+      left: 165px;
+      top: 0;
+      transform-origin: bottom center;
+    }  
+
+    .inner-ellipse {
+      position: relative;
+      width: 97%;
+      height: 182px;
+      margin: 5px;
+      border-radius: 100px;
+      border: solid 35px $accentBlue;
+    }
+
+    .num2, .num5 { left: 260px; }
+    .num10, .num7 { left: 70px; }
+    .num5, .num6, .num7 { top: 145px; }
+    .num3 { transform: rotate(54deg); }
+    .num4 { transform: rotate(72deg); }
+    /*.num5 { transform: rotate(90deg); }*/
+    /*.num6 { transform: rotate(108deg); }*/
+    /*.num7 { transform: rotate(126deg); }*/
+    .num8 { transform: rotate(144deg); }
+    .num9 { transform: rotate(162deg); }
+        
+  }
+}
+
 /* TEAMS LIST */
 
 .teams-list {

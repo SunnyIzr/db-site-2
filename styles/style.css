@@ -8364,6 +8364,63 @@ body, html {
   background-color: #304684;
 }
 
+/* STREAK */
+.streak {
+  width: 100%;
+  margin-top: 20px;
+}
+.streak .main-ellipse {
+  position: relative;
+  width: 95%;
+  height: 200px;
+  border: solid 4px #eb5b05;
+  border-radius: 100px;
+  margin: auto;
+  /*.num5 { transform: rotate(90deg); }*/
+  /*.num6 { transform: rotate(108deg); }*/
+  /*.num7 { transform: rotate(126deg); }*/
+}
+.streak .main-ellipse p span {
+  font-family: "Rockwell", serif;
+  font-size: 24pt;
+  color: white;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 165px;
+  top: 0;
+  transform-origin: bottom center;
+}
+.streak .main-ellipse .inner-ellipse {
+  position: relative;
+  width: 97%;
+  height: 182px;
+  margin: 5px;
+  border-radius: 100px;
+  border: solid 35px #304684;
+}
+.streak .main-ellipse .num2, .streak .main-ellipse .num5 {
+  left: 260px;
+}
+.streak .main-ellipse .num10, .streak .main-ellipse .num7 {
+  left: 70px;
+}
+.streak .main-ellipse .num5, .streak .main-ellipse .num6, .streak .main-ellipse .num7 {
+  top: 145px;
+}
+.streak .main-ellipse .num3 {
+  transform: rotate(54deg);
+}
+.streak .main-ellipse .num4 {
+  transform: rotate(72deg);
+}
+.streak .main-ellipse .num8 {
+  transform: rotate(144deg);
+}
+.streak .main-ellipse .num9 {
+  transform: rotate(162deg);
+}
+
 /* TEAMS LIST */
 .teams-list {
   margin-top: 20px;
