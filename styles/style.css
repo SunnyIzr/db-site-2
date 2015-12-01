@@ -8372,53 +8372,70 @@ body, html {
 .streak .main-ellipse {
   position: relative;
   width: 95%;
-  height: 200px;
+  height: 220px;
   border: solid 4px #eb5b05;
-  border-radius: 100px;
+  border-radius: 120px;
   margin: auto;
-  /*.num5 { transform: rotate(90deg); }*/
-  /*.num6 { transform: rotate(108deg); }*/
-  /*.num7 { transform: rotate(126deg); }*/
+}
+.streak .main-ellipse .outer-numbers {
+  font-family: "Rockwell", serif;
+  font-size: 22pt;
+  color: white;
 }
 .streak .main-ellipse p span {
-  font-family: "Rockwell", serif;
-  font-size: 24pt;
-  color: white;
-  height: 200px;
   position: absolute;
-  width: 20px;
-  left: 165px;
   top: 0;
-  transform-origin: bottom center;
 }
 .streak .main-ellipse .inner-ellipse {
   position: relative;
   width: 97%;
-  height: 182px;
+  height: 202px;
   margin: 5px;
   border-radius: 100px;
-  border: solid 35px #304684;
+  border: solid 30px #304684;
+}
+.streak .main-ellipse .inner-ellipse .inner-text {
+  padding: 5px 60px;
+  text-align: center;
+  font-size: 12pt;
+}
+.streak .main-ellipse .num1, .streak .main-ellipse .num6 {
+  left: 175px;
 }
 .streak .main-ellipse .num2, .streak .main-ellipse .num5 {
   left: 260px;
 }
 .streak .main-ellipse .num10, .streak .main-ellipse .num7 {
-  left: 70px;
+  left: 90px;
 }
 .streak .main-ellipse .num5, .streak .main-ellipse .num6, .streak .main-ellipse .num7 {
-  top: 145px;
+  top: 172px;
+}
+.streak .main-ellipse .num3, .streak .main-ellipse .num9 {
+  top: 50px;
+}
+.streak .main-ellipse .num4, .streak .main-ellipse .num8 {
+  top: 120px;
 }
 .streak .main-ellipse .num3 {
-  transform: rotate(54deg);
-}
-.streak .main-ellipse .num4 {
-  transform: rotate(72deg);
-}
-.streak .main-ellipse .num8 {
-  transform: rotate(144deg);
+  left: 352px;
+  transform: rotate(64deg);
 }
 .streak .main-ellipse .num9 {
-  transform: rotate(162deg);
+  left: 18px;
+  transform: rotate(-64deg);
+}
+.streak .main-ellipse .num8 {
+  left: 20px;
+  transform: rotate(58deg);
+}
+.streak .main-ellipse .num4 {
+  left: 350px;
+  transform: rotate(-72deg);
+}
+.streak .main-ellipse .inner-numbers span {
+  font-size: 12pt;
+  color: #eb5b05;
 }
 
 /* TEAMS LIST */

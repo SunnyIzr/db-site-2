@@ -210,42 +210,65 @@ body, html {
   .main-ellipse {
     position: relative;
     width: 95%;
-    height: 200px;
+    height: 220px;
     border: solid 4px $orange;
-    border-radius: 100px;
+    border-radius: 120px;
     margin: auto;
 
-    p span {  
+    .outer-numbers {  
       font-family: "Rockwell", serif;
-      font-size: 24pt;
+      font-size: 22pt;
       color: white;
-      height: 200px;
-      position: absolute;
-      width: 20px;
-      left: 165px;
-      top: 0;
-      transform-origin: bottom center;
     }  
+
+    p span {
+      position: absolute;
+      top: 0;
+    }
 
     .inner-ellipse {
       position: relative;
       width: 97%;
-      height: 182px;
+      height: 202px;
       margin: 5px;
       border-radius: 100px;
-      border: solid 35px $accentBlue;
+      border: solid 30px $accentBlue;
+
+      .inner-text {
+        padding: 5px 60px;
+        text-align: center;
+        font-size: 12pt;
+      }
     }
 
+    .num1, .num6 { left: 175px; }
     .num2, .num5 { left: 260px; }
-    .num10, .num7 { left: 70px; }
-    .num5, .num6, .num7 { top: 145px; }
-    .num3 { transform: rotate(54deg); }
-    .num4 { transform: rotate(72deg); }
-    /*.num5 { transform: rotate(90deg); }*/
-    /*.num6 { transform: rotate(108deg); }*/
-    /*.num7 { transform: rotate(126deg); }*/
-    .num8 { transform: rotate(144deg); }
-    .num9 { transform: rotate(162deg); }
+    .num10, .num7 { left: 90px; }
+    .num5, .num6, .num7 { top: 172px; }
+    .num3, .num9 { top: 50px; }
+    .num4, .num8 { top: 120px; }
+    .num3 { 
+      left: 352px; 
+      transform: rotate(64deg); 
+    }
+    .num9 { 
+      left: 18px; 
+      transform: rotate(-64deg); 
+    }
+    .num8 { 
+      left: 20px;
+      transform: rotate(58deg); 
+    }
+    .num4 { 
+      left: 350px;
+      transform: rotate(-72deg); 
+    }
+
+
+    .inner-numbers span {
+      font-size: 12pt;
+      color: $orange;
+    }
         
   }
 }
