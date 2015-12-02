@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  menuNavToggle();
+  menuNavToggleOff();
   revealSingleGameView();
   removeSingleGameView();
   toggleGameItem();
@@ -7,6 +9,18 @@ $(document).ready(function(){
   ballDraggable()
   paginateGame();
 })
+
+function menuNavToggle(){
+  $('.menu-icon').click(function(e){
+    $('.sidebar').addClass('reveal');
+  })
+}
+
+function menuNavToggleOff(){
+  $(".inner-content-wrapper").click(function(e){
+    $('.sidebar').removeClass('reveal');
+  })
+}
 
 function revealSingleGameView(){
   $('a.ball-center').bind('mouseup', function(e){

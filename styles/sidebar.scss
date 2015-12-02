@@ -111,3 +111,24 @@
     }
   }  
 }
+
+// SMALL TABLETS
+@media (max-width: 768px) {
+  .sidebar{
+    width: 300px;
+    z-index: 2;
+    position: absolute;
+    right: -310px;
+    transition: all 300ms ease-in;
+  }
+  .sidebar.reveal{
+    right: 0;
+  }
+} 
+
+
+
+
+
+
+
