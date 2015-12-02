@@ -8399,9 +8399,9 @@ body, html {
   margin: auto;
 }
 .streak .main-ellipse .active-border {
-  border: solid 5px white;
-  width: 146px;
-  height: 212px;
+  border: solid 5px transparent;
+  width: 100%;
+  height: 100%;
   border-top-left-radius: 120px;
   border-bottom-left-radius: 120px;
 }
@@ -8411,6 +8411,20 @@ body, html {
   top: 179px;
   left: 140px;
   height: 30px;
+}
+.streak .main-ellipse svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.streak .main-ellipse svg rect {
+  fill: transparent;
+  stroke-width: 5;
+  stroke: #fff;
 }
 .streak .main-ellipse .inner-ellipse {
   position: relative;
@@ -8428,6 +8442,8 @@ body, html {
   border-radius: 120px;
   margin-top: -5px;
   background-color: #132451;
+  width: 104%;
+  margin-left: -2%;
 }
 .streak .main-ellipse .inner-ellipse .inner-text p:first-child {
   margin-top: -2px;
