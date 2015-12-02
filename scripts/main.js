@@ -5,6 +5,7 @@ $(document).ready(function(){
   gameSelector();
   selectBetBracket();
   ballDraggable()
+  paginateGame();
 })
 
 function revealSingleGameView(){
@@ -99,8 +100,6 @@ function betBracket(bracket,pick){
 }
 
 
-
-
 function selectBetBracket(){
   $('button.team-btn').click(function(e){
     e.preventDefault();
@@ -109,6 +108,27 @@ function selectBetBracket(){
     betBracket(bracket,pick)
   })  
 }
+
+function paginateGame(){
+  $('.game-paginate').click(function(e){
+    e.preventDefault();
+    currentGame = $('.game-select.active').data('game-id')
+    if ( $(this).hasClass('left') ){
+      newGame = currentGame - 1
+      if ( newGame  == -1 ){
+        newGame = 4
+      }
+    } else if ( $(this).hasClass('right') ){
+      newGame = currentGame + 1
+      if ( newGame  == 5 ){
+        newGame = 0
+      }
+    }
+    selectGame(newGame)
+  })
+}
+
+
 
 (function () {
     // math trick 2*pi*57 = 358, must be less than 360 degree 
