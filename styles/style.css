@@ -8707,11 +8707,14 @@ body, html {
 .teams-list li.submitting span {
   opacity: 0.0;
 }
-.teams-list li.submitting .team-btn, .teams-list li.submitting .team-btn.active, .teams-list li.submitting .team-btn:focus {
+.teams-list li.submitting .team-btn, .teams-list li.submitting .team-btn.active, .teams-list li.submitting .team-btn:focus, .teams-list li.submitting .team-btn:hover {
   background-color: transparent;
 }
 .teams-list li.submitting h4 {
   opacity: 1.0;
+}
+.teams-list li.submitting .ball-center {
+  transition: all 300ms ease-in;
 }
 
 /* SLIDESHOW NAV */

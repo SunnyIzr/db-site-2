@@ -4,16 +4,19 @@ $(document).ready(function(){
   toggleGameItem();
   gameSelector();
   selectBetBracket();
+  ballDraggable()
 })
 
 function revealSingleGameView(){
-  $('a.ball-center').click(function(e){
+  $('a.ball-center').bind('mouseup', function(e){
     e.preventDefault();
-    $('.main-game').addClass('hide')
-    $('.single-game-view').addClass('reveal')
-    
-    gameId = $(this).data('game-id')
-    selectGame(gameId)
+    if ( window.dragCheck == false ){
+      $('.main-game').addClass('hide')
+      $('.single-game-view').addClass('reveal')
+      
+      gameId = $(this).data('game-id')
+      selectGame(gameId)
+    }
   })
 }
 
@@ -38,6 +41,28 @@ function toggleGameItem(){
   })
 }
 
+function ballDraggable(){
+  window.dragCheck = false
+  $('.ball-center').draggable({
+    axis: 'x',
+    containment: 'parent',
+    drag: function(){
+      window.dragCheck = true
+      percentLeft = parseInt( $(this).css('left') ) / $(this).parent().width()
+      bracketId = $(this).parent().data('bracket-id')
+      if ( percentLeft < 0.33 ){
+        betBracket(bracketId,0)
+      } else if ( percentLeft > 0.67 ){
+        betBracket(bracketId,1)
+      }
+    },
+    stop: function(){
+      window.dragCheck = false
+    }
+  })
+}
+
+
 function gameSelector(){
   $('.game-select').click(function(){
     selectGame($(this).data('game-id'))
@@ -55,14 +80,26 @@ function selectGame(num){
 function betBracket(bracket,pick){
   bracketEl = $($('#mainTeamList li')[bracket])
   pickEl = $($(bracketEl).find('.btn')[pick])
+  ballEl = $(bracketEl).find('.ball-center')
   $($(bracketEl).find('.btn.active')).removeClass('active')
   $(bracketEl).addClass('submitting')
   $(bracketEl).find('h4').html($(pickEl).find('.title').html())
+  if ( pick == 0 ){
+    $(ballEl).css('left','10%')
+  } else {
+    $(ballEl).css('left','90%')
+  }
+  setTimeout(function(){
+    $(ballEl).css('left','50%')
+  },500)
   setTimeout(function(){
     $(bracketEl).removeClass('submitting')
-    $(pickEl).addClass('active')  
+    $(pickEl).addClass('active')
   },1000)
 }
+
+
+
 
 function selectBetBracket(){
   $('button.team-btn').click(function(e){

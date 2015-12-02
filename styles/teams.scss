@@ -176,11 +176,14 @@
     span{
       opacity: 0.0;
     }
-    .team-btn,.team-btn.active,.team-btn:focus{
+    .team-btn,.team-btn.active,.team-btn:focus,.team-btn:hover{
       background-color: transparent;
     }
     h4{
       opacity: 1.0;
+    }
+    .ball-center{
+      transition: all 300ms ease-in;
     }
   }
 }
