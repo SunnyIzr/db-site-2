@@ -8331,6 +8331,8 @@ body, html {
   background-color: #132451;
   width: 45%;
   margin: 0 auto;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .placeholder img {
@@ -8362,11 +8364,17 @@ body, html {
 }
 
 .single-game-view {
-  display: none;
+  opacity: 1.0;
+  top: 100%;
+  position: absolute;
+  transition: all 300ms ease-in;
+  background: #132451;
+  z-index: 1;
 }
 
 .single-game-view.reveal {
-  display: block;
+  opacity: 1.0;
+  top: 0;
 }
 
 .teams-details-wrapper {
@@ -8719,7 +8727,7 @@ body, html {
 
 /* SLIDESHOW NAV */
 .nav-buttons {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .nav-buttons .carousel-indicators {
   top: 20px;

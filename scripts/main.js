@@ -11,7 +11,7 @@ function revealSingleGameView(){
   $('a.ball-center').bind('mouseup', function(e){
     e.preventDefault();
     if ( window.dragCheck == false ){
-      $('.main-game').addClass('hide')
+
       $('.single-game-view').addClass('reveal')
       
       gameId = $(this).data('game-id')
