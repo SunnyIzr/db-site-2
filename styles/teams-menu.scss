@@ -16,11 +16,8 @@
   text-align: center;
   width: 100%;
   font-size: 14pt;
-
-  a, a:hover {
-    color: $accentBlue;
-    text-decoration: none;
-  }
+  color: $accentBlue;
+  text-decoration: none;
 
   a:hover {
     font-family: "ProximaNova", "Arial Bold", sans-serif;
@@ -32,16 +29,14 @@
     padding: 0 50px 10px 50px;
     margin: -10px;
     border-bottom: solid 1px $accentBlue;
+    cursor: pointer;
   }
 
   li.active {
     border-bottom: solid 7px $accentBlue;
     padding-bottom: 4px;
-
-    a, a:hover {
-      color: $white;
-      text-decoration: none;
-      font-family: "ProximaNova Light", "Arial", sans-serif;
-    }
+    color: $white;
+    text-decoration: none;
+    font-family: "ProximaNova Light", "Arial", sans-serif;
   }
 }

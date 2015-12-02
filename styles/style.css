@@ -8329,7 +8329,7 @@ body, html {
 
 .inner-content {
   background-color: #132451;
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -8359,6 +8359,30 @@ body, html {
 }
 .description .learn-more a.button:hover {
   background-color: #304684;
+}
+
+.single-game-view {
+  display: none;
+}
+
+.single-game-view.reveal {
+  display: block;
+}
+
+.teams-details-wrapper {
+  display: none;
+}
+
+.teams-details-wrapper.reveal {
+  display: block;
+}
+
+.game {
+  display: none;
+}
+
+.game.reveal {
+  display: block;
 }
 
 /* STREAK */
@@ -8695,8 +8719,6 @@ body, html {
   text-align: center;
   width: 100%;
   font-size: 14pt;
-}
-.teams-menu a, .teams-menu a:hover {
   color: #304684;
   text-decoration: none;
 }
@@ -8709,12 +8731,11 @@ body, html {
   padding: 0 50px 10px 50px;
   margin: -10px;
   border-bottom: solid 1px #304684;
+  cursor: pointer;
 }
 .teams-menu li.active {
   border-bottom: solid 7px #304684;
   padding-bottom: 4px;
-}
-.teams-menu li.active a, .teams-menu li.active a:hover {
   color: #fff;
   text-decoration: none;
   font-family: "ProximaNova Light", "Arial", sans-serif;

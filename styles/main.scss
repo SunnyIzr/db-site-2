@@ -39,7 +39,7 @@ body, html {
 
 .inner-content {
   background-color: $midBlue;
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -75,7 +75,29 @@ body, html {
 }
 
 
+.single-game-view{
+  display: none;
+}
 
+.single-game-view.reveal{
+  display: block;
+}
+
+.teams-details-wrapper{
+  display: none;
+}
+
+.teams-details-wrapper.reveal{
+  display: block;
+}
+
+.game{
+  display: none;
+}
+
+.game.reveal{
+  display: block;
+}
 
 
 
