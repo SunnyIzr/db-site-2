@@ -3,6 +3,7 @@ $(document).ready(function(){
   removeSingleGameView();
   toggleGameItem();
   gameSelector();
+  selectBetBracket();
 })
 
 function revealSingleGameView(){
@@ -10,7 +11,6 @@ function revealSingleGameView(){
     e.preventDefault();
     $('.main-game').addClass('hide')
     $('.single-game-view').addClass('reveal')
-    
     
     gameId = $(this).data('game-id')
     selectGame(gameId)
@@ -52,3 +52,23 @@ function selectGame(num){
   $($('.carousel-indicators li')[parseInt(num)]).addClass('active')
 }
 
+function betBracket(bracket,pick){
+  bracketEl = $($('#mainTeamList li')[bracket])
+  pickEl = $($(bracketEl).find('.btn')[pick])
+  $($(bracketEl).find('.btn.active')).removeClass('active')
+  $(bracketEl).addClass('submitting')
+  $(bracketEl).find('h4').html($(pickEl).find('.title').html())
+  setTimeout(function(){
+    $(bracketEl).removeClass('submitting')
+    $(pickEl).addClass('active')  
+  },1000)
+}
+
+function selectBetBracket(){
+  $('button.team-btn').click(function(e){
+    e.preventDefault();
+    pick = $(this).data('pick')
+    bracket = $(this).parent().parent().data('bracket-id')
+    betBracket(bracket,pick)
+  })  
+}

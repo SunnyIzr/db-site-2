@@ -8544,6 +8544,19 @@ body, html {
   list-style-type: none;
   position: relative;
 }
+.teams-list li span {
+  transition: opacity 300ms ease-in;
+}
+.teams-list li h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8px;
+  opacity: 0.0;
+  transition: opacity 300ms ease-in;
+}
 .teams-list li .team-box {
   position: relative;
   display: block;
@@ -8559,6 +8572,7 @@ body, html {
   outline: none;
   background-color: #132451;
   margin-bottom: -40px;
+  transition: background-color 300ms ease-in;
 }
 .teams-list li .team-box .team-btn span {
   display: block;
@@ -8673,6 +8687,15 @@ body, html {
   height: 65px;
   display: inline-block;
   margin: 0 auto;
+}
+.teams-list li.submitting span {
+  opacity: 0.0;
+}
+.teams-list li.submitting .team-btn, .teams-list li.submitting .team-btn.active, .teams-list li.submitting .team-btn:focus {
+  background-color: transparent;
+}
+.teams-list li.submitting h4 {
+  opacity: 1.0;
 }
 
 /* SLIDESHOW NAV */

@@ -9,6 +9,20 @@
   li {
     list-style-type: none;
     position: relative;
+    
+    span{
+      transition: opacity 300ms ease-in;
+    }
+    h4{
+      position: absolute;
+      top: 0;
+      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 8px;
+      opacity: 0.0;
+      transition: opacity 300ms ease-in;
+    }
 
     .team-box {
     position: relative;
@@ -25,6 +39,7 @@
         outline: none;
         background-color: $midBlue;
         margin-bottom: -40px;
+        transition: background-color 300ms ease-in;
 
         span {
           display: block;
@@ -155,5 +170,17 @@
         margin: 0 auto;
       }
     }  
+  }
+  
+  li.submitting{
+    span{
+      opacity: 0.0;
+    }
+    .team-btn,.team-btn.active,.team-btn:focus{
+      background-color: transparent;
+    }
+    h4{
+      opacity: 1.0;
+    }
   }
 }
