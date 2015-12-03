@@ -64,11 +64,11 @@ function ballDraggable(){
     drag: function(){
       window.dragCheck = true
       percentLeft = parseInt( $(this).css('left') ) / $(this).parent().width()
-      bracketId = $(this).parent().data('bracket-id')
+      bracketEl = $(this).parent()
       if ( percentLeft < 0.33 ){
-        betBracket(bracketId,0)
+        betBracket(bracketEl,0)
       } else if ( percentLeft > 0.67 ){
-        betBracket(bracketId,1)
+        betBracket(bracketEl,1)
       }
     },
     stop: function(){
@@ -92,11 +92,11 @@ function selectGame(num){
   $($('.carousel-indicators li')[parseInt(num)]).addClass('active')
 }
 
-function betBracket(bracket,pick){
-  bracketEl = $($('#mainTeamList li')[bracket])
+function betBracket(bracketEl,pick){
+  bracket = $(bracketEl).data('bracket-id')
   pickEl = $($(bracketEl).find('.btn')[pick])
   ballEl = $(bracketEl).find('.ball-center')
-  $($(bracketEl).find('.btn.active')).removeClass('active')
+  $(".game-" + bracket + " button.active").removeClass('active')
   $(bracketEl).addClass('submitting')
   $(bracketEl).find('h4').html($(pickEl).find('.title').html())
   if ( pick == 0 ){
@@ -109,7 +109,7 @@ function betBracket(bracket,pick){
   },500)
   setTimeout(function(){
     $(bracketEl).removeClass('submitting')
-    $(pickEl).addClass('active')
+    $(".game-" + bracket + " button[data-pick='" + pick + "']").addClass('active')
   },1000)
 }
 
@@ -118,8 +118,8 @@ function selectBetBracket(){
   $('button.team-btn').click(function(e){
     e.preventDefault();
     pick = $(this).data('pick')
-    bracket = $(this).parent().parent().data('bracket-id')
-    betBracket(bracket,pick)
+    bracketEl = $(this).parent().parent()
+    betBracket(bracketEl,pick)
   })  
 }
 
