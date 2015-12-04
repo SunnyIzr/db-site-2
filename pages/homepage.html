@@ -2,7 +2,7 @@ include "head.html"
 
 include "sidebar.html"
 
-<div class="col-xs-12 col-sm-8 col-md-9 main-content">
+<div class="main-content">
 
   include "header.html"
   
@@ -31,24 +31,16 @@ include "sidebar.html"
         
         <div class='single-game-view'>
           <div class="row nav-buttons">
-            <div class="col-xs-2 col-xs-offset-1">
-              <a class="exit exit-single-view" href="#" role="button"><img class="img-responsive" src="img/close.png"></a>
-            </div>
-            <div class="col-xs-2">
-              <a class="left game-paginate" href="#team-slides" role="button" data-slide="prev"><img class="img-responsive" src="img/prev.png"></a>
-            </div>
-            <div class="col-xs-4">  
-              <ol class="carousel-indicators">
-                <li class='game-select' data-target="#team-slides" data-game-id="0"></li>
-                <li class='game-select' data-target="#team-slides" data-game-id="1"></li>
-                <li class='game-select' data-target="#team-slides" data-game-id="2"></li>
-                <li class='game-select' data-target="#team-slides" data-game-id="3"></li>
-                <li class='game-select' data-target="#team-slides" data-game-id="4"></li>
-              </ol>
-            </div>
-            <div class="col-xs-2 right-button">  
-              <a class="right game-paginate" href="#team-slides" role="button" data-slide="next"><img class="img-responsive" src="img/next.png"></a>
-            </div>  
+            <a class="exit exit-single-view nav-icon nav-element" href="#" role="button"><img class="img-responsive" src="img/close.png"></a>
+            <a class="left game-paginate nav-icon nav-element" href="#team-slides" role="button" data-slide="prev"><img class="img-responsive" src="img/prev.png"></a>
+            <ol class="carousel-indicators nav-element">
+              <li class='game-select' data-target="#team-slides" data-game-id="0"></li>
+              <li class='game-select' data-target="#team-slides" data-game-id="1"></li>
+              <li class='game-select' data-target="#team-slides" data-game-id="2"></li>
+              <li class='game-select' data-target="#team-slides" data-game-id="3"></li>
+              <li class='game-select' data-target="#team-slides" data-game-id="4"></li>
+            </ol>
+            <a class="right game-paginate nav-icon nav-element" href="#team-slides" role="button" data-slide="next"><img class="img-responsive" src="img/next.png"></a> 
           </div>
           <div id='game0' class='game'>
             include "game0.html"

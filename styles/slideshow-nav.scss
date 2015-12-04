@@ -2,6 +2,7 @@
 
 .nav-buttons {
   margin-top: 0px;
+  text-align: center;
 
   .carousel-indicators {
     top: 20px;
@@ -31,4 +32,24 @@
     margin-top: 8px;
   }
 
+}
+
+.nav-icon{
+  img{ 
+    margin-top: 13px !important;
+    width: 31px;
+  }
+}
+
+.nav-element{
+  display: inline-block;
+  margin: 15px;
+}
+
+.carousel-indicators.nav-element{
+  position: static;
+  width: inherit;
+  vertical-align: top;
+  padding-top: 29px;
+  margin: 0;
 }

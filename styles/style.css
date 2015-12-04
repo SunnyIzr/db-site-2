@@ -8195,15 +8195,18 @@ button.close {
 }
 .header img.menu-icon {
   position: absolute;
-  right: 13px;
+  right: 28px;
   top: 16px;
   cursor: pointer;
+  width: 39px;
 }
 
 /* SIDEBAR */
 .sidebar {
   background-color: #0B1529;
   padding-left: 0;
+  width: 320px;
+  float: left;
 }
 
 .search-box {
@@ -8231,6 +8234,10 @@ button.close {
 .notification {
   margin-top: 10px;
   margin-left: -10px;
+}
+.notification .sidebar-icon {
+  width: 29px;
+  margin-top: 9px;
 }
 
 .profile-stats {
@@ -8265,9 +8272,6 @@ button.close {
   font-size: 12pt;
 }
 
-.sidebar-nav {
-  padding-left: 60px;
-}
 .sidebar-nav ul {
   margin: 15px 0px 0px 0px;
   list-style: none;
@@ -8276,24 +8280,37 @@ button.close {
   text-indent: 20px;
   line-height: 55px;
   border-bottom: solid 1px #304684;
+  cursor: pointer;
 }
 .sidebar-nav ul li a {
-  padding-left: 10px;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: #bababd;
+  font-size: 17px;
+  margin-left: -9px;
 }
-.sidebar-nav ul li i {
-  line-height: inherit;
-  color: #304684;
+.sidebar-nav ul li img.sidebar-icon {
   margin-top: -4px;
-  border-bottom: solid 1px #304684;
+  width: 29px;
+  display: inline-block;
+}
+.sidebar-nav ul li img.active-icon {
+  display: none;
+}
+.sidebar-nav ul li:hover {
+  background-color: #304684;
 }
 .sidebar-nav ul .active, .sidebar-nav ul i.active {
   background-color: #304684;
   text-decoration: none;
   color: #bababd;
   border: none;
+}
+.sidebar-nav ul .active img.default-icon, .sidebar-nav ul i.active img.default-icon {
+  display: none;
+}
+.sidebar-nav ul .active img.active-icon, .sidebar-nav ul i.active img.active-icon {
+  display: inline-block;
 }
 .sidebar-nav ul i.active {
   margin-top: -4px;
@@ -8319,6 +8336,7 @@ body {
   font-family: 'ProximaNova Light', 'Arial', sans-serif;
   font-size: 16pt;
   color: #fff;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -8341,6 +8359,13 @@ body, html {
   background-color: #0B1529;
   margin-left: -15px !important;
   padding-right: 0;
+  float: right;
+  width: calc(100% - 335px);
+}
+@media (max-width: 768px) {
+  .main-content {
+    width: 100%;
+  }
 }
 
 .inner-content-wrapper {
@@ -8355,6 +8380,7 @@ body, html {
   margin: 0 auto;
   position: relative;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .placeholder img {
@@ -8439,7 +8465,7 @@ body, html {
 .streak .main-ellipse .active-border img.checker-finish {
   display: block;
   position: absolute;
-  top: 179px;
+  top: 176px;
   left: 140px;
   height: 30px;
 }
@@ -8751,6 +8777,7 @@ body, html {
 /* SLIDESHOW NAV */
 .nav-buttons {
   margin-top: 0px;
+  text-align: center;
 }
 .nav-buttons .carousel-indicators {
   top: 20px;
@@ -8774,6 +8801,24 @@ body, html {
 }
 .nav-buttons .exit img {
   margin-top: 8px;
+}
+
+.nav-icon img {
+  margin-top: 13px !important;
+  width: 31px;
+}
+
+.nav-element {
+  display: inline-block;
+  margin: 15px;
+}
+
+.carousel-indicators.nav-element {
+  position: static;
+  width: inherit;
+  vertical-align: top;
+  padding-top: 29px;
+  margin: 0;
 }
 
 /* TEAMS MENU */
@@ -8817,7 +8862,7 @@ body, html {
 /* ANALYSIS */
 .teams-details-wrapper {
   color: black;
-  margin: 5px 18px 10px 18px;
+  margin: 5px 8px 10px 8px;
   list-style-type: none;
   padding: 0;
 }
@@ -8825,6 +8870,8 @@ body, html {
   background-color: #fff;
   margin-bottom: 10px;
   padding: 8px 12px;
+  overflow-y: scroll;
+  height: 525px;
 }
 .teams-details-wrapper .title {
   font-family: "ProximaNova Bold", "Arial Bold", sans-serif;

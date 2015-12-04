@@ -7,6 +7,7 @@ body {
   font-family: 'ProximaNova Light', 'Arial', sans-serif;
   font-size: 16pt;
   color: $white;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -31,6 +32,11 @@ body, html {
   background-color: $darkestBlue;
   margin-left: -15px !important;
   padding-right: 0;
+  float: right;
+  width: calc(100% - 335px);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .inner-content-wrapper {
@@ -45,6 +51,7 @@ body, html {
   margin: 0 auto;
   position: relative;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .placeholder img {
