@@ -35,8 +35,23 @@
   margin-top: 10px;
   margin-left: -10px;
   .sidebar-icon{
-    width: 29px;
+    width: 34px;
     margin-top: 9px;
+  }
+  span{
+    background: #f67808;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    line-height: 23px;
+    position: absolute;
+    top: 0px;
+    right: 28px;
+    
   }
 }
 
