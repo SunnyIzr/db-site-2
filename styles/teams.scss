@@ -187,3 +187,45 @@
     }
   }
 }
+
+
+
+// SMALL TABLETS
+@media (max-width: 768px) {
+  .teams-list{
+    li{
+      margin-bottom: 10px;
+      .ball-center{
+        top: -13px
+        img{
+          height: 55px;
+        }
+      }
+      .team-box{
+        .team-btn{
+          .title{
+            font-size: 12px;
+          }
+          .subtitle{
+            font-size: 11px;
+          }
+          .time-channel{
+            font-size: 10px;
+          }
+        }
+        .team-btn-left{
+          padding-left: 11px;
+          .time-channel{
+            padding: 8px 35px 8px 10px !important;
+          }
+        }
+        .team-btn-right{
+          padding-right: 11px;
+          .time-channel{
+            padding: 8px 10px 8px 35px !important;
+          }
+        }
+      }
+    }
+  }
+} 
