@@ -41,6 +41,19 @@
       stroke: #fff;
     }
   }
+  .anim-fix-overlay{
+    position: absolute;
+    width: 138px;
+    height: 6px;
+    background: $midBlue;
+    z-index: 4;
+    bottom: 0;
+    left: 150px;
+    transition: width linear 750ms;
+  }
+  .anim-fix-overlay.finish{
+    width: 0;
+  }
 
   .inner-ellipse {
     position: relative;

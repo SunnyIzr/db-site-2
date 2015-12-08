@@ -2,7 +2,7 @@ var Streak = {
   init: function(){
     
   },
-  angleIntervals: [204,306,402,510,594,684,804,894,1014],
+  angleIntervals: [204,306,402,510,594,684,804,894,1014,1050],
   loadActiveStreak: function(level){
     var circle = document.getElementById('activeBar');
     var interval = 30;
@@ -15,6 +15,9 @@ var Streak = {
       if ( index > -1 ){
        Streak.activateNum(index) 
       }
+      if ( angle > 1014 ){
+        Streak.triggerAnimFix();
+      }
       if (angle >= stopAngle) {
         window.clearInterval(window.timer);
       } 
@@ -24,5 +27,8 @@ var Streak = {
   activateNum: function(index){
     level = index + 1
     $('.level-' + level).addClass('active')
+  },
+  triggerAnimFix: function(){
+    $('.anim-fix-overlay').addClass('finish')
   }
 }

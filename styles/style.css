@@ -8511,6 +8511,19 @@ body, html {
   stroke-width: 5;
   stroke: #fff;
 }
+.streak .main-ellipse .anim-fix-overlay {
+  position: absolute;
+  width: 138px;
+  height: 6px;
+  background: #132451;
+  z-index: 4;
+  bottom: 0;
+  left: 150px;
+  transition: width linear 750ms;
+}
+.streak .main-ellipse .anim-fix-overlay.finish {
+  width: 0;
+}
 .streak .main-ellipse .inner-ellipse {
   position: relative;
   width: 385px;
