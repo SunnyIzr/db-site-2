@@ -51,6 +51,8 @@ body, html {
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .placeholder img {
@@ -117,6 +119,14 @@ body, html {
 }
 
 
+
+@media (max-width: 768px) {
+  .inner-content{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  
+}
 
 
 
