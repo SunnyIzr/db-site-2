@@ -8,6 +8,7 @@ $(document).ready(function(){
   selectBetBracket();
   ballDraggable()
   paginateGame();
+  Streak.loadActiveStreak(9)
 })
 
 function menuNavToggle(){
@@ -141,22 +142,3 @@ function paginateGame(){
     selectGame(newGame)
   })
 }
-
-
-
-(function () {
-    // math trick 2*pi*57 = 358, must be less than 360 degree 
-    var circle = document.getElementById('activeBar');
-    var interval = 30;
-    var angle = 0;
-    var angle_increment = 6;
-
-    window.timer = window.setInterval(function () {
-        circle.setAttribute("stroke-dasharray", angle + ", 20000");
-
-        if (angle >= 1012) {
-            window.clearInterval(window.timer);
-        }
-        angle += angle_increment;
-    }.bind(this), interval);
-})()
