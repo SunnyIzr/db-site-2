@@ -8,7 +8,7 @@ $(document).ready(function(){
   selectBetBracket();
   ballDraggable()
   paginateGame();
-  Streak.loadActiveStreak(10)
+  Streak.init()
 })
 
 function menuNavToggle(){

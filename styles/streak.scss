@@ -102,67 +102,80 @@
 
     .outer-numbers {  
       font-family: "Rockwell", serif;
-      font-size: 22pt;
+      font-size: 19pt;
       color: $darkBlue;
   
-      .num1, .num6 { left: 175px; }
-      .num2, .num5 { left: 260px; }
-      .num10, .num7 { left: 90px; }
-      .num5, .num6, .num7 { top: 172px; }
-      .num3, .num9 { top: 50px; }
-      .num4, .num8 { top: 120px; }
-      .num3 { 
-        left: 352px; 
-        transform: rotate(64deg); 
-      }
-      .num9 { 
-        left: 18px; 
-        transform: rotate(-64deg); 
-      }
-      .num8 { 
-        left: 20px;
-        transform: rotate(58deg); 
-      }
-      .num4 { 
-        left: 350px;
-        transform: rotate(-72deg); 
-      }
+
       .active {
         color: $white;
       }
+    }
+    
+    .outer-numbers{
+      .nums{
+        width: 28px;
+        height: 28px;
+        color: #fff;
+        line-height: 28px;
+        font-size: 23px;
+        text-align: center;
+      }
+      
+      .bottom { top: 85%; }
+      .top{ top: 3%; }
+      
+      .left-outer{left: 25%; transform: translateX(-50%);}
+      .center{ left: 50%; transform: translateX(-50%); }
+      .right-outer{ left: 76%; transform: translateX(-50%); }
+      
+      .left-inner{left: 38%; transform: translateX(-50%);}
+      .right-inner{left: 62%; transform: translateX(-50%);}
+      
+      .left-section{left: 5%;}
+      .right-section{left: 94%;transform: translateX(-100%);}
+      .top-half{ top: 21%; }
+      .bottom-half{ top: 79%; transform: translateY(-100%);}
+      .mid-point{ top: 50%; transform: translateY(-50%); }
+      
+      .left-section.top-half{ transform: rotate(-55deg);}
+      .left-section.bottom-half{ transform: translateY(-100%) rotate(56deg);}
+      .right-section.top-half{ transform: translateX(-100%) rotate(55deg);}
+      .right-section.bottom-half{ transform: translateX(-100%) translateY(-100%) rotate(-56deg);}
+      .left-section.mid-point{left: 1%; transform: translateY(-50%) rotate(-90deg)}
+      .right-section.mid-point{left: 91%; transform: translateY(-50%) rotate(90deg)}
+          
     }  
 
-      .inner-numbers {
-        span {
-        font-size: 12pt;
+    .inner-numbers {
+      span {
+        font-size: 10pt;
         color: $orange;
-        }
-
-      .inner-num1 { left: 175px; }
-      .inner-num6 { left: 155px; }
-      .inner-num2, .inner-num5 { left: 260px; }
-      .inner-num10, .inner-num7 { left: 90px; }
-      .inner-num1, .inner-num2, .inner-num10 { top: 35px; }
-      .inner-num5, .inner-num6, .inner-num7 { top: 158px; }
-      .inner-num3, .inner-num9 { top: 70px; }
-      .inner-num3 { 
-        left: 317px; 
-        transform: rotate(64deg); 
+        width: 35px;
+        text-align: center;
       }
-      .inner-num9 { 
-        left: 40px; 
-        transform: rotate(-64deg); 
-      }
-      .inner-num8 { 
-        top: 120px;
-        left: 43px;
-        transform: rotate(58deg); 
-      }
-      .inner-num4 { 
-        top: 127px;
-        left: 310px;
-        transform: rotate(-53deg); 
-      }  
+      
+      .bottom { top: 77%; }
+      .top{ top: 17%; }
+      
+      .left-outer{left: 25%; transform: translateX(-50%);}
+      .center{ left: 50%; transform: translateX(-50%); }
+      .right-outer{ left: 76%; transform: translateX(-50%); }
+      
+      .left-inner{left: 38%; transform: translateX(-50%);}
+      .right-inner{left: 62%; transform: translateX(-50%);}
+      
+      .left-section{left: 10%;}
+      .right-section{left: 90%;transform: translateX(-100%);}
+      .top-half{ top: 28%; }
+      .bottom-half{ top: 71%; transform: translateY(-100%);}
+      .mid-point{ top: 50%; transform: translateY(-50%); }
+      
+      .left-section.top-half{ transform: rotate(-55deg);}
+      .left-section.bottom-half{ transform: translateY(-100%) rotate(56deg);}
+      .right-section.top-half{ transform: translateX(-100%) rotate(55deg);}
+      .right-section.bottom-half{ transform: translateX(-100%) translateY(-100%) rotate(-56deg);}
+      .left-section.mid-point{left: 7%; transform: translateY(-50%) rotate(-90deg)}
+      .right-section.mid-point{left: 84%; transform: translateY(-50%) rotate(90deg)} 
     }
   }  
 }

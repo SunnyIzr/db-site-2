@@ -8563,88 +8563,153 @@ body, html {
 }
 .streak .main-ellipse .outer-numbers {
   font-family: "Rockwell", serif;
-  font-size: 22pt;
+  font-size: 19pt;
   color: #111e42;
-}
-.streak .main-ellipse .outer-numbers .num1, .streak .main-ellipse .outer-numbers .num6 {
-  left: 175px;
-}
-.streak .main-ellipse .outer-numbers .num2, .streak .main-ellipse .outer-numbers .num5 {
-  left: 260px;
-}
-.streak .main-ellipse .outer-numbers .num10, .streak .main-ellipse .outer-numbers .num7 {
-  left: 90px;
-}
-.streak .main-ellipse .outer-numbers .num5, .streak .main-ellipse .outer-numbers .num6, .streak .main-ellipse .outer-numbers .num7 {
-  top: 172px;
-}
-.streak .main-ellipse .outer-numbers .num3, .streak .main-ellipse .outer-numbers .num9 {
-  top: 50px;
-}
-.streak .main-ellipse .outer-numbers .num4, .streak .main-ellipse .outer-numbers .num8 {
-  top: 120px;
-}
-.streak .main-ellipse .outer-numbers .num3 {
-  left: 352px;
-  transform: rotate(64deg);
-}
-.streak .main-ellipse .outer-numbers .num9 {
-  left: 18px;
-  transform: rotate(-64deg);
-}
-.streak .main-ellipse .outer-numbers .num8 {
-  left: 20px;
-  transform: rotate(58deg);
-}
-.streak .main-ellipse .outer-numbers .num4 {
-  left: 350px;
-  transform: rotate(-72deg);
 }
 .streak .main-ellipse .outer-numbers .active {
   color: #fff;
 }
+.streak .main-ellipse .outer-numbers .nums {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  line-height: 28px;
+  font-size: 23px;
+  text-align: center;
+}
+.streak .main-ellipse .outer-numbers .bottom {
+  top: 85%;
+}
+.streak .main-ellipse .outer-numbers .top {
+  top: 3%;
+}
+.streak .main-ellipse .outer-numbers .left-outer {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.streak .main-ellipse .outer-numbers .center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.streak .main-ellipse .outer-numbers .right-outer {
+  left: 76%;
+  transform: translateX(-50%);
+}
+.streak .main-ellipse .outer-numbers .left-inner {
+  left: 38%;
+  transform: translateX(-50%);
+}
+.streak .main-ellipse .outer-numbers .right-inner {
+  left: 62%;
+  transform: translateX(-50%);
+}
+.streak .main-ellipse .outer-numbers .left-section {
+  left: 5%;
+}
+.streak .main-ellipse .outer-numbers .right-section {
+  left: 94%;
+  transform: translateX(-100%);
+}
+.streak .main-ellipse .outer-numbers .top-half {
+  top: 21%;
+}
+.streak .main-ellipse .outer-numbers .bottom-half {
+  top: 79%;
+  transform: translateY(-100%);
+}
+.streak .main-ellipse .outer-numbers .mid-point {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.streak .main-ellipse .outer-numbers .left-section.top-half {
+  transform: rotate(-55deg);
+}
+.streak .main-ellipse .outer-numbers .left-section.bottom-half {
+  transform: translateY(-100%) rotate(56deg);
+}
+.streak .main-ellipse .outer-numbers .right-section.top-half {
+  transform: translateX(-100%) rotate(55deg);
+}
+.streak .main-ellipse .outer-numbers .right-section.bottom-half {
+  transform: translateX(-100%) translateY(-100%) rotate(-56deg);
+}
+.streak .main-ellipse .outer-numbers .left-section.mid-point {
+  left: 1%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.streak .main-ellipse .outer-numbers .right-section.mid-point {
+  left: 91%;
+  transform: translateY(-50%) rotate(90deg);
+}
 .streak .main-ellipse .inner-numbers span {
-  font-size: 12pt;
+  font-size: 10pt;
   color: #EB5B05;
+  width: 35px;
+  text-align: center;
 }
-.streak .main-ellipse .inner-numbers .inner-num1 {
-  left: 175px;
+.streak .main-ellipse .inner-numbers .bottom {
+  top: 77%;
 }
-.streak .main-ellipse .inner-numbers .inner-num6 {
-  left: 155px;
+.streak .main-ellipse .inner-numbers .top {
+  top: 17%;
 }
-.streak .main-ellipse .inner-numbers .inner-num2, .streak .main-ellipse .inner-numbers .inner-num5 {
-  left: 260px;
+.streak .main-ellipse .inner-numbers .left-outer {
+  left: 25%;
+  transform: translateX(-50%);
 }
-.streak .main-ellipse .inner-numbers .inner-num10, .streak .main-ellipse .inner-numbers .inner-num7 {
-  left: 90px;
+.streak .main-ellipse .inner-numbers .center {
+  left: 50%;
+  transform: translateX(-50%);
 }
-.streak .main-ellipse .inner-numbers .inner-num1, .streak .main-ellipse .inner-numbers .inner-num2, .streak .main-ellipse .inner-numbers .inner-num10 {
-  top: 35px;
+.streak .main-ellipse .inner-numbers .right-outer {
+  left: 76%;
+  transform: translateX(-50%);
 }
-.streak .main-ellipse .inner-numbers .inner-num5, .streak .main-ellipse .inner-numbers .inner-num6, .streak .main-ellipse .inner-numbers .inner-num7 {
-  top: 158px;
+.streak .main-ellipse .inner-numbers .left-inner {
+  left: 38%;
+  transform: translateX(-50%);
 }
-.streak .main-ellipse .inner-numbers .inner-num3, .streak .main-ellipse .inner-numbers .inner-num9 {
-  top: 70px;
+.streak .main-ellipse .inner-numbers .right-inner {
+  left: 62%;
+  transform: translateX(-50%);
 }
-.streak .main-ellipse .inner-numbers .inner-num3 {
-  left: 317px;
-  transform: rotate(64deg);
+.streak .main-ellipse .inner-numbers .left-section {
+  left: 10%;
 }
-.streak .main-ellipse .inner-numbers .inner-num9 {
-  left: 40px;
-  transform: rotate(-64deg);
+.streak .main-ellipse .inner-numbers .right-section {
+  left: 90%;
+  transform: translateX(-100%);
 }
-.streak .main-ellipse .inner-numbers .inner-num8 {
-  top: 120px;
-  left: 43px;
-  transform: rotate(58deg);
+.streak .main-ellipse .inner-numbers .top-half {
+  top: 28%;
 }
-.streak .main-ellipse .inner-numbers .inner-num4 {
-  top: 127px;
-  left: 310px;
-  transform: rotate(-53deg);
+.streak .main-ellipse .inner-numbers .bottom-half {
+  top: 71%;
+  transform: translateY(-100%);
+}
+.streak .main-ellipse .inner-numbers .mid-point {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.streak .main-ellipse .inner-numbers .left-section.top-half {
+  transform: rotate(-55deg);
+}
+.streak .main-ellipse .inner-numbers .left-section.bottom-half {
+  transform: translateY(-100%) rotate(56deg);
+}
+.streak .main-ellipse .inner-numbers .right-section.top-half {
+  transform: translateX(-100%) rotate(55deg);
+}
+.streak .main-ellipse .inner-numbers .right-section.bottom-half {
+  transform: translateX(-100%) translateY(-100%) rotate(-56deg);
+}
+.streak .main-ellipse .inner-numbers .left-section.mid-point {
+  left: 7%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.streak .main-ellipse .inner-numbers .right-section.mid-point {
+  left: 84%;
+  transform: translateY(-50%) rotate(90deg);
 }
 
 /* TEAMS LIST */
