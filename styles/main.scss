@@ -26,6 +26,8 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: $midBlue;
+  position: relative;
+  overflow-x: hidden; 
 }
 
 .main-content {
@@ -108,10 +110,15 @@ body, html {
 
 .teams-details-wrapper.reveal{
   display: block;
+  margin-left: -7px;
 }
 
 .game{
   display: none;
+  .teams-list{
+    margin-left: -7px;
+    padding: 0 7px;
+  }
 }
 
 .game.reveal{
