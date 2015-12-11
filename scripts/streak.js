@@ -1,7 +1,7 @@
 var Streak = { 
   init: function(){
     //10 Prizes
-    this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[6,'$10'],[8,'$50'],[10,'$250'],[15,'$1k'],[20,'$5K'],[30,'$100K'],[40,'$1M']])
+    // this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[6,'$10'],[8,'$50'],[10,'$250'],[15,'$1k'],[20,'$5K'],[30,'$100K'],[40,'$1M']])
     // 11 Prizes
     // this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[5,'$5'],[6,'$10'],[8,'$50'],[10,'$250'],[15,'$1k'],[20,'$5K'],[30,'$100K'],[40,'$1M']])
     //12 Prizes
@@ -9,7 +9,7 @@ var Streak = {
     //13 Prizes
     // this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[5,'$5'],[6,'$10'],[7,'$25'],[8,'$50'],[10,'$250'],[15,'$1k'],[17,'$3k'],[20,'$5K'],[30,'$100K'],[40,'$1M']])
     //14 Prizes
-    // this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[5,'$5'],[6,'$10'],[7,'$25'],[8,'$50'],[10,'$250'],[15,'$1k'],[17,'$3k'],[20,'$5K'],[25,'$7K'],[30,'$100K'],[40,'$1M']])
+    this.renderPrizes([[1,'100BB'],[2,'$1'],[4,'$3'],[5,'$5'],[6,'$10'],[7,'$25'],[8,'$50'],[10,'$250'],[15,'$1k'],[17,'$3k'],[20,'$5K'],[25,'$7K'],[30,'$100K'],[40,'$1M']])
   },
   angleIntervals: [192,288,402,498,594,702,786,912,996,1050],
   loadActiveStreak: function(level){
@@ -44,15 +44,19 @@ var Streak = {
     classes = ['bottom left-outer','bottom-half left-section','top-half left-section','top left-outer','top center','top right-outer','top-half right-section','bottom-half right-section','bottom right-outer','bottom center']
     if ( prizes.length >= 11 ){
       classes.splice(4,0,'top left-inner')
+      Streak.angleIntervals.splice(4,0,546)
     }
     if ( prizes.length >= 12 ){
       classes.splice(6,0,'top right-inner')
+      Streak.angleIntervals.splice(6,0,642)
     }
     if ( prizes.length >= 13 ){
       classes.splice(2,0,'mid-point left-section')
+      Streak.angleIntervals.splice(2,0,342)
     }
     if ( prizes.length >= 14 ){
       classes.splice(10,0,'mid-point right-section')
+      Streak.angleIntervals.splice(10,0,846)
     }
     $(prizes).each(function(index,prize){
       outerNum = "<span class='nums level-" + index + " num" + index + " " + classes[index] + "'>" + prize[0] + "</span>"
