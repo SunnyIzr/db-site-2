@@ -8189,9 +8189,10 @@ button.close {
   position: relative;
 }
 .header img.logo {
-  height: 100%;
   margin: 0 auto;
-  padding: 8px 0px;
+  padding: 14px 0px;
+  width: 100%;
+  max-width: 250px;
 }
 .header img.menu-icon {
   position: absolute;
