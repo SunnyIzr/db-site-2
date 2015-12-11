@@ -9,6 +9,7 @@ $(document).ready(function(){
   ballDraggable()
   paginateGame();
   Streak.init()
+  Streak.loadActiveStreak(10)
 })
 
 function menuNavToggle(){
