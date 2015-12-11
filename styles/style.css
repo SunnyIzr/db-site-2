@@ -8577,6 +8577,9 @@ body, html {
   font-size: 23px;
   text-align: center;
 }
+.streak .main-ellipse .outer-numbers .nums.active {
+  color: #fff;
+}
 .streak .main-ellipse .outer-numbers .bottom {
   top: 85%;
 }
