@@ -114,6 +114,7 @@ function triggerAnim(bracketEl,pick){
   $(bracketEl).find('.ball-center').addClass('pick-' + pick)
   setTimeout(function(){
     $(bracketEl).find('.ball-center').removeClass('pick-' + pick)
+    $(bracketEl).find('.ball-center').css('left','50%')
   },500)
   setTimeout(function(){
     $(bracketEl).removeClass('submitting')
