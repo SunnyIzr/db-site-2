@@ -8519,7 +8519,6 @@ body, html {
   stroke: #fff;
 }
 .streak .main-ellipse .anim-fix-overlay {
-  display: none;
   position: absolute;
   width: 138px;
   height: 6px;
@@ -8726,71 +8725,7 @@ body, html {
 
 @media (max-width: 400px) {
   .streak .main-ellipse {
-    width: 306px;
-  }
-  .streak .main-ellipse .active-border img.checker-finish {
-    left: 100px;
-  }
-  .streak .main-ellipse .outer-numbers .nums {
-    font-size: 17px;
-    line-height: 20px;
-  }
-  .streak .main-ellipse .outer-numbers .top {
-    top: 7%;
-  }
-  .streak .main-ellipse .outer-numbers .bottom {
-    top: 84%;
-  }
-  .streak .main-ellipse .outer-numbers .left-section {
-    left: 7%;
-  }
-  .streak .main-ellipse .outer-numbers .right-section {
-    left: 93%;
-  }
-  .streak .main-ellipse .outer-numbers .top-half {
-    top: 27%;
-  }
-  .streak .main-ellipse .outer-numbers .left-section.mid-point {
-    left: 4%;
-  }
-  .streak .main-ellipse .outer-numbers .right-section.mid-point {
-    left: 86%;
-  }
-  .streak .main-ellipse .inner-numbers span {
-    font-size: 8pt;
-  }
-  .streak .main-ellipse .inner-numbers .top {
-    top: 18%;
-  }
-  .streak .main-ellipse .inner-numbers .bottom {
-    top: 75%;
-  }
-  .streak .main-ellipse .inner-numbers .left-section {
-    left: 12%;
-  }
-  .streak .main-ellipse .inner-numbers .right-section {
-    left: 88%;
-  }
-  .streak .main-ellipse .inner-numbers .top-half {
-    top: 31%;
-  }
-  .streak .main-ellipse .inner-numbers .left-section.mid-point {
-    left: 9%;
-  }
-  .streak .main-ellipse .inner-numbers .right-section.mid-point {
-    left: 80%;
-  }
-  .streak .main-ellipse .inner-ellipse .inner-text p:first-child {
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .streak .main-ellipse .inner-ellipse .inner-text p:nth-child(2) {
-    font-size: 16pt;
-    margin-top: -5px;
-    margin-bottom: 20px;
-  }
-  .streak .main-ellipse .inner-ellipse .inner-text p:nth-child(3) {
-    font-size: 11px;
+    zoom: 75%;
   }
 }
 /* TEAMS LIST */
@@ -8947,6 +8882,12 @@ body, html {
   height: 65px;
   display: inline-block;
   margin: 0 auto;
+}
+.teams-list li .ball-center.pick-0 {
+  left: 10%;
+}
+.teams-list li .ball-center.pick-1 {
+  left: 90%;
 }
 .teams-list li.submitting span {
   opacity: 0.0;

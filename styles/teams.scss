@@ -169,7 +169,13 @@
         display: inline-block;
         margin: 0 auto;
       }
+    }
+    .ball-center.pick-0{
+      left: 10%;
     }  
+    .ball-center.pick-1{
+      left: 90%;
+    }
   }
   
   li.submitting{

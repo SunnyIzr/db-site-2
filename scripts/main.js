@@ -93,28 +93,6 @@ function selectGame(num){
   $($('.carousel-indicators li')[parseInt(num)]).addClass('active')
 }
 
-function betBracket(bracketEl,pick){
-  bracket = $(bracketEl).data('bracket-id')
-  pickEl = $($(bracketEl).find('.btn')[pick])
-  ballEl = $(bracketEl).find('.ball-center')
-  $(".game-" + bracket + " button.active").removeClass('active')
-  $(bracketEl).addClass('submitting')
-  $(bracketEl).find('h4').html($(pickEl).find('.title').html())
-  if ( pick == 0 ){
-    $(ballEl).css('left','10%')
-  } else {
-    $(ballEl).css('left','90%')
-  }
-  setTimeout(function(){
-    $(ballEl).css('left','50%')
-  },500)
-  setTimeout(function(){
-    $(bracketEl).removeClass('submitting')
-    $(".game-" + bracket + " button[data-pick='" + pick + "']").addClass('active')
-  },1000)
-}
-
-
 function selectBetBracket(){
   $('button.team-btn').click(function(e){
     e.preventDefault();
@@ -122,6 +100,25 @@ function selectBetBracket(){
     bracketEl = $(this).parent().parent()
     betBracket(bracketEl,pick)
   })  
+}
+
+function betBracket(bracketEl,pick){
+  bracket = $(bracketEl).data('bracket-id')
+  $(".game-" + bracket + " button.active").removeClass('active')
+  triggerAnim(bracketEl,pick)
+}
+
+function triggerAnim(bracketEl,pick){
+  $(bracketEl).addClass('submitting')
+  $(bracketEl).find('h4').html($($($(bracketEl).find('.btn')[pick])).find('.title').html())
+  $(bracketEl).find('.ball-center').addClass('pick-' + pick)
+  setTimeout(function(){
+    $(bracketEl).find('.ball-center').removeClass('pick-' + pick)
+  },500)
+  setTimeout(function(){
+    $(bracketEl).removeClass('submitting')
+    $(".game-" + $(bracketEl).data('bracket-id') + " button[data-pick='" + pick + "']").addClass('active')
+  },1000)
 }
 
 function paginateGame(){
