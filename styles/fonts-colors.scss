@@ -39,7 +39,9 @@ $white: #fff;
 
 @font-face {
   font-family: 'Rockwell Light';
-  src: url('fonts/rockwell/RockwellStd-Light.otf')
+  src: url('fonts/rockwell/RockwellStd-Light.ttf'),
+       url('fonts/rockwell/RockwellStd-Light.otf'),
+       url('fonts/rockwell/RockwellStd-Light.svg');
 }
 
 @font-face {
