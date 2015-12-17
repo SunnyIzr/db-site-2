@@ -9220,4 +9220,23 @@ body, html {
   color: #fff;
 }
 
+.refer p {
+  width: 100%;
+  font-size: 28px;
+  margin-top: 45px;
+  text-align: center;
+}
+.refer .share-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+.refer .share-icons a {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 53px;
+}
+.refer .share-icons a img {
+  width: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
