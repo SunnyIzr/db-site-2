@@ -1,0 +1,51 @@
+include "head.html" 
+
+include "sidebar.html"
+
+<div class="main-content">
+
+  include "header.html"
+  
+  <div class="row inner-content-wrapper">
+    
+    <div class="col-xs-12">  
+      <div class="inner-content">
+        
+        <div class='leaderboards'>
+          
+          <div class='top-section'>
+            
+            <div class='grid-layout'>
+              <div class='item active'><h4>Score</h4></div><div class='item'><h4>Winnings</h4><p>(Last 30 Days)</p></div><div class='item'><h4>Referrals</h4></div><div class='item'><h4>Streaks</h4></div>
+            </div>
+            
+            <div class='switch-container'>
+              <p>Friends Only</p>
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class='tab-list'>
+            <a href='#' class='tab-item active'>Weekly</a><a href='#' class='tab-item'>Monthly</a><a href='#' class='tab-item'>Yearly</a>
+          </div>
+          
+          <button class='fb-btn btn btn-lg'><img class='hidden-xs' src='img/fb-icon.png'>Connect to Facebook for More Friends</button>
+          
+        </div>
+        
+        
+      </div>    
+    </div>
+    
+  </div>
+  
+</div>
+
+include "footer.html"
