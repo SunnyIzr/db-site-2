@@ -17,21 +17,23 @@ var Streak = {
     var interval = 30;
     var angle = 0;
     var angle_increment = 6;
-    window.timer = window.setInterval(function () {
-      circle.setAttribute("stroke-dasharray", angle + ", 20000");
-      stopAngle = Streak.angleIntervals[level]
-      index = Streak.angleIntervals.indexOf(angle)
-      if ( index > -1 ){
-       Streak.activateNum(index) 
-      }
-      if ( angle > 1014 ){
-        Streak.triggerAnimFix();
-      }
-      if (angle >= stopAngle) {
-        window.clearInterval(window.timer);
-      } 
-      angle += angle_increment;
-    }.bind(this), interval);
+    if ( level > -1 ){
+      window.timer = window.setInterval(function () {
+        circle.setAttribute("stroke-dasharray", angle + ", 20000");
+        stopAngle = Streak.angleIntervals[level]
+        index = Streak.angleIntervals.indexOf(angle)
+        if ( index > -1 ){
+         Streak.activateNum(index) 
+        }
+        if ( angle > 1014 ){
+          Streak.triggerAnimFix();
+        }
+        if (angle >= stopAngle) {
+          window.clearInterval(window.timer);
+        } 
+        angle += angle_increment;
+      }.bind(this), interval);
+    }
   },
   activateNum: function(index){
     level = index
