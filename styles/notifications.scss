@@ -1,0 +1,51 @@
+.notifications{
+  .top-section{
+    margin-top: 35px;
+    padding: 0 20px;
+    img{
+      float: left;
+      width: 40px;
+    }
+    .btn{
+      float: right;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+    .clear{
+      clear: both;
+    }
+  }
+  .notification-list{
+    margin-top: 35px;
+    .notification-item{
+      padding: 18px 25px 7px 14px;
+      font-size: 14px;
+      color: #b8b8ba;
+      position: relative;
+      .name{
+        color: #fff;
+      }
+      p{
+        display: inline-block;
+      }
+      .close-btn{
+        position: absolute;
+        width: 27px;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .accept-btn{
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+      }
+    }
+    .notification-item:nth-child(odd){
+      background: #324065;
+    }
+  }
+}
