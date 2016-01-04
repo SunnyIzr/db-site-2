@@ -1,0 +1,30 @@
+.earnedBracketBuck{
+  font-size: 15px;
+  background: rgba(10, 20, 47, 0.95);
+  padding: 15px 25px 7px;
+  border: 1px solid #375cbf;
+  border-top: none;
+  border-radius: 7px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 400px;
+  p{
+    width: 300px;
+    line-height: 25px;
+  }
+  img{
+    float: right;
+    margin-top: -60px;
+  }
+  span{
+    display: block;
+    float: right;
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: -25px;
+    margin-right: 8px;
+  }
+}

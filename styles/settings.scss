@@ -32,8 +32,8 @@
       }
       .switch-container{
         float: right;
-        zoom: 70%;
-        margin-top: -6px;
+        transform: scale(0.6);
+        margin-top: -10px;
         .onoffswitch-inner:before {
           background-color: #486fd8; color: #486fd8;
         }
