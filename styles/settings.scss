@@ -1,0 +1,46 @@
+.settings{
+  .profile-info{
+    text-align: center;
+    padding: 25px 0;
+    .profile-img{
+      margin: 0 auto 15px;
+      border-radius: 100%;
+      width: 125px;
+    }
+    p.name{
+      margin: 0 auto;
+      font-size: 17px;
+    }
+    .btn{
+      float: right;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 7px 15px;
+      font-weight: 800;
+      margin-top: -100px;
+      margin-right: 35px;
+    }
+  }
+  .profile-elements{
+    margin-top: 1px;
+    .profile-element{
+      padding: 18px 14px;
+      font-size: 16px;
+      img{
+        float: right;
+        width: 15px;
+      }
+      .switch-container{
+        float: right;
+        zoom: 70%;
+        margin-top: -6px;
+        .onoffswitch-inner:before {
+          background-color: #486fd8; color: #486fd8;
+        }
+      }
+    }
+    .profile-element:nth-child(odd){
+      background: #162859;
+    }
+  }
+}

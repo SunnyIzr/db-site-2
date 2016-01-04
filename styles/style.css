@@ -9498,4 +9498,50 @@ body, html {
   right: 0px;
 }
 
+.settings .profile-info {
+  text-align: center;
+  padding: 25px 0;
+}
+.settings .profile-info .profile-img {
+  margin: 0 auto 15px;
+  border-radius: 100%;
+  width: 125px;
+}
+.settings .profile-info p.name {
+  margin: 0 auto;
+  font-size: 17px;
+}
+.settings .profile-info .btn {
+  float: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 15px;
+  font-weight: 800;
+  margin-top: -100px;
+  margin-right: 35px;
+}
+.settings .profile-elements {
+  margin-top: 1px;
+}
+.settings .profile-elements .profile-element {
+  padding: 18px 14px;
+  font-size: 16px;
+}
+.settings .profile-elements .profile-element img {
+  float: right;
+  width: 15px;
+}
+.settings .profile-elements .profile-element .switch-container {
+  float: right;
+  zoom: 70%;
+  margin-top: -6px;
+}
+.settings .profile-elements .profile-element .switch-container .onoffswitch-inner:before {
+  background-color: #486fd8;
+  color: #486fd8;
+}
+.settings .profile-elements .profile-element:nth-child(odd) {
+  background: #162859;
+}
+
 /*# sourceMappingURL=style.css.map */
