@@ -9585,6 +9585,16 @@ body, html {
   height: 46px;
   color: #fff;
 }
+.groups .create-group select.form-control {
+  border-color: #4f7caa;
+  height: 46px;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(img/down-arrow.png) no-repeat 98% 50% #1d336c;
+  cursor: pointer;
+}
 .groups .create-group label {
   text-align: center;
   display: block;
@@ -9616,6 +9626,57 @@ body, html {
   background: #132451;
   text-transform: uppercase;
   border-color: #132451;
+}
+.groups .user-section {
+  padding-top: 50px;
+}
+.groups .user-section h5 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.groups .user-section .user-list {
+  margin-top: 1px;
+}
+.groups .user-section .user-list .user {
+  padding: 10px 14px;
+}
+.groups .user-section .user-list .user div {
+  display: inline-block;
+  font-size: 16px;
+}
+.groups .user-section .user-list .user .avatar {
+  display: inline-block;
+  width: 50px;
+  margin-right: 14px;
+}
+.groups .user-section .user-list .user .btn {
+  float: right;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.groups .user-section .user-list .user span {
+  float: right;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px 12px;
+  background: #0a142f;
+  margin-top: 8px;
+}
+.groups .user-section .user-list .user:nth-child(odd) {
+  background: #162859;
+}
+.groups .deleteGroup {
+  font-family: 'Lubalin';
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 18px 0;
+  height: auto;
+  letter-spacing: 1px;
+  background: #ce1d1d;
+  border-color: #ce1d1d;
+  margin-top: 20px;
+  margin-bottom: 45px;
 }
 .groups .group-heading {
   text-align: center;
