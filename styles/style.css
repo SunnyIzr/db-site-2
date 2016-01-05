@@ -9807,4 +9807,292 @@ body, html {
   background: #162859;
 }
 
+.toggle-btn-grp {
+  margin: 3px 0;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+}
+
+.toggle-btn {
+  text-align: centre;
+  margin: 0;
+  display: inline-block;
+  border: solid 1px;
+  border-color: #4f7caa;
+  cursor: pointer;
+  font-family: 'Lubalin';
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  width: 25%;
+  text-align: center;
+}
+
+.toggle-btn:nth-child(1) {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.toggle-btn:nth-last-child(1) {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.toggle-btn-grp.joint-toggle .toggle-btn {
+  margin: 5px 0;
+  padding: 0.4em 2em;
+  border-radius: 0;
+  border-right-color: white;
+}
+
+.toggle-btn-grp.joint-toggle .toggle-btn:first-child {
+  margin-left: 2px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.toggle-btn-grp.joint-toggle .toggle-btn:last-child {
+  margin-right: 2px;
+  border-radius: 0px 10px 10px 0px;
+  border-right: solid 1px #CCC;
+}
+
+.toggle-btn.success {
+  background: #2b75d3;
+  border: solid 1px green !important;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* CSS only version */
+.toggle-btn-grp.cssonly * {
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.toggle-btn-grp.cssonly div {
+  display: inline-block;
+  position: relative;
+  margin: 5px 2px;
+}
+
+.toggle-btn-grp.cssonly div label {
+  position: absolute;
+  z-index: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toggle-btn-grp.cssonly div input {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.toggle-btn-grp.cssonly div:hover label {
+  border: solid 1px #a0d5dc !important;
+  background: #f1fdfe;
+}
+
+.toggle-btn-grp.cssonly div input:checked + label {
+  background: lightgreen;
+  border: solid 1px green !important;
+}
+
+.transactions .all-transactions h2 {
+  text-align: center;
+}
+.transactions .all-transactions .clear {
+  clear: both;
+}
+.transactions .all-transactions .balances {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.transactions .all-transactions .balances .balance {
+  font-size: 30px;
+  width: 49%;
+  text-align: center;
+}
+.transactions .all-transactions .balances .balance img {
+  width: 27px;
+  margin-right: 7px;
+}
+.transactions .all-transactions .balances .balance:nth-child(1) {
+  float: left;
+}
+.transactions .all-transactions .balances .balance:nth-child(2) {
+  float: right;
+}
+.transactions .all-transactions .trans-actions {
+  margin-bottom: 25px;
+}
+.transactions .all-transactions .trans-actions .btn {
+  font-family: 'Lubalin';
+  display: block;
+  font-size: 20px;
+  width: 48%;
+  padding: 18px 12px;
+}
+.transactions .all-transactions .trans-actions .btn:nth-child(1) {
+  float: left;
+}
+.transactions .all-transactions .trans-actions .btn:nth-child(2) {
+  float: right;
+}
+.transactions .all-transactions .btn-tabs {
+  margin-bottom: 25px;
+}
+.transactions .all-transactions .btn-tabs .btn {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  border-radius: 0;
+  background: none;
+  border-color: #fff;
+  font-size: 21px;
+  padding: 10px 0;
+  font-family: 500;
+}
+.transactions .all-transactions .btn-tabs .btn:nth-child(1) {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.transactions .all-transactions .btn-tabs .btn:nth-child(2) {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.transactions .all-transactions .btn-tabs .btn.active {
+  background: #fff;
+  color: #132451;
+}
+.transactions .all-transactions .listed-transactions {
+  font-size: 16px;
+}
+.transactions .all-transactions .listed-transactions thead th {
+  border-bottom-color: #1d336c;
+}
+.transactions .all-transactions .listed-transactions tbody tr td {
+  border: none;
+  line-height: 2.5;
+}
+.transactions .all-transactions .listed-transactions tbody tr td span.positive {
+  color: #009933;
+}
+.transactions .all-transactions .listed-transactions tbody tr:nth-child(even) {
+  background: #1d336c;
+}
+.transactions .deposit h2,
+.transactions .withdraw h2 {
+  text-align: center;
+}
+.transactions .deposit h2.balance,
+.transactions .withdraw h2.balance {
+  font-size: 33px;
+}
+.transactions .deposit h5,
+.transactions .withdraw h5 {
+  font-family: 'Lubalin';
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+.transactions .deposit select.form-control,
+.transactions .withdraw select.form-control {
+  border-color: #4f7caa;
+  height: 46px;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(img/down-arrow.png) no-repeat 98% 50%;
+  cursor: pointer;
+  margin-top: 85px;
+  text-align: center;
+  font-family: Lubalin;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  height: auto;
+  border-radius: 7px;
+}
+.transactions .deposit .btn,
+.transactions .withdraw .btn {
+  margin-top: 95px;
+  font-family: 'Lubalin';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 18px 0;
+  height: auto;
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+.transactions .withdraw .toggle-btn-grp {
+  margin-bottom: 25px;
+}
+.transactions .withdraw .toggle-btn-grp .toggle-btn {
+  width: 50%;
+}
+.transactions .withdraw select.form-control {
+  margin-top: 0;
+  font-size: 14px;
+  font-family: 'ProximaNova';
+  background: url(img/down-arrow.png) no-repeat 98% 50% #1d336c;
+  border-color: #4f7caa;
+  height: 46px;
+  padding: 6px 15px;
+  background-size: 15px 8px;
+}
+.transactions .withdraw .btn {
+  margin-top: 30px;
+}
+.transactions .withdraw .no-paypal {
+  text-align: center;
+  text-decoration: underline;
+  color: #8f9098;
+  display: block;
+  margin-top: 15px;
+  font-size: 19px;
+}
+.transactions input[type=text].form-control,
+.transactions input[type=password].form-control {
+  background: #1d336c;
+  border-color: #4f7caa;
+  height: 46px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,176 @@
+.transactions{
+  .all-transactions{
+    h2{
+      text-align: center;
+    }
+    .clear{clear:both;}
+    .balances{
+      margin-top: 25px;
+      margin-bottom: 25px;
+      .balance{
+        font-size: 30px;
+        width: 49%;
+        text-align: center;
+        img{
+          width: 27px;
+          margin-right: 7px;
+        }
+      }
+      .balance:nth-child(1){
+        float: left;
+      }
+      .balance:nth-child(2){
+        float: right;
+      }
+    }
+    .trans-actions{
+      margin-bottom: 25px;
+      .btn{
+        font-family: 'Lubalin';
+        display: block;
+        font-size: 20px;
+        width: 48%;
+        padding: 18px 12px;
+      }
+      .btn:nth-child(1){
+        float: left;
+      }
+      .btn:nth-child(2){
+        float: right;
+      }
+    }
+    .btn-tabs{
+      margin-bottom: 25px;
+      .btn{
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+        border-radius: 0;
+        background: none;
+        border-color: #fff;
+        font-size: 21px;
+        padding: 10px 0;
+        font-family: 500;
+      }
+      .btn:nth-child(1){
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+      .btn:nth-child(2){
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      .btn.active{
+        background: #fff;
+        color: #132451;
+      }
+    }
+    .listed-transactions{
+      font-size: 16px;
+      thead{
+        th{
+          border-bottom-color: #1d336c;
+        }
+      }
+      tbody{
+        tr{
+          td{
+            border: none;
+            line-height: 2.5;
+            span.positive{
+              color: #009933;
+            }
+          }
+        }
+        tr:nth-child(even){
+          background: #1d336c;
+        }
+      }
+    }
+  }
+  .deposit,
+  .withdraw{
+    h2{
+      text-align: center;
+    }
+    h2.balance{
+      font-size: 33px;
+    }
+    h5{
+      font-family: 'Lubalin';
+      text-align: center;
+      font-weight: 900;
+      font-size: 18px;
+      margin-top: 55px;
+      margin-bottom: 20px;
+    }
+    select.form-control{
+      border-color: #4f7caa;
+      height: 46px;
+      color: #fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url(img/down-arrow.png) no-repeat 98% 50%;
+      cursor: pointer;
+      margin-top: 85px;
+      text-align: center;
+      font-family: Lubalin;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      padding: 15px 25px;
+      height: auto;
+      border-radius: 7px;
+    }
+    .btn{
+      margin-top: 95px;
+      font-family: 'Lubalin';
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 18px 0;
+      height: auto;
+      letter-spacing: 1px;
+      border-radius: 7px;
+    }
+  }
+  .withdraw{
+    .toggle-btn-grp{
+      margin-bottom: 25px;
+      .toggle-btn{
+        width: 50%;
+      }
+    }
+    select.form-control{
+      margin-top: 0;
+      font-size: 14px;
+      font-family: 'ProximaNova';
+      background: url(img/down-arrow.png) no-repeat 98% 50% #1d336c;
+      border-color: #4f7caa;
+      height: 46px;
+      padding: 6px 15px;
+      background-size: 15px 8px;
+    }
+    .btn{
+      margin-top: 30px;
+    }
+    .no-paypal{
+      text-align: center;
+      text-decoration: underline;
+      color: #8f9098;
+      display: block;
+      margin-top: 15px;
+      font-size: 19px;
+    }
+    
+  }
+  input[type=text].form-control,
+  input[type=password].form-control,{
+    background: #1d336c;
+    border-color: #4f7caa;
+    height: 46px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+}

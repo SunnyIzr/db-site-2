@@ -1,0 +1,52 @@
+include "head.html" 
+
+include "sidebar.html"
+
+<div class="main-content">
+
+  include "header.html"
+  
+  <div class="row inner-content-wrapper">
+    
+    <div class="col-xs-12">  
+      <div class="inner-content">
+        <div class='transactions'>
+          <div class="deposit">
+            <h2>Current Balance</h2>
+            <h2 class="balance">$22.50</h2>
+            
+            <h5>How much do you want to deposit?</h5>
+            
+            <form action="" class="deposit-amt">
+              
+              <div class="toggle-btn-grp">
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>$25</label>
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>$50</label>
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>$100</label>
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>Custom</label>
+              </div>
+              
+              <select name="state" id="" class="form-control state">
+                <option value="California">California</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New York">New York</option>
+                <option value="Rhode Island">Rhode Island</option>
+              </select>
+              
+              <input type="submit" class="btn btn-primary form-control" value='Deposit'>
+              
+            </form>
+            
+          </div>
+          
+        </div>
+        
+      </div>    
+    </div>
+    
+  </div>
+  
+</div>
+
+include "footer.html"

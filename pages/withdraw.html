@@ -1,0 +1,57 @@
+include "head.html" 
+
+include "sidebar.html"
+
+<div class="main-content">
+
+  include "header.html"
+  
+  <div class="row inner-content-wrapper">
+    
+    <div class="col-xs-12">  
+      <div class="inner-content">
+        <div class='transactions'>
+          <div class="withdraw">
+            <h2>Current Balance</h2>
+            <h2 class="balance">$22.50</h2>
+            
+            <h5>How much do you want to withdraw?</h5>
+            
+            <form action="" class="deposit-amt">
+              
+              <div class="toggle-btn-grp">
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>$22.50</label>
+                <label class="toggle-btn"><input type="radio" name="deposit_amt"/>Custom</label>
+              </div>
+              
+              <input type="password" class="form-control" placeholder='Daily Bracket Password'>
+              <input type="text" class="form-control" placeholder='Paypal Email'>
+              <input type="text" class="form-control" placeholder='Confirm Paypal Email'>
+              
+              <select name="state" id="" class="form-control state">
+                <option value="California">California</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New York">New York</option>
+                <option value="Rhode Island">Rhode Island</option>
+              </select>
+              
+              
+              <input type="submit" class="btn btn-primary form-control" value='Withdraw Using Paypal'>
+              
+              <a href='#' class='no-paypal'>Don't have a PayPal Account? Click Here</a>
+              
+            </form>
+            
+          </div>
+          
+        </div>
+        
+      </div>    
+    </div>
+    
+  </div>
+  
+</div>
+
+include "footer.html"

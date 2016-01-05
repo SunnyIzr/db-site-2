@@ -1,0 +1,120 @@
+.toggle-btn-grp { 
+    margin:3px 0; 
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;   
+}
+.toggle-btn { 
+    text-align:centre; 
+    margin:0;
+    display:inline-block; 
+    border:solid 1px; 
+    border-color: #4f7caa;
+    cursor:pointer;
+    font-family: 'Lubalin';
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    width: 25%;
+    text-align: center;
+}
+
+.toggle-btn:nth-child(1){
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.toggle-btn:nth-last-child(1){
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.toggle-btn-grp.joint-toggle .toggle-btn { 
+    margin:5px 0; 
+    padding:0.4em 2em; 
+    border-radius:0;
+    border-right-color:white;
+}
+.toggle-btn-grp.joint-toggle .toggle-btn:first-child { 
+    margin-left:2px; 
+    border-radius: 10px 0px 0px 10px; 
+}
+.toggle-btn-grp.joint-toggle .toggle-btn:last-child { 
+    margin-right:2px;  
+    border-radius: 0px 10px 10px 0px;
+    border-right:solid 1px #CCC;
+}
+
+
+.toggle-btn:hover { 
+    // border:solid 1px #a0d5dc !important; 
+    // background:#f1fdfe;
+}
+
+
+.toggle-btn.success { 
+    background:#2b75d3;
+    border:solid 1px green !important; 
+}
+
+
+.visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { 
+    clip: auto; 
+    height: auto; 
+    margin: 0; 
+    overflow: visible; 
+    position: static; 
+    width: auto; 
+}
+
+
+/* CSS only version */
+.toggle-btn-grp.cssonly * {
+    width:140px;
+    height:30px;
+    line-height:30px;
+}
+.toggle-btn-grp.cssonly div {
+    display:inline-block;
+    position:relative;
+    margin:5px 2px;
+}
+
+.toggle-btn-grp.cssonly div label {
+    position:absolute;
+    z-index:0;
+    padding:0;
+    text-align:center;
+}
+
+.toggle-btn-grp.cssonly div input {
+    position:absolute;
+    z-index:1;
+    cursor:pointer;
+    opacity:0;
+}
+
+.toggle-btn-grp.cssonly div:hover label {
+    border:solid 1px #a0d5dc !important; 
+    background:#f1fdfe;
+}
+
+.toggle-btn-grp.cssonly div input:checked + label {
+    background:lightgreen;
+    border:solid 1px green !important; 
+}
+

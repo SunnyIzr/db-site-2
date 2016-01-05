@@ -1,0 +1,90 @@
+include "head.html" 
+
+include "sidebar.html"
+
+<div class="main-content">
+
+  include "header.html"
+  
+  <div class="row inner-content-wrapper">
+    
+    <div class="col-xs-12">  
+      <div class="inner-content">
+        <div class='transactions'>
+          <div class='all-transactions'>
+            
+            <h2>Current Balances</h2>
+            
+            <div class="balances">
+              <div class="balance">$22.50</div>
+              <div class="balance"><img src="img/balance-icon.png" class="bracket-icon" alt="">10,000</div>
+              <div class="clear"></div>
+            </div>
+            
+            <div class="trans-actions">
+              <a href="#" class="btn btn-primary">Deposit</a>
+              <a href="#" class="btn btn-primary">Withdraw</a>
+              <div class="clear"></div>
+            </div>
+            
+            <div class="btn-tabs">
+              <a href="#" class="btn btn-primary active">Cash</a><!--
+           --><a href="#" class="btn btn-primary">Bracket Bucks</a>
+            </div>
+            
+            <table class="table listed-transactions">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>6/20</td>
+                  <td>DI Entry Fee</td>
+                  <td>-$10</td>
+                  <td>$22.50</td>
+                </tr>
+                <tr>
+                  <td>6/20</td>
+                  <td>Deposit</td>
+                  <td><span class='positive'>$20</span></td>
+                  <td>$32.50</td>
+                </tr>
+                <tr>
+                  <td>6/18</td>
+                  <td>DI Entry Fee</td>
+                  <td>-$1</td>
+                  <td>$12.50</td>
+                </tr>
+                <tr>
+                  <td>6/18</td>
+                  <td>DI Win</td>
+                  <td><span class='positive'>$10</span></td>
+                  <td>$13.50</td>
+                </tr>
+                <tr>
+                  <td>6/18</td>
+                  <td>DI Entre Fee</td>
+                  <td><span class='positive'>$100<span></td>
+                  <td>$22.50</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            
+          </div>
+          
+        </div>
+        
+      </div>    
+    </div>
+    
+  </div>
+  
+</div>
+
+include "footer.html"
