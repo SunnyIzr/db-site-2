@@ -91,6 +91,57 @@
     }
   }
   
+  .user-list.results{
+    .user-heading{
+      padding: 10px 14px 0;
+      div{
+       display: inline-block;
+       font-size: 11px;
+      }
+      .rank{
+        margin-left: -11px;
+      }
+      .payout{
+        float: right;
+        margin-right: -3px;
+      }
+      .picks{
+        float: right;
+        text-align: center;
+        width: 30px;
+      }
+    }
+    .rank{
+      width: 15px;
+    }
+    .picks{
+      width: 10px;
+      text-align: center;
+    }
+    .name{
+      width: 225px;
+    }
+    .payout{     
+      width: 75px;
+      text-align: center;
+    }
+  }
+  
+  .user-list.invite{
+    .user{
+      .name{
+        color: #e8812e;
+        vertical-align: top;
+        margin-top: 6px;
+        .username{
+          position: absolute;
+          font-size: 13px;
+          color: #8e9095;
+        }
+      }
+    }
+  }
+  
   .social-icons{
     text-align: center;
     margin-top: 40px;
@@ -105,21 +156,6 @@
         width: 70%;
       }
     } 
-  }
-  
-  .invite.user-list{
-    .user{
-      .name{
-        color: #e8812e;
-        vertical-align: top;
-        margin-top: 6px;
-        .username{
-          position: absolute;
-          font-size: 13px;
-          color: #8e9095;
-        }
-      }
-    }
   }
   
   .deleteGroup{

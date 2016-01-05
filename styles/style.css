@@ -9665,6 +9665,49 @@ body, html {
 .groups .user-list .user:nth-child(odd) {
   background: #162859;
 }
+.groups .user-list.results .user-heading {
+  padding: 10px 14px 0;
+}
+.groups .user-list.results .user-heading div {
+  display: inline-block;
+  font-size: 11px;
+}
+.groups .user-list.results .user-heading .rank {
+  margin-left: -11px;
+}
+.groups .user-list.results .user-heading .payout {
+  float: right;
+  margin-right: -3px;
+}
+.groups .user-list.results .user-heading .picks {
+  float: right;
+  text-align: center;
+  width: 30px;
+}
+.groups .user-list.results .rank {
+  width: 15px;
+}
+.groups .user-list.results .picks {
+  width: 10px;
+  text-align: center;
+}
+.groups .user-list.results .name {
+  width: 225px;
+}
+.groups .user-list.results .payout {
+  width: 75px;
+  text-align: center;
+}
+.groups .user-list.invite .user .name {
+  color: #e8812e;
+  vertical-align: top;
+  margin-top: 6px;
+}
+.groups .user-list.invite .user .name .username {
+  position: absolute;
+  font-size: 13px;
+  color: #8e9095;
+}
 .groups .social-icons {
   text-align: center;
   margin-top: 40px;
@@ -9679,16 +9722,6 @@ body, html {
 }
 .groups .social-icons a img {
   width: 70%;
-}
-.groups .invite.user-list .user .name {
-  color: #e8812e;
-  vertical-align: top;
-  margin-top: 6px;
-}
-.groups .invite.user-list .user .name .username {
-  position: absolute;
-  font-size: 13px;
-  color: #8e9095;
 }
 .groups .deleteGroup {
   font-family: 'Lubalin';
