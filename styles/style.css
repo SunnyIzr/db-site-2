@@ -9575,6 +9575,43 @@ body, html {
   margin-right: 8px;
 }
 
+.groups .top-section {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.groups .top-section .top-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.groups .top-section .date-select {
+  padding: 0;
+  text-align: center;
+}
+.groups .top-section .date-select img, .groups .top-section .date-select select {
+  display: inline-block;
+}
+.groups .top-section .date-select img {
+  width: 35px;
+}
+.groups .top-section .date-select select.form-control {
+  margin-left: 10px;
+}
+.groups .top-section .date-select select.month {
+  width: 150px;
+  background: url(img/down-arrow.png) no-repeat 96% 50% #1d336c;
+  background-size: 15px 8px;
+}
+.groups .top-section .date-select select.day {
+  width: 65px;
+  background: url(img/down-arrow.png) no-repeat 91% 50% #1d336c;
+  background-size: 15px 8px;
+}
+.groups .top-section .date-select select.year {
+  width: 75px;
+  background: url(img/down-arrow.png) no-repeat 94% 50% #1d336c;
+  background-size: 15px 8px;
+}
 .groups .create-group {
   padding-top: 20px;
 }

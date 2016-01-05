@@ -1,4 +1,42 @@
 .groups{
+  .top-section{
+    padding-top:15px;
+    padding-bottom: 20px;
+    .top-link{
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+      
+    }
+    .date-select{
+      padding: 0;
+      text-align: center;
+      img,select{
+        display: inline-block;
+      }
+      img{
+        width: 35px;
+      }
+      select.form-control{
+        margin-left: 10px;
+      }
+      select.month{
+        width: 150px;
+        background: url(img/down-arrow.png) no-repeat 96% 50% #1d336c;
+        background-size: 15px 8px;
+      }
+      select.day{
+        width: 65px;
+        background: url(img/down-arrow.png) no-repeat 91% 50% #1d336c;
+        background-size: 15px 8px;
+      }
+      select.year{
+        width: 75px;
+        background: url(img/down-arrow.png) no-repeat 94% 50% #1d336c;
+        background-size: 15px 8px;
+      }
+    }
+  }
   .create-group{
     padding-top: 20px;
     input[type=text].form-control,
