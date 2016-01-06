@@ -1,0 +1,124 @@
+.profile{
+  .top-section{
+    margin-top: 45px;
+    .img-container{
+      display: inline-block;
+      width: 35%;
+      vertical-align: top;
+      .profile-pic{
+        width: 100%;
+      }
+    }
+    .stats{
+      display: inline-block;
+      width: 50%;
+      margin-left: 12%;
+      vertical-align: top;
+      padding-top: 11px;
+      .time-horizon{
+        text-transform: uppercase;
+        font-size: 13px;
+        text-align: right;
+      }
+      .line-sep{
+        width: 100%;
+        height: 5px;
+        border-bottom: 2px solid #fff;
+      }
+      .clear{clear:both;}
+      .percentile{
+        max-width: 195px;
+        text-align: center;
+        margin: 7px auto 0px;
+        .num{
+          float: left;
+          font-size: 50px;
+          font-weight: 900;
+        }
+        .measure{
+          float: right;
+          text-transform: uppercase;
+          font-size: 13px;
+          margin-top: 38px;
+        }
+      }
+      .correct{
+        max-width: 195px;
+        text-align: center;
+        margin: 4px auto;
+        .score{
+          float: left;
+          font-size: 32px;
+          font-weight: 900;
+        }
+        .measure{
+          float: right;
+          text-transform: uppercase;
+          font-size: 13px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  .achieve-list{
+    background: #182a58;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    .title{
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 50px;
+    }
+    img{
+      display: inline-block;
+      width: 35px;
+      margin: 0 6px;
+    }
+    img:nth-last-child(1){
+      margin-right: 0;
+    }
+    
+  }
+  .btn-tabs{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .btn{
+      display: inline-block;
+      width: 50%;
+      margin: 0;
+      border-radius: 0;
+      background: none;
+      border-color: #fff;
+      font-size: 18px;
+      padding: 10px 0;
+      font-family: 500;
+    }
+    .btn:nth-child(1){
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+    .btn:nth-child(2){
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+    .btn.active{
+      background: #2b3a63;
+    }
+  }
+  .date-section{
+    position: relative;
+    .date{
+      text-align: center;
+      background: #132451;
+    }
+    .line-sep{
+      width: 100%;
+      height: 5px;
+      border-bottom: 2px solid #1c2f5f;
+      margin-top: -20px;
+      margin-bottom: 35px;
+    }
+    
+  }
+}
+  
