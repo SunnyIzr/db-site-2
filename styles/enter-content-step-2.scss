@@ -1,0 +1,101 @@
+.enter-content-step-1{
+	font-size: 15px;
+	padding: 0 15px;
+	.balance-amount{
+		span.balance{
+			color: #BEBFC1;
+			span.amount{
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.tab-buttons{
+		border-bottom: 1px solid #36497C;
+		> .active{
+			border-bottom: 5px solid #36497C;
+			b{
+				color: #fff;
+			}
+		}
+
+		b{		
+			color: #36497C;
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+
+	.help-text{
+		color : #CBCBCB;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+
+	.contests{
+		padding: 0 15px;
+		> .row{
+			padding:10px 0px;
+			margin-left: -37px;
+			margin-right: -37px;
+			&.dark{
+				background-color: #0D1939;
+			}
+
+			.col-xs-8{
+				p{
+					margin-bottom: 4px;
+				}
+			}
+
+			.col-xs-4{
+				div.button{
+					float:right;;
+					background-color: #1B74BD;
+					border-color: #1B74BD;
+					border-radius: 5px;
+					width: 80%;
+					margin-top: 8px;
+					text-align: center;
+					padding: 8px 0;
+					span.number{
+						font-weight: bold;
+					}
+
+					&.edit-entry-div{
+						padding: 0;
+						background-color: #0A142F;
+						p.edit-entry{
+							font-weight: bold;
+							margin-bottom: 0;
+							font-size: 13px;
+							padding: 3px 0px;
+							background-color: rgb(54, 73, 124);
+							border-top-left-radius: 5px;
+							border-top-right-radius: 5px;
+						}
+
+					}
+				}
+			}
+		}
+
+		.contest-title{
+			font-weight: bold;
+		}
+	}
+
+	.bottom-links{
+		span{
+			text-decoration: underline;
+		}
+	}
+}
+
+// SMALL TABLETS
+@media (min-width: 768px) {
+	.enter-content-step-1{
+		padding: 0 15px;
+	}
+} 
