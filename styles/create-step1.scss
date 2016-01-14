@@ -1,0 +1,70 @@
+.create-step-1{
+	font-size: 15px;
+	padding: 0 15px;
+	.create-step-bottom-links{
+		border: 1px solid #fff;
+    	border-radius: 10px;
+
+    	.col-xs-9{
+    		padding: 10px;
+		    background-color: #1d81ce;
+		    border-top-left-radius: 10px;
+		    border-bottom-left-radius: 10px;
+    	}
+
+    	.col-xs-3{
+    		padding: 10px;
+		    background-color: #0d1939;
+		    border-top-right-radius: 10px;
+		    border-bottom-right-radius: 10px;
+		    text-align: center;
+		    font-weight: bold;
+    	}
+	}
+
+	.contests{
+		padding: 0 15px;
+		> .row{
+			padding:5px 0px;
+			margin-left: -37px;
+			margin-right: -37px;
+			&.dark{
+				background-color: #0D1939;
+			}
+
+			img.basketball-img{
+					width: 35px;
+					margin-top: 5px;
+				}
+
+				p.contest-title,.contest-subtext{
+					margin:0 0 2px;
+				}
+		}
+
+		.accordion .accordion-toggle{    
+			color: #1d81ce;
+    		font-size: 1.25em;
+    		text-decoration: none;
+    		display: block;
+    		margin-top: 10px;
+
+  			img.blue-arrow-down{
+	  			width: 20px;
+	    		margin-left: 10px;
+	  		}
+		}
+
+		.accordion .accordion-toggle:hover{
+			text-decoration: none;
+		}
+	}
+
+	.create-bottom-link{
+		color: #ccc;
+	    text-decoration: underline;
+	    display: block;
+	    text-align: center;
+	    margin-top: 15px;
+	}
+}

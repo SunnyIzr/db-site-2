@@ -9575,6 +9575,177 @@ body, html {
   margin-right: 8px;
 }
 
+.enter-content-step-1 {
+  font-size: 15px;
+  padding: 0 15px;
+}
+.enter-content-step-1 .balance-amount span.balance {
+  color: #BEBFC1;
+}
+.enter-content-step-1 .balance-amount span.balance span.amount {
+  display: block;
+  font-weight: bold;
+}
+.enter-content-step-1 img.small-coin-img {
+  width: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.enter-content-step-1 .tab-buttons {
+  border-bottom: 1px solid #36497C;
+}
+.enter-content-step-1 .tab-buttons > .active {
+  border-bottom: 5px solid #36497C;
+}
+.enter-content-step-1 .tab-buttons > .active b {
+  color: #fff;
+}
+.enter-content-step-1 .tab-buttons b {
+  color: #36497C;
+  margin-bottom: 5px;
+  display: block;
+}
+.enter-content-step-1 .tab-buttons .tab-icon-img {
+  width: 20px;
+  margin: 0px auto;
+}
+.enter-content-step-1 .help-text {
+  color: #CBCBCB;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.enter-content-step-1 .contests {
+  padding: 0 15px;
+}
+.enter-content-step-1 .contests > .row {
+  padding: 10px 0px;
+  margin-left: -37px;
+  margin-right: -37px;
+}
+.enter-content-step-1 .contests > .row.dark {
+  background-color: #0D1939;
+}
+.enter-content-step-1 .contests > .row.dark span.orange {
+  color: #f05d05;
+}
+.enter-content-step-1 .contests > .row .col-xs-8 p {
+  margin-bottom: 4px;
+}
+.enter-content-step-1 .contests > .row .col-xs-4 div.button {
+  float: right;
+  background-color: #1B74BD;
+  border-color: #1B74BD;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 8px;
+  text-align: center;
+  padding: 8px 0;
+}
+.enter-content-step-1 .contests > .row .col-xs-4 div.button span.number {
+  font-weight: bold;
+}
+.enter-content-step-1 .contests > .row .col-xs-4 div.button.edit-entry-div {
+  padding: 0;
+  background-color: #0A142F;
+}
+.enter-content-step-1 .contests > .row .col-xs-4 div.button.edit-entry-div p.edit-entry {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 13px;
+  padding: 3px 0px;
+  background-color: #36497c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.enter-content-step-1 .contests > .row .dual-buttons .middle-div {
+  width: 80%;
+  text-align: center;
+  float: right;
+}
+.enter-content-step-1 .contests > .row .dual-buttons .button {
+  margin: 0px !important;
+  padding: 2px !important;
+}
+.enter-content-step-1 .contests > .row .dual-buttons .button.purple-btn {
+  background-color: #36497c;
+}
+.enter-content-step-1 .contests .contest-title {
+  font-weight: bold;
+}
+.enter-content-step-1 .contests .contest-title.mt10 {
+  margin-top: 10px;
+}
+.enter-content-step-1 .bottom-links span {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .enter-content-step-1 {
+    padding: 0 15px;
+  }
+}
+.create-step-1 {
+  font-size: 15px;
+  padding: 0 15px;
+}
+.create-step-1 .create-step-bottom-links {
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.create-step-1 .create-step-bottom-links .col-xs-9 {
+  padding: 10px;
+  background-color: #1d81ce;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.create-step-1 .create-step-bottom-links .col-xs-3 {
+  padding: 10px;
+  background-color: #0d1939;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.create-step-1 .contests {
+  padding: 0 15px;
+}
+.create-step-1 .contests > .row {
+  padding: 5px 0px;
+  margin-left: -37px;
+  margin-right: -37px;
+}
+.create-step-1 .contests > .row.dark {
+  background-color: #0D1939;
+}
+.create-step-1 .contests > .row img.basketball-img {
+  width: 35px;
+  margin-top: 5px;
+}
+.create-step-1 .contests > .row p.contest-title, .create-step-1 .contests > .row .contest-subtext {
+  margin: 0 0 2px;
+}
+.create-step-1 .contests .accordion .accordion-toggle {
+  color: #1d81ce;
+  font-size: 1.25em;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+.create-step-1 .contests .accordion .accordion-toggle img.blue-arrow-down {
+  width: 20px;
+  margin-left: 10px;
+}
+.create-step-1 .contests .accordion .accordion-toggle:hover {
+  text-decoration: none;
+}
+.create-step-1 .create-bottom-link {
+  color: #ccc;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .groups .top-section {
   padding-top: 15px;
   padding-bottom: 20px;

@@ -11,6 +11,12 @@
 		}
 	}
 
+	img.small-coin-img{
+		width: 15px;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+
 	.tab-buttons{
 		border-bottom: 1px solid #36497C;
 		> .active{
@@ -24,6 +30,11 @@
 			color: #36497C;
 			margin-bottom: 5px;
 			display: block;
+		}
+
+		.tab-icon-img{
+			width: 20px;
+			margin:0px auto;
 		}
 	}
 
@@ -41,7 +52,12 @@
 			margin-right: -37px;
 			&.dark{
 				background-color: #0D1939;
+
+				span.orange{
+					color: #f05d05;
+				}
 			}
+
 
 			.col-xs-8{
 				p{
@@ -79,10 +95,31 @@
 					}
 				}
 			}
+
+			.dual-buttons{
+
+				.middle-div{
+					width: 80%;
+					text-align: center;		
+					float:right;		
+				}
+				.button{
+					margin:0px !important;
+					padding:2px !important;
+
+					&.purple-btn{
+						background-color: rgb(54, 73, 124);
+					}
+				}
+			}
 		}
 
 		.contest-title{
 			font-weight: bold;
+
+			&.mt10{
+				margin-top: 10px;
+			}
 		}
 	}
 
