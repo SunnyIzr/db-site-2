@@ -1,110 +1,10 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  
-  <link href='style.min.css' rel='stylesheet' type='text/css'>
-  
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  
+include "head.html" 
 
-  
-</head>
-
-<body>
-<div class="container-fluid">
-
-<div class="sidebar">
-  <div class="row user-search">
-    <div class="col-xs-9 search-box">
-      <span class="glyphicon glyphicon-search"></span>
-      <input class="search" type="text" name="search" placeholder="Search for Users">
-    </div>
-    <div class="col-xs-3 notification">
-      <img class="img-responsive sidebar-icon" src="img/sidebar-icons/notification.png" alt="notification">
-      <span>2</span>
-    </div>  
-  </div>
-  
-  <div class="row profile-stats">
-    <div class="col-xs-5 user-img">
-      <img class="img-responsive" src="img/user.png" alt="user">
-    </div>
-    <div class="col-xs-7">
-      <p>ybzhang23</p>
-      <p><a href="#">View Profile & Stats</a></p>
-      <p>&dollar;127.00</p>
-      <p><img class="img-responsive" src="img/balance-icon.png" alt="balance">1,128</p>
-    </div>  
-  </div>  
-
-  <div class="row">
-    <div class="col-xs-12 sidebar-nav">
-  <ul class="fa-ul">
-    <li class="active">
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/db.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/db-active.png'>
-      <a href="#">Daily Bracket</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/dl.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/dl-active.png'>
-      <a href="#">Daily Lineup</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/transaction.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/transaction-active.png'>
-      <a href="#">Transactions</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/deposit.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/deposit-active.png'>
-      <a href="#">Deposit New</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/groups.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/groups-active.png'>
-      <a href="#">Groups</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/refer.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/refer-active.png'>
-      <a href="#">Refer a Friend</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/leaderboard.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/leaderboard-active.png'>
-      <a href="#">Leaderboard</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/help.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/help-active.png'>
-      <a href="#">Help & FAQ</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/love.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/love-active.png'>
-      <a href="#">Love this app?</a>
-    </li>
-    <li>
-      <img class='sidebar-icon default-icon' src='img/sidebar-icons/settings.png'>
-      <img class='sidebar-icon active-icon' src='img/sidebar-icons/settings-active.png'>
-      <a href="#">Settings</a>
-    </li>
-  </ul>
-</div>
-</div>
-
-</div>
+include "sidebar.html"
 
 <div class="main-content">
 
-  <div class="row header">
-      <img class="img-responsive logo" src="img/logo.png" alt="Daily Bracket">
-      <img class="menu-icon visible-xs" src="img/menu.png" alt="Menu">
-  </div>
+  include "header.html"
    
   <div class="row inner-content-wrapper">
  
@@ -123,106 +23,16 @@
 				  		<div class="col-xs-2">
 				  			<img src="img/balls/basketball.png" class="img-responsive basketball-img">
 				  		</div>
-				  		<div class="col-xs-4">
+				  		<div class="col-xs-3">
 				  			<p class="contest-title">UVA @ SYR</p>
 				  			<p class="contest-subtext"><small>7:05 P</small>
 				  		</div>
-				  		<div class="col-xs-6 text-right">
-				  			<div class="accordion" id="accordion1">
-								  <div class="accordion-group">
-								    <div class="accordion-heading">
-								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
-								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
-								      </a>
-								    </div>
-								    
-								  </div>
+				  		<div class="col-xs-5">
+				  		<p class="contest-title">Rakeem Christmas, G</p>
+				  			<p class="contest-subtext"><small>Avg: 28.1</small>
 				  		</div>
-				  		</div>
-				  		<div class="col-xs-12">
-				  			<div id="collapseOne" class="accordion-body collapse">
-								      <div class="accordion-inner">
-								      	<div class="accordion-body-wrapper">
-									        <div class="ball-number active-ball">5</div>
-									        <div class="accordion-body-text">
-									        	<div class="row">
-									        		<div class="col-xs-10">
-												        <p class="contest-title">Rakeem Christmas, G - SYR</p>
-												        <small class="accordion-subtext">Avg: 21 Pts, 6 Rbs, 3 Ast</small>
-											        </div>
-										        	<div class="col-xs-2">
-											        	<small>Avg</small><br>
-											        	<small>28.1</small>
-										        	</div>
-										        </div>
-									        </div>
-								        </div>
-
-								        <div class="accordion-body-wrapper">
-									        <div class="ball-number">4</div>
-									        <div class="accordion-body-text">
-									        	<div class="row">
-									        		<div class="col-xs-10">
-												        <p class="contest-title">Jerami Grant, F - SYR</p>
-												        <small class="accordion-subtext">Avg: 20 Pts, 4 Rbs, 3 Ast</small>
-											        </div>
-										        	<div class="col-xs-2">
-											        	<small>Avg</small><br>
-											        	<small>25.4</small>
-										        	</div>
-										        </div>
-									        </div>
-								        </div>
-
-								        <div class="accordion-body-wrapper">
-									        <div class="ball-number">3</div>
-									        <div class="accordion-body-text">
-									        	<div class="row">
-									        		<div class="col-xs-10">
-												        <p class="contest-title">Wesley Johnson, F - SYR</p>
-												        <small class="accordion-subtext">Avg: 19 Pts, 6 Rbs, 3 Ast</small>
-											        </div>
-										        	<div class="col-xs-2">
-											        	<small>Avg</small><br>
-											        	<small>26.1</small>
-										        	</div>
-										        </div>
-									        </div>
-								        </div>
-
-								        <div class="accordion-body-wrapper">
-									        <div class="ball-number">2</div>
-									        <div class="accordion-body-text">
-									        	<div class="row">
-									        		<div class="col-xs-10">
-												        <p class="contest-title">Carmelo Anthony, F - SYR</p>
-												        <small class="accordion-subtext">Avg: 18 Pts, 2 Rbs, 1 Ast</small>
-											        </div>
-										        	<div class="col-xs-2">
-											        	<small>Avg</small><br>
-											        	<small>21.3</small>
-										        	</div>
-										        </div>
-									        </div>
-								        </div>
-
-								        <div class="accordion-body-wrapper">
-									        <div class="ball-number">1</div>
-									        <div class="accordion-body-text">
-									        	<div class="row">
-									        		<div class="col-xs-10">
-												        <p class="contest-title">Jerian Grant, G - SYR</p>
-												        <small class="accordion-subtext">Avg: 14 Pts, 6 Rbs, 3 Ast</small>
-											        </div>
-										        	<div class="col-xs-2">
-											        	<small>Avg</small><br>
-											        	<small>23.1</small>
-										        	</div>
-										        </div>
-									        </div>
-								      </div>
-								    </div>
-								  </div>
+				  		<div class="col-xs-2 text-right">
+				  			<div class="selected-ball-number">5</div>
 				  		</div>
 				  	</div>
 				  	<div class="row">
@@ -233,17 +43,16 @@
 				  			<p class="contest-title">WSU @ UCLA</p>
 				  			<p class="contest-subtext"><small>7:30 P</small>
 				  		</div>
-				  		<div class="col-xs-6 text-right">
+				  		<div class="col-xs-5 text-right">
 				  			<div class="accordion" id="accordion2">
-								  <div class="accordion-group">
+								<div class="accordion-group">
 								    <div class="accordion-heading">
 								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
-								    </div>
-								    
-								  </div>
-				  		</div>
+								    </div>							    
+								</div>
+				  			</div>
 				  		</div>
 				  		<div class="col-xs-12">
 				  			<div id="collapseTwo" class="accordion-body collapse">
@@ -339,17 +148,16 @@
 				  			<p class="contest-title">PHX @ MIA</p>
 				  			<p class="contest-subtext"><small>7:30 P</small>
 				  		</div>
-				  		<div class="col-xs-6 text-right">
+				  		<div class="col-xs-5 text-right">
 				  			<div class="accordion" id="accordion3">
-								  <div class="accordion-group">
+								<div class="accordion-group">
 								    <div class="accordion-heading">
 								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
-								    </div>
-								    
-								  </div>
-				  		</div>
+								    </div>								    
+								</div>
+				  			</div>
 				  		</div>
 				  		<div class="col-xs-12">
 				  			<div id="collapseThree" class="accordion-body collapse">
@@ -445,17 +253,16 @@
 				  			<p class="contest-title">NOP @ DAL</p>
 				  			<p class="contest-subtext"><small>10:05 P</small>
 				  		</div>
-				  		<div class="col-xs-6 text-right">
+				  		<div class="col-xs-5 text-right">
 				  			<div class="accordion" id="accordion4">
-								  <div class="accordion-group">
+								<div class="accordion-group">
 								    <div class="accordion-heading">
 								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
-								    </div>
-								    
-								  </div>
-				  		</div>
+								    </div>								    
+								</div>
+				  			</div>
 				  		</div>
 				  		<div class="col-xs-12">
 				  			<div id="collapseFour" class="accordion-body collapse">
@@ -551,17 +358,16 @@
 				  			<p class="contest-title">OKLA @ ISU</p>
 				  			<p class="contest-subtext"><small>10:30 P</small>
 				  		</div>
-				  		<div class="col-xs-6 text-right">
+				  		<div class="col-xs-5 text-right">
 				  			<div class="accordion" id="accordion5">
-								  <div class="accordion-group">
+								<div class="accordion-group">
 								    <div class="accordion-heading">
 								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
-								    </div>
-								    
-								  </div>
-				  		</div>
+								    </div>								
+								</div>
+				  			</div>
 				  		</div>
 				  		<div class="col-xs-12">
 				  			<div id="collapseFive" class="accordion-body collapse">
@@ -662,12 +468,7 @@
   </div>  
 </div>
 
-  </div>
-    <script src="script.min.js"></script>
-  </body>
-
-
-</html>
+include "footer.html"
 
 <script>
 </script>

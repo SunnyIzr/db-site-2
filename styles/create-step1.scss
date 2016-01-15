@@ -5,6 +5,9 @@
 		border: 1px solid #fff;
     	border-radius: 10px;
 
+    	&.edit-step-bottom{
+    		border:none;
+    	}
     	.col-xs-9{
     		padding: 10px;
 		    background-color: #1d81ce;
@@ -20,7 +23,30 @@
 		    text-align: center;
 		    font-weight: bold;
     	}
-	}
+
+    	.button.view-btn{
+    			background-color: #1B74BD;
+				border-color: #1B74BD;
+				border-radius: 5px;
+				text-align: center;
+				padding: 8px 0;
+				font-weight: bold;
+				font-size:1.5em;
+				letter-spacing: 2px;
+    		}
+		}
+
+		p.help-text{
+			.top-bold-text{
+				font-weight: bold;
+				color: #fff;
+			}
+
+			.orange-text{
+				color:#f05d05;
+				font-weight: bold;
+			}
+		}
 
 	.contests{
 		padding: 0 15px;
@@ -33,13 +59,60 @@
 			}
 
 			img.basketball-img{
-					width: 35px;
-					margin-top: 5px;
-				}
+				width: 35px;
+				margin-top: 5px;
+			}
 
-				p.contest-title,.contest-subtext{
-					margin:0 0 2px;
+			p.contest-title{
+				font-size: 0.9em;
+
+				&.lineup-title{
+					margin-top: 40px;
+					text-align: center;
 				}
+			}
+
+			p.contest-title,.contest-subtext{
+				margin:0 0 2px;
+			}
+
+			p.contest-subtext{
+				span{
+					color: #1d81ce;
+				}
+			}
+
+			div.selected-ball-number{
+				background-color: #132451;
+			    border: 2px solid #1b70b6;
+			    width: 35px;
+			    height: 35px;
+			    border-radius: 17px;
+			    text-align: center;
+			    font-size: 1.7em;
+			    font-weight: 700;
+			    margin-top: 5px;
+			}
+
+			.button.edit-btn{
+				    background-color: #1B74BD;
+				    border-color: #1B74BD;
+				    border-radius: 5px;
+				    width: 80%;
+				    margin-top: 35px;
+				    text-align: center;
+				    padding: 8px 0;
+				    float: right;
+
+				    &.create-btn{
+				    	width: 25%;
+				    	margin-top: 30px;
+				    }
+
+				    &.del-btn{
+				    	margin-top: 13px;
+				    }
+			}
 		}
 
 		.accordion .accordion-toggle{    
@@ -57,6 +130,43 @@
 
 		.accordion .accordion-toggle:hover{
 			text-decoration: none;
+		}
+
+		.accordion-body .accordion-inner {
+			.accordion-body-wrapper{
+				margin-bottom: 20px;
+			}
+
+			.ball-number{
+				background-color:#132451;
+				border:2px solid #1b70b6;
+				width: 60px;
+			    height: 60px;
+			    border-radius: 30px;
+			    text-align: center;
+			    font-size: 3em;
+			    position: absolute;
+			    margin-top: -7px;
+			    font-weight: bold;
+
+			    &.active-ball{
+			    	color: #1b70b6;
+			    }
+			}
+
+			.accordion-body-text{
+				padding-left: 65px;
+			    border: 1px solid #686b71;
+			    border-radius: 25px;
+			    margin-left: 15px;
+			    margin-top: 10px;
+			    margin-bottom: 15px;
+
+			    small.accordion-subtext{
+			    	color: #9ea1aa;
+			    }
+			}
+
 		}
 	}
 
