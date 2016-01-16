@@ -9850,6 +9850,44 @@ body, html {
   color: #1b70b6;
 }
 
+.leaderboards {
+  padding: 0 0px;
+}
+.leaderboards .top-section .top-leaderboard-section {
+  border: 1px solid #fff;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 10px;
+}
+.leaderboards .top-section .top-leaderboard-section .entry-section {
+  padding: 10px;
+  background-color: #132451;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.leaderboards .top-section .top-leaderboard-section .board-section {
+  padding: 10px;
+  background-color: #2b3a63;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.leaderboards .user.leaderboard-users-dark {
+  background-color: #0a142f !important;
+  text-align: center;
+}
+.leaderboards span.marginTop {
+  margin-top: 10px;
+  display: block;
+}
+.leaderboards span.name {
+  text-align: left;
+}
+.leaderboards .user.leaderboard-users-light {
+  background-color: #0e1938 !important;
+  text-align: center;
+}
+
 .groups .top-section {
   padding-top: 15px;
   padding-bottom: 20px;
