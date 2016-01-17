@@ -9852,6 +9852,38 @@ body, html {
 
 .leaderboards {
   padding: 0 0px;
+  font-size: 15px;
+}
+.leaderboards .top-section .cube-box {
+  text-align: center;
+  border: 7px solid #385fc6;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  padding-top: 5px;
+}
+.leaderboards .top-section .cube-box .cube-inner-row {
+  border-bottom: 7px solid #385fc6;
+}
+.leaderboards .top-section .cube-box h4 {
+  border-bottom: 7px solid #385fc6;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+.leaderboards .top-section .cube-box .cube-sections {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.leaderboards .top-section .cube-box .cube-sections span.orange-txt {
+  color: #f05d05;
+}
+.leaderboards .top-section .cube-box .cube-cols {
+  border-right: 7px solid #385fc6;
+}
+.leaderboards .top-section .cube-box .cube-border {
+  width: 313px;
+  margin-left: 0px;
+  margin-top: -7px;
+  height: 26px;
 }
 .leaderboards .top-section .top-leaderboard-section {
   border: 1px solid #fff;
@@ -9872,7 +9904,19 @@ body, html {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.leaderboards .user.leaderboard-users-dark {
+.leaderboards .top-section .top-leaderboard-section .entry {
+  padding: 10px;
+  background-color: #2b3a63;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.leaderboards .top-section .top-leaderboard-section .board {
+  padding: 10px;
+  background-color: #132451;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.leaderboards .leaderboard-users-dark {
   background-color: #0a142f !important;
   text-align: center;
 }
@@ -9883,9 +9927,31 @@ body, html {
 .leaderboards span.name {
   text-align: left;
 }
-.leaderboards .user.leaderboard-users-light {
+.leaderboards .leaderboard-users-light {
   background-color: #0e1938 !important;
   text-align: center;
+}
+.leaderboards .user-list span {
+  color: #fff;
+}
+.leaderboards .accordion-body-wrapper .row.textLeft {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.leaderboards .accordion-body-wrapper .row.textLeft .yellow-txt {
+  color: #c88e6d;
+  display: block;
+}
+
+.user button.entries-edit-btn {
+  background-color: #1d81ce;
+  border: 1px solid #1d81ce;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .groups .top-section {
