@@ -9640,6 +9640,7 @@ body, html {
   margin-top: 8px;
   text-align: center;
   padding: 8px 0;
+  color: #fff;
 }
 .enter-content-step-1 .contests > .row .col-xs-4 div.button span.number {
   font-weight: bold;
@@ -9677,6 +9678,49 @@ body, html {
 }
 .enter-content-step-1 .bottom-links span {
   text-decoration: underline;
+}
+
+.main-content .modal-dialog {
+  width: 35%;
+}
+.main-content .confirm-entry-content {
+  color: #000;
+  font-size: 0.7em;
+}
+.main-content .confirm-entry-content .select-check {
+  background-color: #157efb;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.main-content .confirm-entry-content .select-check input {
+  display: none;
+}
+.main-content .confirm-entry-content .select-check span {
+  margin-top: 13px;
+  color: #fff;
+}
+.main-content .confirm-entry-content .modal-footer {
+  padding: 0px;
+}
+.main-content .confirm-entry-content .modal-footer .btn {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-content .confirm-entry-content .modal-footer a {
+  color: #157efb;
+  font-size: 1.4em;
+}
+.main-content .confirm-entry-content .modal-footer a:hover {
+  background-color: #fff;
+  text-decoration: none;
+}
+.main-content .confirm-entry-content .modal-footer .borderRight {
+  border-right: 1px solid #ccc;
 }
 
 @media (min-width: 768px) {

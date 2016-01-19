@@ -67,7 +67,7 @@
 
 			.col-xs-4{
 				div.button{
-					float:right;;
+					float:right;
 					background-color: #1B74BD;
 					border-color: #1B74BD;
 					border-radius: 5px;
@@ -75,6 +75,7 @@
 					margin-top: 8px;
 					text-align: center;
 					padding: 8px 0;
+					color: #fff;
 					span.number{
 						font-weight: bold;
 					}
@@ -126,6 +127,60 @@
 	.bottom-links{
 		span{
 			text-decoration: underline;
+		}
+	}
+}
+
+.main-content{
+
+	.modal-dialog{
+		width:35%;
+	}
+
+	.confirm-entry-content{
+		color: #000;
+		font-size: 0.7em;
+
+		.select-check{
+			background-color: #157efb;
+		    text-align: center;
+		    width: 40px;
+		    height: 40px;
+		    border-radius: 20px;
+
+		    input{
+		    	display: none;
+		    }
+
+		    span{
+		    	margin-top: 13px;
+		    	color: #fff;
+		    }
+		}
+
+		.modal-footer{
+			padding:0px;
+			.btn{
+				width: 100%;
+				text-align: center;
+				border:1px solid #fff;
+				padding-top: 10px;
+    			padding-bottom: 10px;
+			}
+
+			a{
+				color: #157efb;
+				font-size: 1.4em;
+			}
+
+			a:hover{
+				background-color:#fff;
+				text-decoration: none;
+			}
+
+			.borderRight{
+				border-right:1px solid #ccc;
+			}
 		}
 	}
 }

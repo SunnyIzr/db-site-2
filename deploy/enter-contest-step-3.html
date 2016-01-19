@@ -144,10 +144,12 @@
 				  			<p><small>Entries </small> <b class="entries-conut">1890/2200</b></p>
 				  		</div>
 				  		<div class="col-xs-4 text-right">
-				  			<div class="button">
-				  				<small>Enter for</small> <br> 
-				  				<span class="number">$1</span>
-				  			</div>
+				  			<a href="#" data-toggle="modal" data-target="#myModal">
+					  			<div class="button">
+					  				<small>Enter for</small> <br> 
+					  				<span class="number">$1</span>
+					  			</div>
+				  			</a>
 				  		</div>
 				  	</div>
 				  	<div class="row dark">
@@ -157,17 +159,21 @@
 				  			<p><small>Entries </small> <b class="entries-conut">9502/11000<span class="orange"> [Multi-Entry]</span></b></p>
 				  		</div>
 				  		<div class="col-xs-4 text-right dual-buttons">
-				  			<div class="button purple-btn">
-				  				<small>Enter Entries </small>
-				  			</div>
+				  			<a href="#" data-toggle="modal" data-target="#myModal">
+					  			<div class="button purple-btn">
+					  				<small>Enter Entries </small>
+					  			</div>
+				  			</a>
 				  			<div class="middle-div">
 					  			<small>Entered x2</small>
 					  			<div class="clearfix"></div>
 					  			<span class="number">$1</span>
 				  			</div>
-				  			<div class="button">
-				  				<small>Enter Again </small>
-				  			</div>
+				  			<a href="#" data-toggle="modal" data-target="#myModal">
+					  			<div class="button">
+					  				<small>Enter Again </small>
+					  			</div>
+				  			</a>
 				  		</div>
 				  	</div>
 				  	<div class="row">
@@ -177,10 +183,12 @@
 				  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
 				  		</div>
 				  		<div class="col-xs-4 text-right">
-				  			<div class="button">
-				  				<small>Enter for</small> <br> 
-				  				<span class="number">$6</span>
-				  			</div>
+				  			<a href="#" data-toggle="modal" data-target="#myModal">
+					  			<div class="button">
+					  				<small>Enter for</small> <br> 
+					  				<span class="number">$6</span>
+					  			</div>
+				  			</a>
 				  		</div>
 				  	</div>
 					</div>
@@ -193,7 +201,54 @@
 			  </div>
 			</div>
     </div>    
-  </div>  
+  </div> 
+  <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content confirm-entry-content">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      <div class="modal-body">
+		      	<h4 class="modal-title text-center" id="myModalLabel">Confirm Entry</h4><br>
+		      	<div class="row">
+		      		<div class="col-xs-2">
+		      			<div class="select-check">
+		      				<input type="checkbox">
+		      				<span class="glyphicon glyphicon-ok"></span>
+		      			</div>
+		      		</div>
+		      		<div class="col-xs-2">
+		      			<span>Lineup 1</span>
+		      		</div>
+		      		<div class="col-xs-8">
+		      			<span>R. Christmas, J. Hawkinson, C. Bosh, T. Chandler, B. Hield</span>
+		      		</div>
+		      	</div><br>
+		      	<div class="row">
+		      		<div class="col-xs-2">
+		      			<div class="select-check">
+		      				<input type="checkbox">
+		      				<span class="glyphicon glyphicon-plus"></span>
+		      			</div>
+		      		</div>
+		      		<div class="col-xs-10">
+		      			<span>Create New Lineup</span>
+		      		</div>
+		      	</div><br>
+		      	<p class="text-center">I agree to enter the contest and understand that $6.00 will be debited from my account. I also certify that I am not a resident of Arizona, Iowa, Lousiana, Montana, Nevada, South Carolina, Washington, and Quebec, Canada.</p>
+		      </div>
+		      <div class="modal-footer">
+			      <div class="row">
+			      	<div class="col-xs-6 borderRight">
+			      		<a href="#" type="button" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			      	</div>
+			      	<div class="col-xs-6">
+			      		 <a href="#" type="button" class="btn btn-default">Confirm</a>
+			      	</div>
+			      </div>		  
+		      </div>
+		    </div>
+		  </div>
+		</div> 
 </div>
 
   </div>
