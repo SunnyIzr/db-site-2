@@ -9594,16 +9594,32 @@ body, html {
 .enter-content-step-1 .tab-buttons {
   border-bottom: 1px solid #36497C;
 }
-.enter-content-step-1 .tab-buttons > .active {
+.enter-content-step-1 .tab-buttons ul li.active {
   border-bottom: 5px solid #36497C;
 }
-.enter-content-step-1 .tab-buttons > .active b {
+.enter-content-step-1 .tab-buttons ul li.active b {
   color: #fff;
 }
-.enter-content-step-1 .tab-buttons b {
+.enter-content-step-1 .tab-buttons ul li.active a span.balance {
+  visibility: visible;
+  color: #fff;
+}
+.enter-content-step-1 .tab-buttons ul li a {
+  padding: 0;
+  outline: none;
+  background-color: transparent !important;
+  border: 0 !important;
+}
+.enter-content-step-1 .tab-buttons ul li a:hover {
+  background-color: transparent !important;
+}
+.enter-content-step-1 .tab-buttons ul li a b {
   color: #36497C;
   margin-bottom: 5px;
   display: block;
+}
+.enter-content-step-1 .tab-buttons ul li a span.balance {
+  visibility: hidden;
 }
 .enter-content-step-1 .tab-buttons .tab-icon-img {
   width: 20px;
@@ -9936,17 +9952,27 @@ body, html {
   margin-right: 0px;
   border-radius: 10px;
 }
+.leaderboards .top-section .top-leaderboard-section div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .leaderboards .top-section .top-leaderboard-section .entry-section {
   padding: 10px;
   background-color: #132451;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border: 0 !important;
+  color: #fff;
+  outline: none;
 }
 .leaderboards .top-section .top-leaderboard-section .board-section {
   padding: 10px;
   background-color: #2b3a63;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: 0 !important;
+  color: #fff;
+  outline: none;
 }
 .leaderboards .top-section .top-leaderboard-section .entry {
   padding: 10px;

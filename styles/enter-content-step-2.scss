@@ -19,18 +19,43 @@
 
 	.tab-buttons{
 		border-bottom: 1px solid #36497C;
-		> .active{
-			border-bottom: 5px solid #36497C;
-			b{
-				color: #fff;
+
+		ul{
+			li {
+				&.active{
+					border-bottom: 5px solid #36497C;
+					b{
+						color: #fff;
+					}
+
+					a{
+						span.balance{
+							visibility: visible;
+							color: #fff;
+						}
+					}
+				}
+				a{
+					padding: 0;
+					outline: none;
+					background-color: transparent !important;
+					border: 0 !important;
+					&:hover{
+						background-color: transparent !important;					
+					}
+					b{		
+						color: #36497C;
+						margin-bottom: 5px;
+						display: block;
+					}
+					span.balance{
+						visibility: hidden;
+					}
+				}
 			}
 		}
 
-		b{		
-			color: #36497C;
-			margin-bottom: 5px;
-			display: block;
-		}
+		
 
 		.tab-icon-img{
 			width: 20px;

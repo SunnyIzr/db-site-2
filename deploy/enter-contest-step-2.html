@@ -107,93 +107,178 @@
   </div>
    
   <div class="row inner-content-wrapper">
- 
     <div class="col-xs-12">  
       <div class="inner-content">
 	      <div class="enter-content-step-1">
-	        <div class="row balance-amount">
-	        	<div class="col-xs-3 text-center">
-	        		<span class="balance">
-			  				<small>Balance</small>
-			  				<span class="amount">$23</span>
-			  			</span>
-	        	</div>
-	        </div>
 				  <div class="row tab-buttons">
-			  		<div class="col-xs-3 active text-center">
-			  			<b >Suggested</b>
-			  		</div>
-			  		<div class="col-xs-3  text-center">
-			  			<b>Cash</b>
-			  		</div>
-			  		<div class="col-xs-3 text-center">
-			  			<img src="img/tab-icon.png" class="img-responsive tab-icon-img"/>
-			  		</div>
-			  		<div class="col-xs-3 text-center">
-			  			<b>Entered</b>
+			  		<div class="col-xs-12">
+			  			<ul class="nav nav-tabs nav-justified" role="tablist">
+						    <li role="presentation" class="active">
+						    	<a href="#home" role="tab" data-toggle="tab">
+						    		<span class="balance">
+						  				<small>Balance</small>
+						  				<div class="clearfix"></div>
+						  				<span class="amount">$23</span>
+						  			</span>
+						  			<b >Suggested</b>
+						    	</a>
+						    </li>
+						    <li role="presentation">
+						    	<a href="#profile" role="tab" data-toggle="tab">
+						    		<span class="balance">
+						  				<small>Balance</small>
+						  				<div class="clearfix"></div>
+						  				<span class="amount">$23</span>
+						  			</span>
+						  			<b>Cash</b>
+						    	</a>
+						    </li>
+						    <li role="presentation">
+						    	<a href="#messages" role="tab" data-toggle="tab">
+						    		<br><br>
+						    		<img src="img/tab-icon.png" class="img-responsive tab-icon-img"/>
+						    	</a>
+						    </li>
+						    <li role="presentation">
+						   	 	<a href="#settings" role="tab" data-toggle="tab">
+						   	 		<br><br>
+						   			<b>Entered</b> 	
+						   		</a>
+						   	</li>
+						  </ul>
 			  		</div>
 				  </div>
 				  <br>
-			  	<div class="row">
-			  		<div class="col-xs-12">
-			  			<p class="help-text">Enter one of the suggested contests below or use the tabs above to find more contests</p>
-			  		</div>
-			  	</div>
-			  	<br>
-				  <div class="contests">
-				  	<div class="row dark">
-				  		<div class="col-xs-8">
-				  			<p class="contest-title">Jackpot Johy, 1st Wins $1000</p>
-				  			<p><small>Prize Pool </small> <b class="amount">$2000</b></p>
-				  			<p><small>Entries </small> <b class="entries-conut">1890/2200</b></p>
-				  		</div>
-				  		<div class="col-xs-4 text-right">
-				  			<a href="#" data-toggle="modal" data-target="#myModal">
-					  			<div class="button">
-					  				<small>Enter for</small> <br> 
-					  				<span class="number">$1</span>
-					  			</div>
-				  			</a>
-				  		</div>
-				  	</div>
-				  	<div class="row">
-				  		<div class="col-xs-8">
-				  			<p class="contest-title">200BB Head to Head</p>
-				  			<p><small>Prize Pool </small> <img src="img/balance-icon.png" class="small-coin-img"><b class="amount">2000</b></p>
-				  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
-				  		</div>
-				  		<div class="col-xs-4 text-right">
-				  			<a href="#" data-toggle="modal" data-target="#myModal">
-					  			<div class="button">
-					  				<small>Enter for </small><br> 
-					  				<img src="img/balance-icon.png" class="small-coin-img"><span class="number">1,100</span>
-					  			</div>
-				  			</a>
-				  		</div>
-				  	</div>
-				  	<div class="row dark">
-				  		<div class="col-xs-8">
-				  			<p class="contest-title">$10 Head to Head</p>
-				  			<p><small>Prize Pool </small> <b class="amount">$10</b></p>
-				  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
-				  		</div>
-				  		<div class="col-xs-4 text-right">
-				  			<a href="#" data-toggle="modal" data-target="#myModal">
-					  			<div class="button edit-entry-div">
-					  				<p class="edit-entry">Edit Entry</p>
-					  				<small>Entered</small><br> 
-					  				<b><span class="number">$6</span></b>
-					  			</div>
-				  			</a>
-				  		</div>
-				  	</div>
-				</div>
-			  	<br>
-			  	<div class="row bottom-links">
-			  		<div class="col-xs-4 text-center"><span>Edit My Lineup</span></div>
-			  		<div class="col-xs-4 text-center"><span>How to Play</span></div>
-			  		<div class="col-xs-4 text-center"><span>Deposit</span></div>
-			  	</div>
+				   <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="home">
+				    	<div class="row">
+					  		<div class="col-xs-12">
+					  			<p class="help-text">Enter one of the suggested contests below or use the tabs above to find more contests</p>
+					  		</div>
+					  	</div>
+					  	<br>
+						  <div class="contests">
+						  	<div class="row dark">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title">Jackpot Johy, 1st Wins $1000</p>
+						  			<p><small>Prize Pool </small> <b class="amount">$2000</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">1890/2200</b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button">
+							  				<small>Enter for</small> <br> 
+							  				<span class="number">$1</span>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+						  	<div class="row">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title">200BB Head to Head</p>
+						  			<p><small>Prize Pool </small> <img src="img/balance-icon.png" class="small-coin-img"><b class="amount">2000</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button">
+							  				<small>Enter for </small><br> 
+							  				<img src="img/balance-icon.png" class="small-coin-img"><span class="number">1,100</span>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+						  	<div class="row dark">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title">$10 Head to Head</p>
+						  			<p><small>Prize Pool </small> <b class="amount">$10</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button edit-entry-div">
+							  				<p class="edit-entry">Edit Entry</p>
+							  				<small>Entered</small><br> 
+							  				<b><span class="number">$6</span></b>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+							</div>
+					  	<br>
+					  	<div class="row bottom-links">
+					  		<div class="col-xs-4 text-center"><span>Edit My Lineup</span></div>
+					  		<div class="col-xs-4 text-center"><span>How to Play</span></div>
+					  		<div class="col-xs-4 text-center"><span>Deposit</span></div>
+					  	</div>
+					  </div>
+				    <div role="tabpanel" class="tab-pane" id="profile">
+				    	<div class="contests">
+						  	<div class="row">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title">Jackpot 	Johy, 1st Wins $1000</p>
+						  			<p><small>Prize Pool </small> <b class="amount">$2000</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">1890/2200</b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button">
+							  				<small>Enter for</small> <br> 
+							  				<span class="number">$1</span>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+						  	<div class="row dark">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title mt10">$10000 Mega Pot[1st: $1000]<span class="orange"> [M]</span></p>
+						  			<p><small>Prize Pool </small> <b class="amount">$10000</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">9502/11000<span class="orange"> [Multi-Entry]</span></b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right dual-buttons">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button purple-btn">
+							  				<small>Enter Entries </small>
+							  			</div>
+						  			</a>
+						  			<div class="middle-div">
+							  			<small>Entered x2</small>
+							  			<div class="clearfix"></div>
+							  			<span class="number">$1</span>
+						  			</div>
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button">
+							  				<small>Enter Again </small>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+						  	<div class="row">
+						  		<div class="col-xs-8">
+						  			<p class="contest-title">$10 Head to Head</p>
+						  			<p><small>Prize Pool </small> <b class="amount">$10</b></p>
+						  			<p><small>Entries </small> <b class="entries-conut">1/2</b></p>
+						  		</div>
+						  		<div class="col-xs-4 text-right">
+						  			<a href="#" data-toggle="modal" data-target="#myModal">
+							  			<div class="button">
+							  				<small>Enter for</small> <br> 
+							  				<span class="number">$6</span>
+							  			</div>
+						  			</a>
+						  		</div>
+						  	</div>
+							</div>
+					  	<br>
+					  	<div class="row bottom-links">
+					  		<div class="col-xs-5 text-center"><span>View/Edit My Lineup</span></div>
+					  		<div class="col-xs-3 text-center"><span>How to Play</span></div>
+					  		<div class="col-xs-4 text-center"><span>Deposit</span></div>
+					  	</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+				    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+					</div>
 			  </div>
 			</div>
 	    </div>    
