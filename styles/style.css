@@ -9858,6 +9858,10 @@ body, html {
   font-size: 1.3em !important;
   color: #fff;
 }
+.create-step-1 .contests .accordion .choosen-row .selected-text {
+  color: #fff !important;
+  font-size: 0.8em;
+}
 .create-step-1 .contests .accordion .accordion-toggle:hover {
   text-decoration: none;
 }
