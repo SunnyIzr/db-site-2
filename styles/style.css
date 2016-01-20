@@ -9856,6 +9856,7 @@ body, html {
 }
 .create-step-1 .contests .accordion .selected {
   font-size: 1.3em !important;
+  color: #fff;
 }
 .create-step-1 .contests .accordion .accordion-toggle:hover {
   text-decoration: none;
