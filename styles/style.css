@@ -9854,11 +9854,15 @@ body, html {
   width: 20px;
   margin-left: 10px;
 }
+.create-step-1 .contests .accordion .selected {
+  font-size: 1.3em !important;
+}
 .create-step-1 .contests .accordion .accordion-toggle:hover {
   text-decoration: none;
 }
 .create-step-1 .contests .accordion-body .accordion-inner .accordion-body-wrapper {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .create-step-1 .contests .accordion-body .accordion-inner .ball-number {
   background-color: #132451;
