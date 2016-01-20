@@ -64,12 +64,24 @@
 
 	    .board-section{
 	    	padding: 10px;
-	    	background-color: #2b3a63;
 		    border-top-right-radius: 10px;
 		    border-bottom-right-radius: 10px;
 		    border:0 !important;
 		    color: #fff;
 		    outline: none;
+	    }
+	    .nav{
+	    	a:hover{
+	    		background: none !important;
+	    	}
+		    .active{
+		    	a{
+		    		background-color: #2b3a63;
+		    	}
+		    	a:hover{
+		    		background: #2b3a63 !important;	
+		    	}
+		    }
 	    }
 
 

@@ -9379,6 +9379,15 @@ body, html {
 .leaderboards .user-list .user {
   padding: 10px 14px;
 }
+.leaderboards .user-list .user button.entries-edit-btn {
+  background-color: #1d81ce;
+  border: 1px solid #1d81ce;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+}
 .leaderboards .user-list .user div {
   display: inline-block;
   font-size: 16px;
@@ -9575,79 +9584,79 @@ body, html {
   margin-right: 8px;
 }
 
-.enter-content-step-1 {
+.contests {
   font-size: 15px;
   padding: 0 15px;
 }
-.enter-content-step-1 .balance-amount span.balance {
+.contests .balance-amount span.balance {
   color: #BEBFC1;
 }
-.enter-content-step-1 .balance-amount span.balance span.amount {
+.contests .balance-amount span.balance span.amount {
   display: block;
   font-weight: bold;
 }
-.enter-content-step-1 img.small-coin-img {
+.contests img.small-coin-img {
   width: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.enter-content-step-1 .tab-buttons {
+.contests .tab-buttons {
   border-bottom: 1px solid #36497C;
 }
-.enter-content-step-1 .tab-buttons ul li.active {
+.contests .tab-buttons ul li.active {
   border-bottom: 5px solid #36497C;
 }
-.enter-content-step-1 .tab-buttons ul li.active b {
+.contests .tab-buttons ul li.active b {
   color: #fff;
 }
-.enter-content-step-1 .tab-buttons ul li.active a span.balance {
+.contests .tab-buttons ul li.active a span.balance {
   visibility: visible;
   color: #fff;
 }
-.enter-content-step-1 .tab-buttons ul li a {
+.contests .tab-buttons ul li a {
   padding: 0;
   outline: none;
   background-color: transparent !important;
   border: 0 !important;
 }
-.enter-content-step-1 .tab-buttons ul li a:hover {
+.contests .tab-buttons ul li a:hover {
   background-color: transparent !important;
 }
-.enter-content-step-1 .tab-buttons ul li a b {
+.contests .tab-buttons ul li a b {
   color: #36497C;
   margin-bottom: 5px;
   display: block;
 }
-.enter-content-step-1 .tab-buttons ul li a span.balance {
+.contests .tab-buttons ul li a span.balance {
   visibility: hidden;
 }
-.enter-content-step-1 .tab-buttons .tab-icon-img {
+.contests .tab-buttons .tab-icon-img {
   width: 20px;
   margin: 0px auto;
 }
-.enter-content-step-1 .help-text {
+.contests .help-text {
   color: #CBCBCB;
   font-weight: bold;
   margin-bottom: 0;
 }
-.enter-content-step-1 .contests {
+.contests .contests {
   padding: 0 15px;
 }
-.enter-content-step-1 .contests > .row {
+.contests .contests > .row {
   padding: 10px 0px;
   margin-left: -37px;
   margin-right: -37px;
 }
-.enter-content-step-1 .contests > .row.dark {
+.contests .contests > .row.dark {
   background-color: #0D1939;
 }
-.enter-content-step-1 .contests > .row.dark span.orange {
+.contests .contests > .row.dark span.orange {
   color: #f05d05;
 }
-.enter-content-step-1 .contests > .row .col-xs-8 p {
+.contests .contests > .row .col-xs-8 p {
   margin-bottom: 4px;
 }
-.enter-content-step-1 .contests > .row .col-xs-4 div.button {
+.contests .contests > .row .col-xs-4 div.button {
   float: right;
   background-color: #1B74BD;
   border-color: #1B74BD;
@@ -9658,14 +9667,14 @@ body, html {
   padding: 8px 0;
   color: #fff;
 }
-.enter-content-step-1 .contests > .row .col-xs-4 div.button span.number {
+.contests .contests > .row .col-xs-4 div.button span.number {
   font-weight: bold;
 }
-.enter-content-step-1 .contests > .row .col-xs-4 div.button.edit-entry-div {
+.contests .contests > .row .col-xs-4 div.button.edit-entry-div {
   padding: 0;
   background-color: #0A142F;
 }
-.enter-content-step-1 .contests > .row .col-xs-4 div.button.edit-entry-div p.edit-entry {
+.contests .contests > .row .col-xs-4 div.button.edit-entry-div p.edit-entry {
   font-weight: bold;
   margin-bottom: 0;
   font-size: 13px;
@@ -9674,25 +9683,25 @@ body, html {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.enter-content-step-1 .contests > .row .dual-buttons .middle-div {
+.contests .contests > .row .dual-buttons .middle-div {
   width: 80%;
   text-align: center;
   float: right;
 }
-.enter-content-step-1 .contests > .row .dual-buttons .button {
+.contests .contests > .row .dual-buttons .button {
   margin: 0px !important;
   padding: 2px !important;
 }
-.enter-content-step-1 .contests > .row .dual-buttons .button.purple-btn {
+.contests .contests > .row .dual-buttons .button.purple-btn {
   background-color: #36497c;
 }
-.enter-content-step-1 .contests .contest-title {
+.contests .contests .contest-title {
   font-weight: bold;
 }
-.enter-content-step-1 .contests .contest-title.mt10 {
+.contests .contests .contest-title.mt10 {
   margin-top: 10px;
 }
-.enter-content-step-1 .bottom-links span {
+.contests .bottom-links span {
   text-decoration: underline;
 }
 
@@ -9744,24 +9753,24 @@ body, html {
     padding: 0 15px;
   }
 }
-.create-step-1 {
+.create-lineup {
   font-size: 15px;
   padding: 0 15px;
 }
-.create-step-1 .create-step-bottom-links {
+.create-lineup .create-step-bottom-links {
   border: 1px solid #fff;
   border-radius: 10px;
 }
-.create-step-1 .create-step-bottom-links.edit-step-bottom {
+.create-lineup .create-step-bottom-links.edit-step-bottom {
   border: none;
 }
-.create-step-1 .create-step-bottom-links .col-xs-9 {
+.create-lineup .create-step-bottom-links .col-xs-9 {
   padding: 10px;
   background-color: #1d81ce;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.create-step-1 .create-step-bottom-links .col-xs-3 {
+.create-lineup .create-step-bottom-links .col-xs-3 {
   padding: 10px;
   background-color: #0d1939;
   border-top-right-radius: 10px;
@@ -9769,7 +9778,7 @@ body, html {
   text-align: center;
   font-weight: bold;
 }
-.create-step-1 .create-step-bottom-links .button.view-btn {
+.create-lineup .create-step-bottom-links .button.view-btn {
   background-color: #1B74BD;
   border-color: #1B74BD;
   border-radius: 5px;
@@ -9779,43 +9788,43 @@ body, html {
   font-size: 1.5em;
   letter-spacing: 2px;
 }
-.create-step-1 p.help-text .top-bold-text {
+.create-lineup p.help-text .top-bold-text {
   font-weight: bold;
   color: #fff;
 }
-.create-step-1 p.help-text .orange-text {
+.create-lineup p.help-text .orange-text {
   color: #f05d05;
   font-weight: bold;
 }
-.create-step-1 .contests {
+.create-lineup .contests-section {
   padding: 0 15px;
 }
-.create-step-1 .contests > .row {
+.create-lineup .contests-section > .row {
   padding: 5px 0px;
   margin-left: -37px;
   margin-right: -37px;
 }
-.create-step-1 .contests > .row.dark {
+.create-lineup .contests-section > .row.dark {
   background-color: #0D1939;
 }
-.create-step-1 .contests > .row img.basketball-img {
+.create-lineup .contests-section > .row img.basketball-img {
   width: 35px;
   margin-top: 5px;
 }
-.create-step-1 .contests > .row p.contest-title {
+.create-lineup .contests-section > .row p.contest-title {
   font-size: 0.9em;
 }
-.create-step-1 .contests > .row p.contest-title.lineup-title {
+.create-lineup .contests-section > .row p.contest-title.lineup-title {
   margin-top: 40px;
   text-align: center;
 }
-.create-step-1 .contests > .row p.contest-title, .create-step-1 .contests > .row .contest-subtext {
+.create-lineup .contests-section > .row p.contest-title, .create-lineup .contests-section > .row .contest-subtext {
   margin: 0 0 2px;
 }
-.create-step-1 .contests > .row p.contest-subtext span {
+.create-lineup .contests-section > .row p.contest-subtext span {
   color: #1d81ce;
 }
-.create-step-1 .contests > .row div.selected-ball-number {
+.create-lineup .contests-section > .row div.selected-ball-number {
   background-color: #132451;
   border: 2px solid #1b70b6;
   width: 35px;
@@ -9826,7 +9835,7 @@ body, html {
   font-weight: 700;
   margin-top: 5px;
 }
-.create-step-1 .contests > .row .button.edit-btn {
+.create-lineup .contests-section > .row .button.edit-btn {
   background-color: #1B74BD;
   border-color: #1B74BD;
   border-radius: 5px;
@@ -9836,40 +9845,40 @@ body, html {
   padding: 8px 0;
   float: right;
 }
-.create-step-1 .contests > .row .button.edit-btn.create-btn {
+.create-lineup .contests-section > .row .button.edit-btn.create-btn {
   width: 25%;
   margin-top: 30px;
 }
-.create-step-1 .contests > .row .button.edit-btn.del-btn {
+.create-lineup .contests-section > .row .button.edit-btn.del-btn {
   margin-top: 13px;
 }
-.create-step-1 .contests .accordion .accordion-toggle {
+.create-lineup .contests-section .accordion .accordion-toggle {
   color: #1d81ce;
   font-size: 1.25em;
   text-decoration: none;
   display: block;
   margin-top: 10px;
 }
-.create-step-1 .contests .accordion .accordion-toggle img.blue-arrow-down {
+.create-lineup .contests-section .accordion .accordion-toggle img.blue-arrow-down {
   width: 20px;
   margin-left: 10px;
 }
-.create-step-1 .contests .accordion .selected {
+.create-lineup .contests-section .accordion .selected {
   font-size: 1.3em !important;
   color: #fff;
 }
-.create-step-1 .contests .accordion .choosen-row .selected-text {
+.create-lineup .contests-section .accordion .choosen-row .selected-text {
   color: #fff !important;
   font-size: 0.8em;
 }
-.create-step-1 .contests .accordion .accordion-toggle:hover {
+.create-lineup .contests-section .accordion .accordion-toggle:hover {
   text-decoration: none;
 }
-.create-step-1 .contests .accordion-body .accordion-inner .accordion-body-wrapper {
+.create-lineup .contests-section .accordion-body .accordion-inner .accordion-body-wrapper {
   margin-bottom: 20px;
   cursor: pointer;
 }
-.create-step-1 .contests .accordion-body .accordion-inner .ball-number {
+.create-lineup .contests-section .accordion-body .accordion-inner .ball-number {
   background-color: #132451;
   border: 2px solid #1b70b6;
   width: 60px;
@@ -9881,10 +9890,10 @@ body, html {
   margin-top: -7px;
   font-weight: bold;
 }
-.create-step-1 .contests .accordion-body .accordion-inner .ball-number.active-ball {
+.create-lineup .contests-section .accordion-body .accordion-inner .ball-number.active-ball {
   color: #1b70b6;
 }
-.create-step-1 .contests .accordion-body .accordion-inner .accordion-body-text {
+.create-lineup .contests-section .accordion-body .accordion-inner .accordion-body-text {
   padding-left: 65px;
   border: 1px solid #686b71;
   border-radius: 25px;
@@ -9892,31 +9901,15 @@ body, html {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.create-step-1 .contests .accordion-body .accordion-inner .accordion-body-text small.accordion-subtext {
+.create-lineup .contests-section .accordion-body .accordion-inner .accordion-body-text small.accordion-subtext {
   color: #9ea1aa;
 }
-.create-step-1 .create-bottom-link {
+.create-lineup .create-bottom-link {
   color: #ccc;
   text-decoration: underline;
   display: block;
   text-align: center;
   margin-top: 15px;
-}
-
-.create-step-1 .ball-number {
-  background-color: #132451;
-  border: 2px solid #1b70b6;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  text-align: center;
-  font-size: 3em;
-  position: absolute;
-  margin-top: -7px;
-  font-weight: bold;
-}
-.create-step-1 .ball-number.active-ball {
-  color: #1b70b6;
 }
 
 .leaderboards {
@@ -9976,12 +9969,20 @@ body, html {
 }
 .leaderboards .top-section .top-leaderboard-section .board-section {
   padding: 10px;
-  background-color: #2b3a63;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 0 !important;
   color: #fff;
   outline: none;
+}
+.leaderboards .top-section .top-leaderboard-section .nav a:hover {
+  background: none !important;
+}
+.leaderboards .top-section .top-leaderboard-section .nav .active a {
+  background-color: #2b3a63;
+}
+.leaderboards .top-section .top-leaderboard-section .nav .active a:hover {
+  background: #2b3a63 !important;
 }
 .leaderboards .top-section .top-leaderboard-section .entry {
   padding: 10px;
@@ -10021,16 +10022,6 @@ body, html {
 .leaderboards .accordion-body-wrapper .row.textLeft .yellow-txt {
   color: #c88e6d;
   display: block;
-}
-
-.user button.entries-edit-btn {
-  background-color: #1d81ce;
-  border: 1px solid #1d81ce;
-  border-radius: 25px;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  font-weight: bold;
 }
 
 .groups .top-section {
