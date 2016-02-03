@@ -9303,6 +9303,7 @@ body, html {
   text-align: center;
   height: 45px;
   vertical-align: top;
+  cursor: pointer;
 }
 .leaderboards .top-section .grid-layout .item h4 {
   font-size: 15px;
@@ -9342,7 +9343,7 @@ body, html {
   border-bottom-right-radius: 12px;
 }
 .leaderboards .top-section .grid-layout .item.active {
-  background: #2f3e66;
+  background: #1d81ce;
 }
 .leaderboards .top-section .switch-container {
   width: 38%;
@@ -9778,15 +9779,11 @@ body, html {
   text-align: center;
   font-weight: bold;
 }
-.create-lineup .create-step-bottom-links .button.view-btn {
-  background-color: #1B74BD;
-  border-color: #1B74BD;
-  border-radius: 5px;
-  text-align: center;
-  padding: 8px 0;
-  font-weight: bold;
-  font-size: 1.5em;
-  letter-spacing: 2px;
+.create-lineup .create-step-bottom-links .col-xs-3 span a {
+  color: #fff;
+}
+.create-lineup .create-step-bottom-links .col-xs-3 span a:hover {
+  text-decoration: none;
 }
 .create-lineup p.help-text .top-bold-text {
   font-weight: bold;
@@ -9803,6 +9800,7 @@ body, html {
   padding: 5px 0px;
   margin-left: -37px;
   margin-right: -37px;
+  cursor: pointer;
 }
 .create-lineup .contests-section > .row.dark {
   background-color: #0D1939;
@@ -9903,6 +9901,13 @@ body, html {
 }
 .create-lineup .contests-section .accordion-body .accordion-inner .accordion-body-text small.accordion-subtext {
   color: #9ea1aa;
+}
+.create-lineup .contests-section .accordion-body .accordion-inner .selected {
+  background-color: #1d81ce;
+  border-color: #1d81ce;
+}
+.create-lineup .contests-section .accordion-body .accordion-inner .selected small.accordion-subtext {
+  color: #fff;
 }
 .create-lineup .create-bottom-link {
   color: #ccc;

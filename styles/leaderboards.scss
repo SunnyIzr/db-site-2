@@ -11,6 +11,7 @@
         text-align: center;
         height: 45px;
         vertical-align: top;
+        cursor:pointer;
         h4{
           font-size: 15px;
           margin: 12px 0 0;
@@ -44,7 +45,7 @@
       .item:nth-child(3){border-bottom-left-radius: 12px;}
       .item:nth-child(4){border-bottom-right-radius: 12px;}
       .item.active{
-        background: #2f3e66;
+        background: #1d81ce;
       }
     }
     .switch-container{
