@@ -211,3 +211,12 @@
 
 
 </html>
+
+<script>
+  $(document).ready(function(){
+    $('.grid-layout .item').click(function(){
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+    }); 
+  });
+</script>
