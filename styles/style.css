@@ -9766,8 +9766,6 @@ body, html {
   border: none;
 }
 .create-lineup .create-step-bottom-links .col-xs-9 {
-  padding: 10px;
-  background-color: #1d81ce;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -9915,6 +9913,29 @@ body, html {
   display: block;
   text-align: center;
   margin-top: 15px;
+}
+.create-lineup .create-step-bottom-links .col-xs-12 {
+  height: 44px;
+}
+.create-lineup .create-step-bottom-links .points-left {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 11;
+}
+.create-lineup .create-step-bottom-links .points-left.over-salary-cap {
+  color: red;
+  font-weight: bold;
+}
+.create-lineup .create-step-bottom-links .total-points-wrapper {
+  margin: 0 -15px;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #1d81ce;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 10;
 }
 
 .leaderboards {
