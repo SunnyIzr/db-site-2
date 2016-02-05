@@ -108,7 +108,7 @@
    
   <div class="row inner-content-wrapper">
  
-    <div class="col-xs-12">  
+   <div class="col-xs-12">  
       <div class="inner-content">
 	      <div class="create-lineup">
 				  <br>
@@ -118,7 +118,7 @@
 			  		</div>
 			  	</div>
 			  	<br>
-				  <div class="contests-section">
+				  <div class="contests-section" id="selectplayer">
 				  	<div class="row dark" data-block="block1" >
 				  		<div class="col-xs-2">
 				  			<img src="img/balls/basketball.png" class="img-responsive basketball-img">
@@ -131,7 +131,7 @@
 				  			<div class="accordion" id="accordion1">
 								  <div class="accordion-group">
 								    <div class="accordion-heading">
-								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#selectplayer" href="#collapseOne">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
 								    </div>
@@ -281,7 +281,7 @@
 				  			<div class="accordion" id="accordion2">
 							  <div class="accordion-group">
 							    <div class="accordion-heading">
-							      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+							      <a class="accordion-toggle" data-toggle="collapse" data-parent="#selectplayer" href="#collapseTwo">
 							        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 							      </a>
 							    </div>
@@ -432,7 +432,7 @@
 				  			<div class="accordion" id="accordion3">
 								  <div class="accordion-group">
 								    <div class="accordion-heading">
-								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#selectplayer" href="#collapseThree">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
 								    </div>
@@ -583,7 +583,7 @@
 				  			<div class="accordion" id="accordion4">
 								  <div class="accordion-group">
 								    <div class="accordion-heading">
-								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
+								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#selectplayer" href="#collapseFour">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
 								    </div>
@@ -734,7 +734,7 @@
 				  			<div class="accordion" id="accordion5">
 								  <div class="accordion-group">
 								    <div class="accordion-heading">
-								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">
+								      <a class="accordion-toggle" data-toggle="collapse" data-parent="#selectplayer" href="#collapseFive">
 								        Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">
 								      </a>
 								    </div>
@@ -898,7 +898,10 @@
 
 </html>
 
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/utils/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript">
 var players = {
 	'block1' : 0,
 	'block2' : 0,
@@ -935,34 +938,83 @@ function renderPointsLeft(){
 	}
 }
 
+function resetBallPosition(ball){
+	TweenLite.to(ball, .3, {
+		transform : 'translate(0px,0px,0px)'
+	});
+}
+
+function removeSelectedPlayer(ball){
+	ball.next().removeClass('selected');
+	var togglerA = ball.closest('.col-xs-12').prev().find('a.accordion-toggle');
+	var selectPlayer = 'Select a player <img src="img/blue-down-arrow.png" class="blue-arrow-down">';
+	togglerA.html(selectPlayer);
+	var block = ball.closest('.row').attr('data-block');
+	//set the block value
+	players[block] = 0;
+	//rerender the points block
+	renderPointsLeft();
+}
+
+function selectPlayerAfterSlide(){
+	$(this).siblings().each(function(){
+		$(this).find('.accordion-body-text').removeClass('selected');
+		resetBallPosition($(this).find('.ball-number'));
+	});
+	var selectedValue = parseInt($(this).find('.ball-number').text());
+	var block = $(this).closest('.row').attr('data-block');
+	//set the block value
+	players[block] = selectedValue;
+	//rerender the points block
+	renderPointsLeft();
+	var togglerA = $(this).closest('.col-xs-12')
+						  .prev().find('a.accordion-toggle');
+	var row = $(this).find('.choosen-row').clone();
+	row.removeClass('hidden');
+	togglerA.html(row);
+	$(this).find('.accordion-body-text').addClass('selected');
+};
+
 $(document).ready(function(){
 	
 	renderPointsLeft();
 	$('.total-points-wrapper')
 		.height($('.create-step-bottom-links').height());
-	$('.accordion-body-wrapper').click(function(){
-		$(this).siblings().each(function(){
-			$(this).find('.accordion-body-text').removeClass('selected');
-		});
-		var selectedValue = parseInt($(this).find('.ball-number').text());
-		var block = $(this).closest('.row').attr('data-block');
-		//set the block value
-		players[block] = selectedValue;
-		//rerender the points block
-		renderPointsLeft();
-		var togglerA = $(this).closest('.col-xs-12').prev().find('a.accordion-toggle');
-		var row = $(this).find('.choosen-row').clone();
-		row.removeClass('hidden');
-		togglerA.html(row);
-		togglerA.click();
-		$(this).find('.accordion-body-text').addClass('selected');
 
+	$('.accordion-body-wrapper').click(function(evt){
+		evt.preventDefault();
+		evt.stopPropagation();
 	});
 
 	$('.contests-section > .row').click(function(evt){
 		evt.stopPropagation();
 		var panel = $(this).find('.accordion-toggle').attr('href');
 		$(panel).collapse('toggle');
+	});
+	var ballBoxWidth = $(".ball-number").outerWidth();
+	$(".ball-number").each(function(){
+		var ball = $(this);
+		var draggable = Draggable.create($(this)[0], {
+		    type:"x",
+		    edgeResistance:0.65,
+		    bounds: $(this).parent(),
+		    lockAxis:true,
+		    throwProps:true
+		})[0];
+		draggable.addEventListener('dragend', function(evt){
+		  	var endX = draggable.endX;
+		  	if(ball.next().hasClass('selected')){
+	  			removeSelectedPlayer(ball);
+	  		}
+		  	if(endX === ball.parent().width() - ballBoxWidth){
+		  		selectPlayerAfterSlide.call(ball.parent());
+		  	}
+	  		else{
+	  			resetBallPosition(ball);
+	  		}
+
+	  		
+		});
 	});
 
 });
