@@ -9358,13 +9358,18 @@ body, html {
   margin-left: auto;
   margin-right: auto;
 }
+.leaderboards ul.board-tabpanel {
+  border-bottom: 1px solid #36497C;
+}
 .leaderboards ul.board-tabpanel li.active {
-  background-color: #1d81ce;
   border-bottom: 5px solid #36497C;
+}
+.leaderboards ul.board-tabpanel li.active a {
+  color: #fff !important;
 }
 .leaderboards ul.board-tabpanel li a.leaderboard-tabs {
   padding: 10px;
-  color: #fff;
+  color: #36497C;
   outline: 0;
   background-color: transparent !important;
   border: 0 !important;

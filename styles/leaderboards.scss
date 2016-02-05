@@ -64,15 +64,20 @@
   }
 
   ul.board-tabpanel{
+
+    border-bottom:1px solid #36497C;
      li{
         &.active{
-          background-color:#1d81ce;
           border-bottom:5px solid #36497C;
+
+          a{
+            color: #fff !important;
+          }
         }
 
         a.leaderboard-tabs{
           padding: 10px;
-          color: #fff;
+          color: #36497C;
           outline: 0;
           background-color: transparent!important;
           border: 0!important;
