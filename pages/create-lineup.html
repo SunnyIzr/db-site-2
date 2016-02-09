@@ -852,9 +852,9 @@ function removeSelectedPlayer(ball){
 }
 
 function selectPlayerAfterSlide(){
+	var self = this;
 	$(this).siblings().each(function(){
 		$(this).find('.accordion-body-text').removeClass('selected');
-		resetBallPosition($(this).find('.ball-number'));
 	});
 	var selectedValue = parseInt($(this).find('.ball-number').text());
 	var block = $(this).closest('.row').attr('data-block');
@@ -868,6 +868,12 @@ function selectPlayerAfterSlide(){
 	row.removeClass('hidden');
 	togglerA.html(row);
 	$(this).find('.accordion-body-text').addClass('selected');
+	$(this).find('.ball-number').fadeOut('fast', function(){
+		resetBallPosition($(self).find('.ball-number'));
+		setTimeout(function(){
+			$(self).find('.ball-number').fadeIn();
+		},400);
+	});
 };
 
 $(document).ready(function(){
@@ -879,6 +885,7 @@ $(document).ready(function(){
 	$('.accordion-body-wrapper').click(function(evt){
 		evt.preventDefault();
 		evt.stopPropagation();
+		selectPlayerAfterSlide.call($(this));
 	});
 
 	$('.contests-section > .row').click(function(evt){
@@ -907,8 +914,6 @@ $(document).ready(function(){
 	  		else{
 	  			resetBallPosition(ball);
 	  		}
-
-	  		
 		});
 	});
 
